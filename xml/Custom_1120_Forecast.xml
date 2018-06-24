@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1120">
+	<defaultcontrol always="true">15100</defaultcontrol>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<backgroundcolor>background</backgroundcolor>
+	<menucontrol>10000</menucontrol>
+	<controls>
+		<control type="group">
+			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+			<include>ColoredBackgroundImages</include>
+		</control>
+		<include>WeatherStationTopBar</include>
+		<control type="grouplist" id="2000">
+			<orientation>vertical</orientation>
+			<top>100</top>
+			<height>100%</height>
+			<left>50</left>
+			<ondown>20001</ondown>
+			<usecontrolcoords>true</usecontrolcoords>
+			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
+				<effect type="slide" end="0,20" time="60" tween="sine" />
+				<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+			</animation>
+			<animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
+				<effect type="slide" end="0,-20" time="60" tween="sine" />
+				<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+			</animation>
+			<scrolltime tween="cubic" easing="out">500</scrolltime>
+			<include>OpenClose_Right</include>
+			<itemgap>-160</itemgap>
+			<include content="WeatherStationWidget">
+				<param name="content_include" value="WeatherStationDailyItems" />
+				<param name="list_id" value="15110" />
+				<param name="widget_header" value="$LOCALIZE[31019]"/>
+				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
+				<param name="width" value="420" />
+			</include>
+			<include content="WeatherStationWidget">
+				<param name="content_include" value="WeatherStationHourlyItems" />
+				<param name="list_id" value="15111" />
+				<param name="widget_header" value="$LOCALIZE[33036]"/>
+				<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
+				<param name="width" value="420" />
+			</include>
+		</control>
+		<include>WeatherStationOverlay</include>
+	</controls>
+</window>

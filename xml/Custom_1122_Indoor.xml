@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1122">
+	<defaultcontrol always="true">15100</defaultcontrol>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<backgroundcolor>background</backgroundcolor>
+	<menucontrol>10000</menucontrol>
+	<controls>
+		<control type="group">
+			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+			<include>ColoredBackgroundImages</include>
+		</control>
+		<include>WeatherStationTopBar</include>
+		<control type="grouplist" id="2000">
+			<orientation>vertical</orientation>
+			<top>0</top>
+			<height>100%</height>
+			<left>0</left>
+			<ondown>20001</ondown>
+			<usecontrolcoords>true</usecontrolcoords>
+			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
+				<effect type="slide" end="0,20" time="60" tween="sine" />
+				<effect type="slide" end="0,-20" time="180" tween="sine" delay="80" />
+			</animation>
+			<animation type="Conditional" condition="Control.IsVisible(20001)" reversible="false">
+				<effect type="slide" end="0,-20" time="60" tween="sine" />
+				<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
+			</animation>
+			<scrolltime tween="cubic" easing="out">500</scrolltime>
+			<include>OpenClose_Right</include>
+			<itemgap>-160</itemgap>
+			<control type="group" id="567">
+				<description>Weather info</description>
+				<height>580</height>
+				<top>100</top>
+				<left>22</left>
+				<control type="image">
+					<left>2.5%</left>
+					<top>100</top>
+					<width>95%</width>
+					<height>540</height>
+					<texture border="21">dialogs/dialog-bg.png</texture>
+				</control>
+				<control type="grouplist">
+					<top>100</top>
+					<left>200</left>
+					<right>200</right>
+					<align>justify</align>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<description>current indoor temp</description>
+						<align>center</align>
+						<width>646</width>
+						<height>350</height>
+						<font>big_temperature</font>
+						<textcolor>grey</textcolor>
+						<label>$INFO[Window(weather).Property(IndoorTemp)]$INFO[System.TemperatureUnits]</label>
+					</control>
+					<control type="label">
+						<description>current indoor humidity</description>
+						<align>center</align>
+						<width>646</width>
+						<height>350</height>
+						<font>big_temperature</font>
+						<textcolor>grey</textcolor>
+						<label>$INFO[Window(weather).Property(IndoorHumidity)]</label>
+					</control>
+				</control>
+				<control type="grouplist">
+					<top>310</top>
+					<left>200</left>
+					<right>200</right>
+					<align>center</align>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<description>current indoor pressure</description>
+						<align>center</align>
+						<width>1200</width>
+						<height>230</height>
+						<font>big_temperature</font>
+						<textcolor>grey</textcolor>
+						<label>$INFO[Window(weather).Property(IndoorPressure)]</label>
+					</control>
+				</control>
+				<control type="image">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rising)</visible>
+					<right>150</right>
+					<top>400</top>
+					<width>200</width>
+					<height>135</height>
+					<texture>weather/weatherstation/red-single-arrow.png</texture>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly rising)</visible>
+					<top>350</top>
+					<control type="image">
+					    <right>150</right>
+						<width>200</width>
+						<height>135</height>
+						<texture>weather/weatherstation/red-single-arrow.png</texture>
+					</control>
+					<control type="image">
+					    <right>150</right>
+					    <top>100</top>
+						<width>200</width>
+						<height>135</height>
+						<texture>weather/weatherstation/red-single-arrow.png</texture>
+					</control>
+				</control>
+				<control type="image">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),falling)</visible>
+					<left>150</left>
+					<top>400</top>
+					<width>200</width>
+					<height>135</height>
+					<texture>weather/weatherstation/blue-single-arrow.png</texture>
+				</control>
+				<control type="group">
+					<visible>String.IsEqual(Window(weather).Property(PressureTrend),rapidly falling)</visible>
+					<top>350</top>
+					<control type="image">
+					    <left>150</left>
+						<width>200</width>
+						<height>135</height>
+						<texture>weather/weatherstation/blue-single-arrow.png</texture>
+					</control>
+					<control type="image">
+					    <left>150</left>
+					    <top>100</top>
+						<width>200</width>
+						<height>135</height>
+						<texture>weather/weatherstation/blue-single-arrow.png</texture>
+					</control>
+				</control>
+			</control>
+		</control>
+		<include>WeatherStationOverlay</include>
+	</controls>
+</window>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="WeatherStationTopBar">
+		<control type="multiimage">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+		    <timeperimage>600000</timeperimage>
+		    <fadetime>400</fadetime>
+			<randomize>true</randomize>
+			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" time="400">VisibleChange</animation>
+			<imagepath background="true" colordiffuse="Skin.String(bg_diffusion)">$VAR[WeatherFanartVar]</imagepath>
+			<visible>!Player.HasMedia</visible>
+		</control>
+		<control type="button" id="15100">
+			<description>hidden focus button</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1</width>
+			<height>1</height>
+			<font></font>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
+			<onup>15101</onup>
+			<ondown>15110</ondown>
+		</control>		
+		<control type="group">
+			<depth>DepthBars</depth>
+			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="image">
+				<left>-5</left>
+				<top>-5</top>
+				<width>110%</width>
+				<height>120</height>
+				<texture>frame/InfoBar.png</texture>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="image">
+				<left>-5</left>
+				<bottom>-5</bottom>
+				<width>110%</width>
+				<height>300</height>
+				<texture flipy="true">frame/InfoBar.png</texture>
+				<bordersize>5</bordersize>
+			</control>
+		</control>
+		<control type="group">
+			<control type="button" id="15101">
+				<description>Next Weather Location</description>
+				<left>0</left>
+				<top>0</top>
+				<width>600</width>
+				<height>80</height>
+				<font></font>
+				<selectedcolor>selected</selectedcolor>
+				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturenofocus />
+				<onclick>Weather.LocationNext</onclick>
+				<onleft>15102</onleft>
+				<onright>15102</onright>
+				<onup>15100</onup>
+				<ondown>15150</ondown>
+			</control>
+			<control type="image">
+				<top>15</top>
+				<left>10</left>
+				<aspectratio>keep</aspectratio>
+				<width>56</width>
+				<height>56</height>
+				<texture colordiffuse="button_focus">icons/logo.png</texture>
+			</control>
+			<control type="label">
+				<description>weather location and update label</description>
+				<visible>!String.IsEmpty(Window(weather).Property(Location)) + !String.IsEmpty(Window(weather).Property(Updated))</visible>
+				<posx>80</posx>
+				<posy>15</posy>
+				<width>520</width>
+				<height>60</height>
+				<font>little_info</font>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>[B]$INFO[Window(weather).Property(Location)] :[/B] [COLOR=selected]$INFO[Window(weather).Property(WeatherProvider)][/COLOR][CR][B]$LOCALIZE[31069] :[/B] $INFO[Window(weather).Property(Updated)]</label>
+			</control>
+			<control type="label">
+				<description>weather updating</description>
+				<visible>String.IsEmpty(Window(weather).Property(Location)) + String.IsEmpty(Window(weather).Property(Updated))</visible>
+				<posx>80</posx>
+				<posy>15</posy>
+				<width>520</width>
+				<height>60</height>
+				<font>little_info</font>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>40170</label>
+			</control>
+			<control type="button" id="15102">
+				<description>System Date</description>
+				<visible>!String.IsEqual(Window(weather).Property(ShowSettings),True)</visible>
+				<top>-20</top>
+				<right>-20</right>
+				<width>900</width>
+				<height>120</height>
+				<align>right</align>
+				<textoffsetx>45</textoffsetx>
+				<font>big_date</font>
+				<label>$INFO[System.Date]</label>
+				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturenofocus />
+				<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
+				<onleft>15101</onleft>
+				<onright>15101</onright>
+				<onup>15100</onup>
+				<ondown>15150</ondown>
+			</control>
+			<control type="button" id="15102">
+				<description>System Date</description>
+				<visible>String.IsEqual(Window(weather).Property(ShowSettings),True)</visible>
+				<top>-20</top>
+				<right>-20</right>
+				<width>900</width>
+				<height>120</height>
+				<align>right</align>
+				<textoffsetx>45</textoffsetx>
+				<font>big_date</font>
+				<label>$INFO[System.Date]</label>
+				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+				<texturenofocus />
+				<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
+				<onleft>15101</onleft>
+				<onright>15101</onright>
+				<onup>15100</onup>
+				<ondown>15108</ondown>
+			</control>
+		</control>
+		<control type="group">
+		    <control type="group">
+				<visible>String.IsEqual(Window(weather).Property(ShowSettings),True)</visible>
+			    <top>90</top>
+			    <left>1385</left>
+				<control type="button" id="15103">
+					<description>Auto Dim</description>
+					<visible>String.IsEqual(Window(weather).Property(AutoDim),True)</visible>
+					<top>0</top>
+					<left>-385</left>
+					<width>400</width>
+					<height>100</height>
+					<valign>center</valign>
+					<align>center</align>
+					<font>big_date</font>
+					<textcolor>white</textcolor>
+					<label>$LOCALIZE[40171]: [COLOR=green]$LOCALIZE[16041][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onclick>RunScript(script.weatherstation.lite,action=AutoDimOff)</onclick>
+					<onleft>15108</onleft>
+					<onright>15104</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15103">
+					<description>Auto Dim</description>
+					<visible>String.IsEqual(Window(weather).Property(AutoDim),False)</visible>
+					<top>0</top>
+					<left>-385</left>
+					<width>400</width>
+					<height>100</height>
+					<valign>center</valign>
+					<align>center</align>
+					<font>big_date</font>
+					<textcolor>white</textcolor>
+					<label>$LOCALIZE[40171]: [COLOR=red]$LOCALIZE[351][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onclick>RunScript(script.weatherstation.lite,action=AutoDimOn)</onclick>
+					<onleft>15108</onleft>
+					<onright>15104</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15104">
+				    <top>5</top>
+					<width>80</width>
+					<height>80</height>
+					<label></label>
+					<texturefocus colordiffuse="selected">weather/weatherstation/brightnessup.png</texturefocus>
+					<texturenofocus>weather/weatherstation/brightnessup.png</texturenofocus>
+					<onclick>RunScript(script.weatherstation.lite,action=BrightnessUp)</onclick>
+					<onleft>15103</onleft>
+					<onright>15105</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15105">
+				    <top>5</top>
+				    <left>110</left>
+					<width>80</width>
+					<height>80</height>
+					<label></label>
+					<texturefocus colordiffuse="selected">weather/weatherstation/brightnessdown.png</texturefocus>
+					<texturenofocus>weather/weatherstation/brightnessdown.png</texturenofocus>
+					<onclick>RunScript(script.weatherstation.lite,action=BrightnessDown)</onclick>
+					<onleft>15104</onleft>
+					<onright>15106</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15106">
+				    <top>5</top>
+				    <left>210</left>
+					<width>90</width>
+					<height>90</height>
+					<label></label>
+					<texturefocus colordiffuse="selected">weather/weatherstation/back.png</texturefocus>
+					<texturenofocus>weather/weatherstation/back.png</texturenofocus>
+					<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
+					<onclick>Action(Back)</onclick>
+					<onleft>15105</onleft>
+					<onright>15107</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15107">
+				    <top>5</top>
+				    <left>320</left>
+					<width>80</width>
+					<height>80</height>
+					<label></label>
+					<texturefocus colordiffuse="selected">weather/weatherstation/settings.png</texturefocus>
+					<texturenofocus>weather/weatherstation/settings.png</texturenofocus>
+					<onclick>Addon.OpenSettings(script.weatherstation.lite)</onclick>
+					<onleft>15106</onleft>
+					<onright>15108</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+				<control type="button" id="15108">
+				    <top>5</top>
+				    <left>430</left>
+					<width>72</width>
+					<height>83</height>
+					<label></label>
+					<texturefocus colordiffuse="selected">weather/weatherstation/power.png</texturefocus>
+					<texturenofocus>icons/power.png</texturenofocus>
+					<onclick>SetProperty(ShowSettings, False, 12600)</onclick>
+					<onclick>RunScript(script.weatherstation.lite,action=ScreenOff)</onclick>
+					<onleft>15107</onleft>
+					<onright>15103</onright>
+					<onup>15102</onup>
+					<ondown>15150</ondown>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="WeatherStationOverlay">
+		<control type="button" id="15200">
+			<description>screen activation overlay</description>
+			<visible>String.IsEqual(Window(weather).Property(ScreenStatus),Off)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>2000</width>
+			<height>2000</height>
+			<font></font>
+			<texturefocus>colors/black.png</texturefocus>
+			<texturenofocus>colors/black.png</texturenofocus>
+			<onclick>RunScript(script.weatherstation.lite,action=ScreenOn)</onclick>
+		</control>
+	</include>
+	<include name="WeatherStationIcon">
+		<control type="group">
+			<width>400</width>
+			<visible>!String.IsEmpty($PARAM[label])</visible>
+			<control type="image">
+				<left>50</left>
+				<width>300</width>
+				<height>300</height>
+				<texture colordiffuse="D0FFFFFF">$PARAM[texture]</texture>
+			</control>
+			<control type="textbox">
+				<top>300</top>
+				<left>50</left>
+				<width>300</width>
+				<height>130</height>
+				<font>ws_widget</font>
+				<align>center</align>
+				<label>$INFO[$PARAM[label]]</label>
+			</control>
+		</control>
+	</include>
+	<include name="WeatherStationHourlyItems">
+		<content>
+			<item>
+				<icon>resource://resource.images.weathericons.default/na.png</icon>
+				<onclick>noop</onclick>
+				<visible>String.IsEmpty(Window(weather).Property(Hourly.IsFetched))</visible>
+			</item>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="1" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="4" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="7" />
+			</include>
+			<include content="WeatherHourlyItem">
+				<param name="item_index" value="10" />
+			</include>
+		</content>
+	</include>
+	<include name="WeatherStationDailyItems">
+		<content>
+			<item>
+				<icon>resource://resource.images.weathericons.default/na.png</icon>
+				<onclick>noop</onclick>
+				<visible>String.IsEmpty(Window(weather).Property(Daily.IsFetched))</visible>
+			</item>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="1" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="2" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="3" />
+			</include>
+			<include content="WeatherDailyItem">
+				<param name="item_index" value="4" />
+			</include>
+		</content>
+	</include>
+	<include name="WeatherStationWidget">
+		<param name="width">266</param>
+		<definition>
+			<include content="WeatherStationCategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>90</top>
+				<right>0</right>
+				<height>500</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<itemlayout width="$PARAM[width]" height="470">
+					<control type="group">
+						<left>70</left>
+						<control type="image">
+							<left>0</left>
+							<top>20</top>
+							<width>420</width>
+							<height>400</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>115</left>
+							<top>150</top>
+							<width>190</width>
+							<height>190</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<top>45</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<top>90</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Property(ShortDate)]</label>
+						</control>
+						<control type="label">
+							<top>320</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout width="$PARAM[width]" height="470">
+					<control type="group">
+						<left>70</left>
+						<control type="image">
+							<left>0</left>
+							<top>20</top>
+							<width>420</width>
+							<height>400</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>20</top>
+							<width>420</width>
+							<height>400</height>
+							<texture colordiffuse="button_focus">colors/grey.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<left>115</left>
+							<top>150</top>
+							<width>190</width>
+							<height>190</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<top>45</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<top>90</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Property(ShortDate)]</label>
+						</control>
+						<control type="label">
+							<top>320</top>
+							<width>420</width>
+							<align>center</align>
+							<font>ws_widget</font>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</control>
+				</focusedlayout>
+				<include>$PARAM[content_include]</include>
+			</control>
+		</definition>
+	</include>
+	<include name="WeatherStationCategoryLabel">
+		<param name="visible">true</param>
+		<definition>
+			<control type="label" id="$PARAM[list_id]666">
+				<left>55</left>
+				<top>80</top>
+				<width>900</width>
+				<height>110</height>
+				<label>$PARAM[label]</label>
+				<shadowcolor>text_shadow</shadowcolor>
+				<font>ws_widget</font>
+				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+			</control>
+		</definition>
+	</include>
+
+</includes>
