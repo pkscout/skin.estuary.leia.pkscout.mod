@@ -758,3 +758,8 @@ msgstr ""
 msgctxt "#40165"
 msgid "Better support for four digit channel numbers in PVR"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40167"
+msgid "Background diffusion"
+msgstr ""

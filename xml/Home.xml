@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="String.IsEmpty(Skin.String(bg_diffusion))">Skin.SetString(bg_diffusion,37FFFFFF)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>

@@ -570,3 +570,8 @@ msgstr "השתמש בפריסה שעון עצר חלופית"
 msgctxt "#40165"
 msgid "Better support for four digit channel numbers in PVR"
 msgstr "תמיכה טובה יותר עבור ארבע ספרות למספרי ערוצים ב-PVR"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40167"
+msgid "Background diffusion"
+msgstr "דיפוזיה לרקע"

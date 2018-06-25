@@ -102,6 +102,23 @@
 					<onclick>Skin.ToggleSetting(show_musicvisualization)</onclick>
 					<selected>Skin.HasSetting(show_musicvisualization)</selected>
 				</control>
+				<control type="button" id="611">
+					<label>$LOCALIZE[40167]</label>
+					<label2>$VAR[BackgroundDiffusionPercent]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),00FFFFFF)">Skin.SetString(bg_diffusion,1AFFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),1AFFFFFF)">Skin.SetString(bg_diffusion,37FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),37FFFFFF)">Skin.SetString(bg_diffusion,33FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),33FFFFFF)">Skin.SetString(bg_diffusion,4DFFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),4DFFFFFF)">Skin.SetString(bg_diffusion,66FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),66FFFFFF)">Skin.SetString(bg_diffusion,80FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),80FFFFFF)">Skin.SetString(bg_diffusion,99FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),99FFFFFF)">Skin.SetString(bg_diffusion,B3FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),B3FFFFFF)">Skin.SetString(bg_diffusion,CCFFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),CCFFFFFF)">Skin.SetString(bg_diffusion,E6FFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),E6FFFFFF)">Skin.SetString(bg_diffusion,FFFFFFFF)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(bg_diffusion),FFFFFFFF)">Skin.SetString(bg_diffusion,00FFFFFF)</onclick>
+				</control>
 				<control type="button" id="607">
 					<label>$LOCALIZE[31156]</label>
 					<label2>$VAR[BackgroundOverlayTypeVar]</label2>

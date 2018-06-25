@@ -43,6 +43,18 @@
 			<fadetime>400</fadetime>
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<texture background="true" colordiffuse="Skin.String(bg_diffusion)">colors/black.png</texture>
+			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true" colordiffuse="88FFFFFF">$INFO[Player.Art(fanart)]</texture>
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
 		</control>

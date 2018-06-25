@@ -430,4 +430,18 @@
 		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
 		<value>$LOCALIZE[20046]</value>
 	</variable>
+	<variable name="BackgroundDiffusionPercent">
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),00FFFFFF)">100%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),1AFFFFFF)">90%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),33FFFFFF)">80%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),37FFFFFF)">$LOCALIZE[13278]</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),4DFFFFFF)">70%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),66FFFFFF)">60%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),80FFFFFF)">50%</value> 
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),99FFFFFF)">40%</value> 
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),B3FFFFFF)">30%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),CCFFFFFF)">20%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),E6FFFFFF)">10%</value>
+		<value condition="String.IsEqual(Skin.String(bg_diffusion),FFFFFFFF)">0%</value>
+	</variable>
 </includes>
