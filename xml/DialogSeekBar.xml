@@ -246,7 +246,6 @@
 			<animation effect="slide" end="0,-80" time="150" condition="Control.IsVisible(6000)">conditional</animation>
 			<bottom>0</bottom>
 			<height>380</height>
-			<!-- KEJ MOD -->
 			<control type="label">
 				<left>20</left>
 				<width>300</width>
