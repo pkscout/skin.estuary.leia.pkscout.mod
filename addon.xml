@@ -19,8 +19,8 @@
 		<disclaimer lang="en_GB">This mod is only lightly supported.</disclaimer>
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum></forum>
-		<source></source>
+		<forum>https://forum.kodi.tv/showthread.php?tid=333143</forum>
+		<source>https://github.com/pkscout/skin.estuary.leia.pkscout.mod</source>
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/icon.jpg</fanart>
