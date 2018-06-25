@@ -16,7 +16,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">pkscout's mod to the Estuary skin by phil65.</summary>
-		<description lang="en_GB">Estuary is the default skin for Kodi 17.0 and above. It attempts to be easy for first time Kodi users to understand and use.</description>
+		<description lang="en_GB">Various mods to Estuary, including Artist Slideshow support and ability to customize home screen and home screen widgets.</description>
 		<disclaimer lang="en_GB">This mod is only lightly supported.</disclaimer>
 		<platform>all</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
