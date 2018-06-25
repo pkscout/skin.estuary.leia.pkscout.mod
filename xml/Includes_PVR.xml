@@ -127,6 +127,14 @@
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[ListItem.Date,[COLOR grey]$LOCALIZE[552]:[/COLOR] ,[CR]]$INFO[ListItem.Duration,[COLOR grey]$LOCALIZE[180]:[/COLOR] ,[CR]]$VAR[ExpirationDateTimeLabel]</label>
+					<visible>!Skin.HasSetting(use_alt_timer_layout)</visible>
+				</control>
+				<control type="label">
+					<top>60</top>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$INFO[ListItem.Date]$INFO[ListItem.Duration,[CR][COLOR grey]$LOCALIZE[180]:[/COLOR] ,[CR]]$VAR[ExpirationDateTimeLabel]</label>
+					<visible>Skin.HasSetting(use_alt_timer_layout)</visible>
 				</control>
 				<control type="group">
 					<visible>Integer.IsGreater(ListItem.Progress,0)</visible>
