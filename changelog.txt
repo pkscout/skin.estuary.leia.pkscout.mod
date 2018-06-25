@@ -1,8 +1,8 @@
-v.1.0.1~beta2
+v.1.0.1
+- fixed issue with background difusion changes not working
 - removed unneeded setting for extended video info
-
-v.1.0.1~beta1
 - added option to hide games widget in addon section
+- refactored github commits so each option is it's own commit
 
 v.1.0.0
 - added option for small icons for category widgets
