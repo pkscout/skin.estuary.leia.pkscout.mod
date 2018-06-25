@@ -750,6 +750,11 @@ msgid "Show music visualisation screen directly when playing song"
 msgstr ""
 
 #: /xml/SkinSettings.xml
+msgctxt "#40163"
+msgid "Use alternate timer layout"
+msgstr ""
+
+#: /xml/SkinSettings.xml
 msgctxt "#40165"
 msgid "Better support for four digit channel numbers in PVR"
 msgstr ""

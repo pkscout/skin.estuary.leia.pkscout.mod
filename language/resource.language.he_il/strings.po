@@ -562,6 +562,11 @@ msgid "Show music visualisation screen directly when playing song"
 msgstr "הצג מסך להדמיה של מוזיקה בעת ניגון  שיר"
 
 #: /xml/SkinSettings.xml
+msgctxt "#40163"
+msgid "Use alternate timer layout"
+msgstr "השתמש בפריסה שעון עצר חלופית"
+
+#: /xml/SkinSettings.xml
 msgctxt "#40165"
 msgid "Better support for four digit channel numbers in PVR"
 msgstr "תמיכה טובה יותר עבור ארבע ספרות למספרי ערוצים ב-PVR"

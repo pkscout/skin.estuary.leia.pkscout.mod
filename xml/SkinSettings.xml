@@ -67,6 +67,12 @@
 					<onclick>Skin.SelectBool(31024, 38018|circle_userrating, 563|circle_rating, 16018|circle_none)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
+				<control type="radiobutton" id="708">
+					<label>$LOCALIZE[40163]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(use_alt_timer_layout)</onclick>
+					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
+				</control>
 				<control type="radiobutton" id="709">
 					<label>$LOCALIZE[40165]</label>
 					<include>DefaultSettingButton</include>

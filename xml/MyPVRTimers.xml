@@ -42,6 +42,16 @@
 								<height>30</height>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName][COLOR grey]$INFO[ListItem.Label, - ][/COLOR]</label>
+								<visible>!Skin.HasSetting(use_alt_timer_layout)</visible>
+							</control>
+							<control type="label">
+								<left>30</left>
+								<top>10</top>
+								<right>30</right>
+								<height>30</height>
+								<aligny>top</aligny>
+								<label>$INFO[ListItem.Label][COLOR grey]$INFO[ListItem.ChannelName, - ][/COLOR]</label>
+								<visible>Skin.HasSetting(use_alt_timer_layout)</visible>
 							</control>
 							<control type="label">
 								<left>30</left>
@@ -102,6 +112,16 @@
 								<height>100</height>
 								<aligny>top</aligny>
 								<label>$INFO[ListItem.ChannelName]$INFO[ListItem.Label, - ]</label>
+								<visible>!Skin.HasSetting(use_alt_timer_layout)</visible>
+							</control>
+							<control type="label">
+								<left>30</left>
+								<top>10</top>
+								<right>30</right>
+								<height>30</height>
+								<aligny>top</aligny>
+								<label>$INFO[ListItem.Label]$INFO[ListItem.ChannelName, - ]</label>
+								<visible>Skin.HasSetting(use_alt_timer_layout)</visible>
 							</control>
 							<control type="label">
 								<left>30</left>
