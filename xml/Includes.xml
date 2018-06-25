@@ -893,16 +893,30 @@
 							<align>right</align>
 						</control>
 					</control>
-					<control type="label">
-						<font>font_clock</font>
-						<shadowcolor>text_shadow</shadowcolor>
-						<height>200</height>
-						<width>auto</width>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-						<label>$INFO[System.Time]</label>
+          			<control type="label">
+			            <font>font_clock</font>
+            			<shadowcolor>text_shadow</shadowcolor>
+			            <height>200</height>
+            			<width>auto</width>
+        			    <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+			            <label>$INFO[System.Time]</label>
+            			<visible>![Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)]</visible>
 					</control>
+          			<control type="label">
+            			<font>font_clock_small</font>
+            			<shadowcolor>text_shadow</shadowcolor>
+            			<height>200</height>
+            			<width>auto</width>
+            			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+            			<label>$INFO[System.Time]</label>
+            			<visible>Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
+          			</control>
 				</control>
 				<control type="grouplist">
+          			<animation type="Conditional" condition="Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)">
+            			<effect type="slide" end="0,-30" />
+          			</animation>
+          			<visible>[!Library.IsScanningVideo + !Library.IsScanningMusic] | !Skin.HasSetting(alt_weather)</visible>
 					<right>10</right>
 					<top>70</top>
 					<width>800</width>

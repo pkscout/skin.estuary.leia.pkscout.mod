@@ -575,3 +575,8 @@ msgstr "תמיכה טובה יותר עבור ארבע ספרות למספרי �
 msgctxt "#40167"
 msgid "Background diffusion"
 msgstr "דיפוזיה לרקע"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40168"
+msgid "Use alternate location for weather widget"
+msgstr "תשתמש במיקום חלופי עבור יישומון מזג אוויר"

@@ -56,12 +56,19 @@
 					<selected>Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</selected>
 				</control>
 				<control type="radiobutton" id="705">
+					<label>- $LOCALIZE[40168]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(alt_weather)</onclick>
+					<selected>Skin.HasSetting(alt_weather)</selected>
+					<visible>Skin.HasSetting(show_weatherinfo)</visible>
+				</control>
+				<control type="radiobutton" id="706">
 					<label>$LOCALIZE[31160]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(hide_mediaflags)</onclick>
 					<selected>!Skin.HasSetting(hide_mediaflags)</selected>
 				</control>
-				<control type="button" id="706">
+				<control type="button" id="707">
 					<label>$LOCALIZE[31024]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(31024, 38018|circle_userrating, 563|circle_rating, 16018|circle_none)</onclick>

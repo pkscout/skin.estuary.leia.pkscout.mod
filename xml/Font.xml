@@ -69,6 +69,11 @@
 			<filename>Roboto-Thin.ttf</filename>
 			<size>70</size>
 		</font>
+		<font>
+			<name>font_clock_small</name>
+			<filename>Roboto-Thin.ttf</filename>
+			<size>45</size>
+		</font>
 		<!-- Title Fonts -->
 		<font>
 			<name>font_flag</name>
@@ -180,6 +185,12 @@
 			<name>font_clock</name>
 			<filename>arial.ttf</filename>
 			<size>70</size>
+			<style>lighten</style>
+		</font>
+		<font>
+			<name>font_clock_small</name>
+			<filename>Arial.ttf</filename>
+			<size>45</size>
 			<style>lighten</style>
 		</font>
 		<!-- Title Fonts -->
