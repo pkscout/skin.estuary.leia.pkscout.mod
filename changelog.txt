@@ -1,3 +1,6 @@
+v.1.0.1~beta2
+- removed unneeded setting for extended video info
+
 v.1.0.1~beta1
 - added option to hide games widget in addon section
 
@@ -13,6 +16,5 @@ v.1.0.0
 - added background diffusion percentage to artwork settings
 - added alternate layout for weather icon on top bar
 - fix for 4 digit channel number in PVR OSD Extended Info and PVR Guide
-- option to show extended video info when PVR OSD is shown
 - added option to have weather screen work as a weather station/clock (with script.weatherstation)
 - Games support enabled by default, but Games section hidden by default
