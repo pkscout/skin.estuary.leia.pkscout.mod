@@ -748,3 +748,8 @@ msgstr ""
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40165"
+msgid "Better support for four digit channel numbers in PVR"
+msgstr ""

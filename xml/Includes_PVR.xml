@@ -302,6 +302,7 @@
 						<label>$INFO[ListItem.ChannelNumberLabel]</label>
 						<align>center</align>
 						<aligny>center</aligny>
+						<visible>!Skin.HasSetting(four_digit_channel_fix)</visible>
 					</control>
 					<control type="label" id="1">
 						<left>68</left>
@@ -311,6 +312,28 @@
 						<label>$INFO[ListItem.ChannelName]</label>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<visible>!Skin.HasSetting(four_digit_channel_fix)</visible>
+					</control>
+					<control type="label">
+						<left>5</left>
+						<top>-2</top>
+						<width>75</width>
+						<height>60</height>
+						<font>font32_title</font>
+						<label>$INFO[ListItem.ChannelNumberLabel]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<visible>Skin.HasSetting(four_digit_channel_fix)</visible>
+					</control>
+					<control type="label" id="1">
+						<left>80</left>
+						<top>-2</top>
+						<height>60</height>
+						<font>font13</font>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<visible>Skin.HasSetting(four_digit_channel_fix)</visible>
 					</control>
 				</channellayout>
 				<focusedchannellayout height="62" width="$PARAM[channel_width]">
@@ -324,6 +347,7 @@
 						<textcolor>button_focus</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
+						<visible>!Skin.HasSetting(four_digit_channel_fix)</visible>
 					</control>
 					<control type="label" id="1">
 						<left>68</left>
@@ -331,9 +355,33 @@
 						<height>60</height>
 						<font>font13</font>
 						<label>$INFO[ListItem.ChannelName]</label>
-						<textcolor>button_focus</textcolor>
 						<aligny>center</aligny>
 						<textoffsetx>10</textoffsetx>
+						<textcolor>button_focus</textcolor>
+						<visible>!Skin.HasSetting(four_digit_channel_fix)</visible>
+					</control>
+					<control type="label">
+						<left>5</left>
+						<top>-2</top>
+						<width>75</width>
+						<height>60</height>
+						<font>font32_title</font>
+						<label>$INFO[ListItem.ChannelNumberLabel]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>button_focus</textcolor>
+						<visible>Skin.HasSetting(four_digit_channel_fix)</visible>
+					</control>
+					<control type="label" id="1">
+						<left>80</left>
+						<top>-2</top>
+						<height>60</height>
+						<font>font13</font>
+						<label>$INFO[ListItem.ChannelName]</label>
+						<aligny>center</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textcolor>button_focus</textcolor>
+						<visible>Skin.HasSetting(four_digit_channel_fix)</visible>
 					</control>
 				</focusedchannellayout>
 				<itemlayout height="62" width="60">
