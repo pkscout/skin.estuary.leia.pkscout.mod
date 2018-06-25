@@ -309,7 +309,7 @@
 							<param name="list_id" value="8200"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_games)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/game/"/>
 							<param name="widget_header" value="$LOCALIZE[35049]"/>
 							<param name="widget_target" value="games"/>

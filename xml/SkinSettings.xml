@@ -732,6 +732,12 @@
 					<selected>!Skin.HasSetting(no_addon_image)</selected>
 					<onclick>Skin.ToggleSetting(no_addon_image)</onclick>
 				</control>
+				<control type="radiobutton" id="8056">
+					<label>- $LOCALIZE[35049]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_addon_games)</selected>
+					<onclick>Skin.ToggleSetting(no_addon_games)</onclick>
+				</control>
 			</control>
 			<!-- END KEJ mod -->
 			<control type="image">
