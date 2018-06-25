@@ -1,3 +1,6 @@
+v.1.0.1~beta1
+- added option to hide games widget in addon section
+
 v.1.0.0
 - added option for small icons for category widgets
 - added widget to combine Unwatched and In Progress TV Shows
