@@ -1,44 +1,20 @@
-[B]0.8.5[/B]
-• Updated language files from Transifex
+v.1.0.1~beta2
+- removed unneeded setting for extended video info
 
-[B]0.8.3[/B]
-• Updated language files from Transifex
+v.1.0.1~beta1
+- added option to hide games widget in addon section
 
-[B]0.8.2[/B]
-• Updated language files from Transifex
-
-[B]0.8.1[/B]
-• Updated language files from Transifex
-
-[B]0.7.13[/B]
-• Updated language files from Transifex
-
-[B]0.7.12[/B]
-• Updated language files from Transifex
-
-[B]0.7.11[/B]
-• Updated language files from Transifex
-
-[B]0.7.10[/B]
-• Updated language files from Transifex
-
-[B]0.7.8[/B]
-• Updated language files from Transifex
-
-[B]0.7.7[/B]
-• Updated language files from Transifex
-
-[B]0.7.3[/B]
-• Updated language files from Transifex
-
-[B]0.7.1[/B]
-• Updated language files from Transifex
-
-[B]0.6.2[/B]
-• Updated language files from Transifex
-
-[B]0.6.1[/B]
-• Updated language files from Transifex
-
-﻿[B]0.0.1[/B]
-• Initial commit
+v.1.0.0
+- added option for small icons for category widgets
+- added widget to combine Unwatched and In Progress TV Shows
+- added options to hide home screen widgets for all sections (except Games)
+- added Artist Slideshow support
+- added option to auto start music visualization
+- change to artist image display to only show transparency overlay if player info or osd showing
+- added alternate timer layout puts show name as primary in PVR lists and details
+- added TV submenu items for X-NEWA and PseudoLibrary if they are installed
+- added background diffusion percentage to artwork settings
+- added alternate layout for weather icon on top bar
+- fix for 4 digit channel number in PVR OSD Extended Info and PVR Guide
+- added option to have weather screen work as a weather station/clock (with script.weatherstation)
+- Games support enabled by default, but Games section hidden by default
