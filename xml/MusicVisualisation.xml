@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
+	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<defaultcontrol></defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="visualisation">
 			<include>FullScreenDimensions</include>
 			<visible>Player.HasAudio</visible>
+		</control>
+		<control type="multiimage">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+		    <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+		    <aspectratio>keep</aspectratio>
+		    <timeperimage>10000</timeperimage>
+		    <fadetime>2000</fadetime>
+			<randomize>true</randomize>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<visible>System.HasAddon(script.artistslideshow) + String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)</visible>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<texture background="true">$INFO[Player.Art(fanart)]</texture>
+			<visible>!System.HasAddon(script.artistslideshow) | !String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
