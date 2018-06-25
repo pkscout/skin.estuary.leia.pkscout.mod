@@ -555,3 +555,8 @@ msgstr "שחק את המשחקים האישיים שלך או הורד אחד מ
 msgctxt "#31163"
 msgid "Show Fanart background"
 msgstr "הצג רקע פאנארט"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40162"
+msgid "Show music visualisation screen directly when playing song"
+msgstr "הצג מסך להדמיה של מוזיקה בעת ניגון  שיר"
