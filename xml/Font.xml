@@ -69,51 +69,6 @@
 			<filename>Roboto-Thin.ttf</filename>
 			<size>70</size>
 		</font>
-		<!-- KEJ mod -->
-		<font>
-			<name>font_clock_small</name>
-			<filename>Roboto-Thin.ttf</filename>
-			<size>45</size>
-		</font>
-		<font>
-			<name>big_time</name>
-			<filename>Arial.ttf</filename>
-			<size>600</size>
-			<style>bold</style>
-		</font>
-		<font>
-			<name>big_date</name>
-			<filename>Arial.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
-			<name>big_temperature</name>
-			<filename>Arial.ttf</filename>
-			<size>190</size>
-			<style>bold</style>
-			<linespacing>0.90</linespacing>
-		</font>
-		<font>
-			<name>big_forecast</name>
-			<filename>Arial.ttf</filename>
-			<size>90</size>
-		</font>
-		<font>
-			<name>ws_widget</name>
-			<filename>Arial.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
-			<name>ws_widget_large</name>
-			<filename>Arial.ttf</filename>
-			<size>120</size>
-		</font>
-		<font>
-			<name>little_info</name>
-			<filename>Arial.ttf</filename>
-			<size>20</size>
-		</font>
-		<!-- End KEJ mod -->
 		<!-- Title Fonts -->
 		<font>
 			<name>font_flag</name>
@@ -227,52 +182,6 @@
 			<size>70</size>
 			<style>lighten</style>
 		</font>
-		<!-- KEJ mod -->
-		<font>
-			<name>font_clock_small</name>
-			<filename>Arial.ttf</filename>
-			<size>45</size>
-			<style>lighten</style>
-		</font>
-		<font>
-			<name>big_time</name>
-			<filename>Arial.ttf</filename>
-			<size>600</size>
-			<style>bold</style>
-		</font>
-		<font>
-			<name>big_date</name>
-			<filename>Arial.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
-			<name>big_temperature</name>
-			<filename>Arial.ttf</filename>
-			<size>190</size>
-			<style>bold</style>
-			<linespacing>0.90</linespacing>
-		</font>
-		<font>
-			<name>big_forecast</name>
-			<filename>Arial.ttf</filename>
-			<size>90</size>
-		</font>
-		<font>
-			<name>ws_widget</name>
-			<filename>Arial.ttf</filename>
-			<size>50</size>
-		</font>
-		<font>
-			<name>ws_widget_large</name>
-			<filename>Arial.ttf</filename>
-			<size>120</size>
-		</font>
-		<font>
-			<name>little_info</name>
-			<filename>Arial.ttf</filename>
-			<size>20</size>
-		</font>
-		<!-- End KEJ mod -->
 		<!-- Title Fonts -->
 		<font>
 			<name>font_flag</name>

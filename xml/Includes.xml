@@ -7,7 +7,6 @@
 	<include file="Includes_Buttons.xml" />
 	<include file="Includes_DialogSelect.xml" />
 	<include file="Includes_PVR.xml" />
-	<include file="Includes_WeatherStation.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_51_Poster.xml" />
 	<include file="View_52_IconWall.xml" />
@@ -894,34 +893,16 @@
 							<align>right</align>
 						</control>
 					</control>
-		          	<!-- KEJ mod -->
-          			<control type="label">
-			            <font>font_clock</font>
-            			<shadowcolor>text_shadow</shadowcolor>
-			            <height>200</height>
-            			<width>auto</width>
-        			    <animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-			            <label>$INFO[System.Time]</label>
-            			<visible>![Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)]</visible>
+					<control type="label">
+						<font>font_clock</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<height>200</height>
+						<width>auto</width>
+						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+						<label>$INFO[System.Time]</label>
 					</control>
-          			<control type="label">
-            			<font>font_clock_small</font>
-            			<shadowcolor>text_shadow</shadowcolor>
-            			<height>200</height>
-            			<width>auto</width>
-            			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
-            			<label>$INFO[System.Time]</label>
-            			<visible>Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)</visible>
-          			</control>
-          			<!-- end KEJ mod -->
 				</control>
 				<control type="grouplist">
-          			<!-- KEJ mod -->
-          			<animation type="Conditional" condition="Skin.HasSetting(alt_weather) + Skin.HasSetting(show_weatherinfo) + !String.IsEmpty(Weather.Plugin)">
-            			<effect type="slide" end="0,-30" />
-          			</animation>
-          			<visible>[!Library.IsScanningVideo + !Library.IsScanningMusic] | !Skin.HasSetting(alt_weather)</visible>
-          			<!-- KEJ mod -->
 					<right>10</right>
 					<top>70</top>
 					<width>800</width>
