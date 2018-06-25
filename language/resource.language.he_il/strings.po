@@ -580,3 +580,18 @@ msgstr "דיפוזיה לרקע"
 msgctxt "#40168"
 msgid "Use alternate location for weather widget"
 msgstr "תשתמש במיקום חלופי עבור יישומון מזג אוויר"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40169"
+msgid "Use weather clock for weather page"
+msgstr "תשתמש בשעון מזג אוויר עבור דף מזג אוויר"
+
+#: /xml/MyWeather.xml
+msgctxt "#40170"
+msgid "Switching locations..."
+msgstr "החלפת מקומות..."
+
+#: /xml/MyWeather.xml
+msgctxt "#40171"
+msgid "Auto Dim"
+msgstr "עימעום אוטומטי"

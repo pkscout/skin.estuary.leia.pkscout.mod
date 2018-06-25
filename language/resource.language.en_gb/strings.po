@@ -768,3 +768,18 @@ msgstr ""
 msgctxt "#40168"
 msgid "Use alternate location for weather widget"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40169"
+msgid "Use weather clock for weather page"
+msgstr ""
+
+#: /xml/MyWeather.xml
+msgctxt "#40170"
+msgid "Switching locations..."
+msgstr ""
+
+#: /xml/MyWeather.xml
+msgctxt "#40171"
+msgid "Auto Dim"
+msgstr ""

@@ -4,6 +4,8 @@
 	<backgroundcolor>background</backgroundcolor>
 	<menucontrol>10000</menucontrol>
 	<controls>
+	  <control type="group">
+	    <visible>!Skin.HasSetting(use_weatherclock) | !System.HasAddon(script.weatherstation.lite)</visible>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
 			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
@@ -47,7 +49,7 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<animation effect="fade" time="400">VisibleChange</animation>
-			<imagepath background="true" colordiffuse="bg_overlay">$VAR[WeatherFanartVar]</imagepath>
+			<imagepath background="true" colordiffuse="Skin.String(bg_diffusion)">$VAR[WeatherFanartVar]</imagepath>
 			<visible>!Player.HasMedia</visible>
 		</control>
 		<control type="grouplist" id="2000">
@@ -203,5 +205,151 @@
 			<param name="sublabel" value="$INFO[Window(weather).Property(WeatherProvider)]" />
 		</include>
 		<include>BottomBar</include>
+	  </control>
+	  <control type="group">
+	    <visible>Skin.HasSetting(use_weatherclock) + System.HasAddon(script.weatherstation.lite)</visible>
+		<control type="group">
+			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+			<animation effect="fade" start="100" end="bg_alpha" time="0" condition="Player.HasMedia">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+			<include>ColoredBackgroundImages</include>
+		</control>
+		<control type="group">
+			<scrolltime tween="cubic" easing="out">500</scrolltime>
+			<include>OpenClose_Right</include>
+			<include>WeatherStationTopBar</include>
+			<control type="label">
+				<width>100%</width>
+				<align>center</align>
+				<description>System Time</description>
+				<font>big_time</font>
+				<textcolor>grey</textcolor>
+				<label>$INFO[System.Time(hh:mm)]</label>
+			</control>
+			<control type="group">
+				<control type="button" id="15150">
+					<description>current outdoor info</description>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + ![String.Contains(Window.Property(Current.Humidity),%%)]</visible>
+					<posx>13</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label>[COLOR=green]$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(Current.Humidity)][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
+					<onclick>ActivateWindow(1121)</onclick>
+					<onleft>15152</onleft>
+					<onright>15151</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15150">
+					<description>current outdoor info error</description>
+					<visible>String.Contains(Window.Property(Current.Humidity),%%)</visible>
+					<posx>13</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onleft>15152</onleft>
+					<onright>15151</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15151">
+					<description>current forecast for today</description>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)] + ![String.Contains(Window.Property(Current.Humidity),%%)]</visible>
+					<posx>630</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label>[COLOR=red]$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits][/COLOR][CR][COLOR=mediumblue]$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>					
+					<onclick>ActivateWindow(1120)</onclick>
+					<onleft>15150</onleft>
+					<onright>15152</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15151">
+					<description>current forecast for today error</description>
+					<visible>String.Contains(Window.Property(Current.Humidity),%%)</visible>
+					<posx>630</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onleft>15150</onleft>
+					<onright>15152</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15152">
+					<description>current indoor info</description>
+					<visible>!String.IsEmpty(Window.Property(IndoorTemp))</visible>
+					<posx>1260</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label>[COLOR=darkkhaki]$INFO[Window.Property(IndoorTemp)]$INFO[System.TemperatureUnits][CR]$INFO[Window.Property(IndoorHumidity)][/COLOR]</label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onclick>SetProperty(ShowSettings, True, 12600)</onclick>
+					<onclick>ActivateWindow(1122)</onclick>
+					<onleft>15151</onleft>
+					<onright>15150</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+				<control type="button" id="15152">
+					<description>current indoor info empty</description>
+					<visible>String.IsEmpty(Window.Property(IndoorTemp))</visible>
+					<posx>1260</posx>
+					<posy>750</posy>
+					<align>center</align>
+					<aligny>center</aligny>
+					<width>646</width>
+					<height>400</height>
+					<font>big_temperature</font>
+					<label></label>
+					<selectedcolor>selected</selectedcolor>
+					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+					<texturenofocus />
+					<onleft>15151</onleft>
+					<onright>15150</onright>
+					<onup>15101</onup>
+					<ondown>15100</ondown>
+				</control>
+			</control>
+		</control>
+		<include>WeatherStationOverlay</include>
+	  </control>
 	</controls>
 </window>

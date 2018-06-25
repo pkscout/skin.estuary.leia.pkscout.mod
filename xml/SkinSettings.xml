@@ -86,6 +86,14 @@
 					<onclick>Skin.ToggleSetting(four_digit_channel_fix)</onclick>
 					<selected>Skin.HasSetting(four_digit_channel_fix)</selected>
 				</control>
+				<control type="radiobutton" id="710">
+					<label>$LOCALIZE[40169]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
+					<selected>Skin.HasSetting(use_weatherclock)</selected>
+					<visible>System.HasAddon(script.weatherstation.lite)</visible>
+				</control>
+				<!-- END KEJ MOD -->
 			</control>
 			<control type="grouplist" id="600">
 				<top>160</top>
