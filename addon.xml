@@ -14,12 +14,6 @@
 		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
 		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
 	</extension>
-	<news>
-v.1.0.1
-- fixed issue with background difusion changes not working
-- removed unneeded setting for extended video info
-- added option to hide games widget in addon section
-	</news>
 	<extension point="xbmc.addon.metadata">
 		<news>
 v.1.0.1
