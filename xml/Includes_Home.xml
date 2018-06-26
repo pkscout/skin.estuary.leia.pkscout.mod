@@ -408,7 +408,6 @@
 		<param name="icon">$INFO[ListItem.Icon]</param>
 		<param name="icon_height">80</param>
 		<param name="pvr_submenu">false</param>
-		<param name="addon_submenu">false</param>
 		<param name="pvr_type">TV</param>
 		<param name="visible">true</param>
 		<definition>
@@ -479,7 +478,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<include condition="!$PARAM[pvr_submenu] + !$PARAM[addon_submenu]" content="SubmenuContent">
+				<include condition="!$PARAM[pvr_submenu]" content="SubmenuContent">
 					<param name="widget_target" value="$PARAM[widget_target]"/>
 					<param name="item_limit" value="$PARAM[item_limit]"/>
 					<param name="content_path" value="$PARAM[content_path]"/>
@@ -487,7 +486,6 @@
 				<include condition="$PARAM[pvr_submenu]" content="PVRSubMenuContent">
 					<param name="pvr_type" value="$PARAM[pvr_type]"/>
 				</include>
-				<include condition="$PARAM[addon_submenu]">AddonSubMenuContent</include>
 			</control>
 		</definition>
 	</include>
