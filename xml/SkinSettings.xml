@@ -93,7 +93,6 @@
 					<selected>Skin.HasSetting(use_weatherclock)</selected>
 					<visible>System.HasAddon(script.weatherstation.lite)</visible>
 				</control>
-				<!-- END KEJ MOD -->
 			</control>
 			<control type="grouplist" id="600">
 				<top>160</top>
