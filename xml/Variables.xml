@@ -472,6 +472,12 @@
 		<value condition="String.IsEqual(Skin.String(addon_categories),1)">$LOCALIZE[536]</value>
 		<value condition="String.IsEqual(Skin.String(addon_categories),2)">$LOCALIZE[351]</value>
 	</variable>
+	<variable name="PictureSourcesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(picture_sources))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(picture_sources),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(picture_sources),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(picture_sources),2)">$LOCALIZE[351]</value>
+	</variable>
 	<variable name="HomeMenuSlot1Var">
 		<value condition="String.IsEqual(Skin.String(homemenu_slot1),0)">$LOCALIZE[351]</value>
 		<value condition="String.IsEqual(Skin.String(homemenu_slot1),1)">$LOCALIZE[342]</value>

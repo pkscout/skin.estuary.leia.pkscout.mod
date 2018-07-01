@@ -764,6 +764,19 @@
 					<selected>!Skin.HasSetting(no_addon_image)</selected>
 					<onclick>Skin.ToggleSetting(no_addon_image)</onclick>
 				</control>
+				<control type="button" id="809">
+					<label>$LOCALIZE[1]</label>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="button" id="8090">
+					<label>- $LOCALIZE[20094]</label>
+					<label2>$VAR[PictureSourcesTypeVar]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="String.IsEmpty(Skin.String(picture_sources))">Skin.SetString(picture_sources,1)</onclick>					
+					<onclick condition="String.IsEqual(Skin.String(picture_sources),2)">Skin.SetString(picture_sources,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(picture_sources),1)">Skin.SetString(picture_sources,2)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(picture_sources),0)">Skin.SetString(picture_sources,1)</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
