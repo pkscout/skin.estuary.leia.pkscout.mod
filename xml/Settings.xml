@@ -91,6 +91,7 @@
 						<icon>icons/settings/network.png</icon>
 					</item>
 					<item>
+						<visible>System.GetBool(gamesgeneral.enable)</visible>
 						<label>$LOCALIZE[15016]</label>
 						<onclick>ActivateWindow(GameSettings)</onclick>
 						<icon>icons/settings/games.png</icon>

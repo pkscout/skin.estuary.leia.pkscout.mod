@@ -760,6 +760,11 @@ msgid "Better support for four digit channel numbers in PVR"
 msgstr ""
 
 #: /xml/SkinSettings.xml
+msgctxt "#40166"
+msgid "Select menu item to display"
+msgstr ""
+
+#: /xml/SkinSettings.xml
 msgctxt "#40167"
 msgid "Background diffusion"
 msgstr ""

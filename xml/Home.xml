@@ -11,7 +11,7 @@
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot9))">Skin.SetString(homemenu_slot9,9)</onload>
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot10))">Skin.SetString(homemenu_slot10,10)</onload>
 	<onload condition="String.IsEmpty(Skin.String(homemenu_slot11))">Skin.SetString(homemenu_slot11,11)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot12))">Skin.SetString(homemenu_slot12,0)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot12))">Skin.SetString(homemenu_slot12,12)</onload>
 	<onload condition="String.IsEmpty(Skin.String(bg_diffusion))">Skin.SetString(bg_diffusion,37FFFFFF)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
@@ -312,7 +312,7 @@
 							<param name="list_id" value="8200"/>
 							<param name="fallback_icon" value="DefaultAddon.png"/>
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_games)" content="WidgetListSquare">
+						<include condition="!Skin.HasSetting(no_addon_games) + System.GetBool(gamesgeneral.enable)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/game/"/>
 							<param name="widget_header" value="$LOCALIZE[35049]"/>
 							<param name="widget_target" value="games"/>
@@ -813,7 +813,7 @@
 					<control type="grouplist" id="17001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>17010</pagecontrol>
-						<include content="WidgetListSquare">
+						<include content="WidgetListSquare" condition="!Skin.HasSetting(no_games)">
 							<param name="content_path" value="addons://sources/game/"/>
 							<param name="widget_header" value="$LOCALIZE[35049]"/>
 							<param name="widget_target" value="games"/>
@@ -828,8 +828,8 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(games)"/>
 						<param name="button_id" value="17100"/>
-						<param name="visible" value="!Integer.IsGreater(Container(17001).NumItems,0)"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoGamesButton)"/>
+						<param name="visible" value="!Integer.IsGreater(Container(17001).NumItems,0) + !Skin.HasSetting(no_games)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="17010"/>
@@ -967,6 +967,9 @@
 						</include>
 						<include content="HomeMenuItem">
 							<param name="menuitem_number" value="Skin.String(homemenu_slot11)" />
+						</include>
+						<include content="HomeMenuItem">
+							<param name="menuitem_number" value="Skin.String(homemenu_slot12)" />
 						</include>
 						<item>
 							<label>$LOCALIZE[427]</label>
