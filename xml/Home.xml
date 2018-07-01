@@ -121,7 +121,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="5500"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMovieButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="5010"/>
@@ -194,7 +194,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="6400"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVShowButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="6010"/>
@@ -269,7 +269,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
 						<param name="button_id" value="7600"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="7010"/>
@@ -394,7 +394,7 @@
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 						<param name="button_id" value="11300"/>
 						<param name="visible" value="!Integer.IsGreater(Container(11001).NumItems,0)"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoVideosButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="11010"/>
@@ -473,7 +473,7 @@
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
 						<param name="button_id" value="12400"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoTVButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="12010"/>
@@ -553,7 +553,7 @@
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
 						<param name="button_id" value="13400"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoRadioButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="13010"/>
@@ -608,7 +608,7 @@
 						<param name="button_id" value="5500"/>
 						<param name="visible" value="!Integer.IsGreater(Container(14100).NumItems,0) + !Container(14100).IsUpdating"/>
 						<param name="visible_1" value="false"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoFavButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="14010"/>
@@ -706,7 +706,7 @@
 						<param name="button_label" value="$LOCALIZE[31121]" />
 						<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
 						<param name="button_id" value="15300"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoWeatherButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="15010"/>
@@ -784,7 +784,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
 						<param name="button_id" value="16800"/>
-						<param name="button2_onclick" value="Skin.SetBool(HomeMenuNoMusicVideoButton)"/>
+						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="16010"/>
