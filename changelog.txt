@@ -2,6 +2,7 @@ v.1.0.3~beta1
 - reconfigured skin to respect games section active boolean
 - use Konami code to enable games: UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A
 - games home screen widget can now be hidden
+- picture and video home screen widgets can now be disabled
 - fixed home screen action for option to disable menu item when no library items are found
 
 v.1.0.2
