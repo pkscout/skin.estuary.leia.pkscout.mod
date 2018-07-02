@@ -352,7 +352,7 @@
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
-						<param name="button_id" value="8500"/>
+						<param name="button_id" value="8800"/>
 						<param name="visible" value="[!Integer.IsGreater(Container(8001).NumItems,0)] | String.IsEqual(Skin.String(addon_categories),0)] | Skin.HasSetting(no_addon_video) | Skin.HasSetting(no_addon_audio) | Skin.HasSetting(no_addon_program) | Skin.HasSetting(no_addon_image) | Skin.HasSetting(no_addon_games) | [System.Platform.Android + Skin.HasSetting(no_addon_android)]"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
@@ -368,19 +368,19 @@
 					<control type="grouplist" id="11001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>11010</pagecontrol>
-						<include content="WidgetListCategories">
+						<include condition="!Skin.HasSetting(no_video_categories) + Library.HasContent(video)" content="WidgetListCategories">
 							<param name="content_path" value="library://video/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="11900"/>
 						</include>
-						<include content="WidgetListCategories">
+						<include condition="!Skin.HasSetting(no_video_sources) + Library.HasContent(video)" content="WidgetListCategories">
 							<param name="content_path" value="sources://video/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="11100"/>
 						</include>
-						<include content="WidgetListCategories">
+						<include condition="!Skin.HasSetting(no_video_playlists) + Library.HasContent(video)" content="WidgetListCategories">
 							<param name="content_path" value="special://videoplaylists/"/>
 							<param name="widget_header" value="$LOCALIZE[136]"/>
 							<param name="widget_target" value="videos"/>
@@ -393,7 +393,7 @@
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 						<param name="button_id" value="11300"/>
-						<param name="visible" value="!Integer.IsGreater(Container(11001).NumItems,0)"/>
+						<param name="visible" value="!Library.HasContent(video)"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">

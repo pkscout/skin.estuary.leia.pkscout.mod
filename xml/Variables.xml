@@ -478,6 +478,24 @@
 		<value condition="String.IsEqual(Skin.String(picture_sources),1)">$LOCALIZE[536]</value>
 		<value condition="String.IsEqual(Skin.String(picture_sources),2)">$LOCALIZE[351]</value>
 	</variable>
+	<variable name="VideoCategoriesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(video_categories))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(video_categories),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(video_categories),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(video_categories),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="VideoSourcesTypeVar">
+		<value condition="String.IsEmpty(Skin.String(video_sources))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(video_sources),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(video_sources),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(video_sources),2)">$LOCALIZE[351]</value>
+	</variable>
+	<variable name="VideoPlaylistsTypeVar">
+		<value condition="String.IsEmpty(Skin.String(video_playlists))">$LOCALIZE[602]</value>		
+		<value condition="String.IsEqual(Skin.String(video_playlists),0)">$LOCALIZE[602]</value>
+		<value condition="String.IsEqual(Skin.String(video_playlists),1)">$LOCALIZE[536]</value>
+		<value condition="String.IsEqual(Skin.String(video_playlists),2)">$LOCALIZE[351]</value>
+	</variable>
 	<variable name="HomeMenuSlot1Var">
 		<value condition="String.IsEqual(Skin.String(homemenu_slot1),0)">$LOCALIZE[351]</value>
 		<value condition="String.IsEqual(Skin.String(homemenu_slot1),1)">$LOCALIZE[342]</value>

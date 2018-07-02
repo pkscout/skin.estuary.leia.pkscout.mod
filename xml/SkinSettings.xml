@@ -777,6 +777,28 @@
 					<onclick condition="String.IsEqual(Skin.String(picture_sources),1)">Skin.SetString(picture_sources,2)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(picture_sources),0)">Skin.SetString(picture_sources,1)</onclick>
 				</control>
+				<control type="button" id="810">
+					<label>$LOCALIZE[3]</label>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="8100">
+					<label>- $LOCALIZE[31148]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_video_categories)</selected>
+					<onclick>Skin.ToggleSetting(no_video_categories)</onclick>
+				</control>
+				<control type="radiobutton" id="8101">
+					<label>- $LOCALIZE[20094]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_video_sources)</selected>
+					<onclick>Skin.ToggleSetting(no_video_sources)</onclick>
+				</control>
+				<control type="radiobutton" id="8103">
+					<label>- $LOCALIZE[136]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(no_video_playlists)</selected>
+					<onclick>Skin.ToggleSetting(no_video_playlists)</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
