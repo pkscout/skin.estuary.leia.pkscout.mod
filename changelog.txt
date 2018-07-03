@@ -1,4 +1,4 @@
-v.1.0.3~beta1
+v.1.0.3
 - reconfigured skin to respect games section active boolean
 - use Konami code to enable games: UP,UP,DOWN,DOWN,LEFT,RIGHT,LEFT,RIGHT,B,A
 - games home screen widget can now be hidden
