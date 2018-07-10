@@ -1,5 +1,6 @@
-v.1.0.4~beta1
+v.1.0.4
 - fixed home menu widget conditional visibility to have consistent logic throughout
+- fixed addons screen so that categories show up properly
 
 v.1.0.3
 - reconfigured skin to respect games section active boolean
