@@ -282,17 +282,19 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="[String.IsEmpty(Skin.String(addon_categories)) | String.IsEqual(Skin.String(addon_categories),0)]  + [[Integer.IsGreater(Container(8100).NumItems,0) | Skin.HasSetting(no_addon_video)] | [Integer.IsGreater(Container(8200).NumItems,0) | Skin.HasSetting(no_addon_audio)] | [Integer.IsGreater(Container(8300).NumItems,0) | Skin.HasSetting(no_addon_program)] | [Integer.IsGreater(Container(8400).NumItems,0) | [System.Platform.Android + Skin.HasSetting(no_addon_android)]] | [Integer.IsGreater(Container(8500).NumItems,0) | Skin.HasSetting(no_addon_image)] | [Integer.IsGreater(Container(8700).NumItems,0) | Skin.HasSetting(no_addon_games)]]" content="WidgetListCategories">
+						<include content="WidgetListCategories">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8900"/>
+							<param name="visible" value="[String.IsEmpty(Skin.String(addon_categories)) | String.IsEqual(Skin.String(addon_categories),0)]  + [[Integer.IsGreater(Container(8100).NumItems,0) | Skin.HasSetting(no_addon_video)] | [Integer.IsGreater(Container(8200).NumItems,0) | Skin.HasSetting(no_addon_audio)] | [Integer.IsGreater(Container(8300).NumItems,0) | Skin.HasSetting(no_addon_program)] | [Integer.IsGreater(Container(8400).NumItems,0) | [System.Platform.Android + Skin.HasSetting(no_addon_android)]] | [Integer.IsGreater(Container(8500).NumItems,0) | Skin.HasSetting(no_addon_image)] | [Integer.IsGreater(Container(8700).NumItems,0) | Skin.HasSetting(no_addon_games)]]" />
 						</include>
-						<include condition="String.IsEqual(Skin.String(addon_categories),1) + [[Integer.IsGreater(Container(8100).NumItems,0) | Skin.HasSetting(no_addon_video)] | [Integer.IsGreater(Container(8200).NumItems,0) | Skin.HasSetting(no_addon_audio)] | [Integer.IsGreater(Container(8300).NumItems,0) | Skin.HasSetting(no_addon_program)] | [Integer.IsGreater(Container(8400).NumItems,0) | [System.Platform.Android + Skin.HasSetting(no_addon_android)]] | [Integer.IsGreater(Container(8500).NumItems,0) | Skin.HasSetting(no_addon_image)] | [Integer.IsGreater(Container(8700).NumItems,0) | Skin.HasSetting(no_addon_games)]]" content="WidgetListCategoriesIcons">
+						<include content="WidgetListCategoriesIcons">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8900"/>
+							<param name="visible" value="String.IsEqual(Skin.String(addon_categories),1) + [[Integer.IsGreater(Container(8100).NumItems,0) | Skin.HasSetting(no_addon_video)] | [Integer.IsGreater(Container(8200).NumItems,0) | Skin.HasSetting(no_addon_audio)] | [Integer.IsGreater(Container(8300).NumItems,0) | Skin.HasSetting(no_addon_program)] | [Integer.IsGreater(Container(8400).NumItems,0) | [System.Platform.Android + Skin.HasSetting(no_addon_android)]] | [Integer.IsGreater(Container(8500).NumItems,0) | Skin.HasSetting(no_addon_image)] | [Integer.IsGreater(Container(8700).NumItems,0) | Skin.HasSetting(no_addon_games)]]" />
 						</include>
 						<include condition="!Skin.HasSetting(no_addon_video)" content="WidgetListSquare">
 							<param name="content_path" value="addons://sources/video/"/>
