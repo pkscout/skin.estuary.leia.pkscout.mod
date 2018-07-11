@@ -3,6 +3,19 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot1))">Skin.SetString(homemenu_slot1,1)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot2))">Skin.SetString(homemenu_slot2,2)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot3))">Skin.SetString(homemenu_slot3,3)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot4))">Skin.SetString(homemenu_slot4,4)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot5))">Skin.SetString(homemenu_slot5,5)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot6))">Skin.SetString(homemenu_slot6,6)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot7))">Skin.SetString(homemenu_slot7,7)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot8))">Skin.SetString(homemenu_slot8,8)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot9))">Skin.SetString(homemenu_slot9,9)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot10))">Skin.SetString(homemenu_slot10,10)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot11))">Skin.SetString(homemenu_slot11,11)</onload>
+	<onload condition="String.IsEmpty(Skin.String(homemenu_slot12))">Skin.SetString(homemenu_slot12,12)</onload>
+	<onload condition="String.IsEmpty(Skin.String(bg_diffusion))">Skin.SetString(bg_diffusion,37FFFFFF)</onload>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="multiimage">
