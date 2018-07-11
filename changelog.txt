@@ -1,3 +1,6 @@
+v.1.0.5~beta1
+- fix so skin settings work on first load of skin without going to home screen
+
 v.1.0.4
 - fixed home menu widget conditional visibility to have consistent logic throughout
 - fixed addons screen so that categories show up properly
