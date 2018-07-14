@@ -1,7 +1,5 @@
-v.1.0.5~beta2
+v.1.0.5
 - another fix for widget and category display in the addons section
-
-v.1.0.5~beta1
 - fix so skin settings work on first load of skin without going to home screen
 
 v.1.0.4
