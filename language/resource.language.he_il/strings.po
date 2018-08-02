@@ -556,42 +556,6 @@ msgctxt "#31163"
 msgid "Show Fanart background"
 msgstr "הצג רקע פאנארט"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40162"
-msgid "Show music visualisation screen directly when playing song"
-msgstr "הצג מסך להדמיה של מוזיקה בעת ניגון  שיר"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40163"
-msgid "Use alternate timer layout"
-msgstr "השתמש בפריסה שעון עצר חלופית"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40165"
-msgid "Better support for four digit channel numbers in PVR"
-msgstr "תמיכה טובה יותר עבור ארבע ספרות למספרי ערוצים ב-PVR"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40167"
-msgid "Background diffusion"
-msgstr "דיפוזיה לרקע"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40168"
-msgid "Use alternate location for weather widget"
-msgstr "תשתמש במיקום חלופי עבור יישומון מזג אוויר"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40169"
-msgid "Use weather clock for weather page"
-msgstr "תשתמש בשעון מזג אוויר עבור דף מזג אוויר"
-
-#: /xml/MyWeather.xml
-msgctxt "#40170"
-msgid "Switching locations..."
-msgstr "החלפת מקומות..."
-
-#: /xml/MyWeather.xml
-msgctxt "#40171"
-msgid "Auto Dim"
-msgstr "עימעום אוטומטי"
+msgctxt "#31165"
+msgid "Profile name"
+msgstr "שם משתמש"

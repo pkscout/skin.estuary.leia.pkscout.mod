@@ -87,19 +87,25 @@
 					<onclick>Skin.SelectBool(31024, 38018|circle_userrating, 563|circle_rating, 16018|circle_none)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
-				<control type="radiobutton" id="708">
+				<control type="button" id="708">
+					<label>$LOCALIZE[31164]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(31164, 31165|show_profilename, 31166|show_profileavatar, 16018|show_none)</onclick>
+					<label2>$VAR[ProfileIdentificationLabel2Var]</label2>
+				</control>
+				<control type="radiobutton" id="709">
 					<label>$LOCALIZE[40163]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_alt_timer_layout)</onclick>
 					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
 				</control>
-				<control type="radiobutton" id="709">
+				<control type="radiobutton" id="710">
 					<label>$LOCALIZE[40165]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(four_digit_channel_fix)</onclick>
 					<selected>Skin.HasSetting(four_digit_channel_fix)</selected>
 				</control>
-				<control type="radiobutton" id="710">
+				<control type="radiobutton" id="711">
 					<label>$LOCALIZE[40169]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
