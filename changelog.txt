@@ -1,3 +1,6 @@
+v.1.0.6
+- Estuary fixes from Estuary 2.0.11 (Leia Alpha 3)
+
 v.1.0.5
 - another fix for widget and category display in the addons section
 - fix so skin settings work on first load of skin without going to home screen
