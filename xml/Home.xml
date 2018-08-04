@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot1))">Skin.SetString(homemenu_slot1,1)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot2))">Skin.SetString(homemenu_slot2,2)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot3))">Skin.SetString(homemenu_slot3,3)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot4))">Skin.SetString(homemenu_slot4,4)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot5))">Skin.SetString(homemenu_slot5,5)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot6))">Skin.SetString(homemenu_slot6,6)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot7))">Skin.SetString(homemenu_slot7,7)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot8))">Skin.SetString(homemenu_slot8,8)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot9))">Skin.SetString(homemenu_slot9,9)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot10))">Skin.SetString(homemenu_slot10,10)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot11))">Skin.SetString(homemenu_slot11,11)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot12))">Skin.SetString(homemenu_slot12,12)</onload>
-	<onload condition="String.IsEmpty(Skin.String(bg_diffusion))">Skin.SetString(bg_diffusion,37FFFFFF)</onload>
+	<onload condition="![Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot1_show_musicvideos) | Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot1_show_games) | Skin.HasSetting(slot1_show_addons) | Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot1_show_favorites) | Skin.HasSetting(slot1_show_weather) | Skin.HasSetting(slot1_show_none)]">Skin.SetBool(slot1_show_movies)</onload>	
+	<onload condition="![Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot2_show_musicvideos) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot2_show_games) | Skin.HasSetting(slot2_show_addons) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot2_show_favorites) | Skin.HasSetting(slot2_show_weather) | Skin.HasSetting(slot2_show_none)]">Skin.SetBool(slot2_show_tvshows)</onload>	
+	<onload condition="![Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot3_show_musicvideos) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot3_show_games) | Skin.HasSetting(slot3_show_addons) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot3_show_favorites) | Skin.HasSetting(slot3_show_weather) | Skin.HasSetting(slot3_show_none)]">Skin.SetBool(slot3_show_music)</onload>	
+	<onload condition="![Skin.HasSetting(slot4_show_movies) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot4_show_music) | Skin.HasSetting(slot4_show_musicvideos) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot4_show_radio) | Skin.HasSetting(slot4_show_games) | Skin.HasSetting(slot4_show_addons) | Skin.HasSetting(slot4_show_pictures) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot4_show_favorites) | Skin.HasSetting(slot4_show_weather) | Skin.HasSetting(slot4_show_none)]">Skin.SetBool(slot4_show_musicvideos)</onload>	
+	<onload condition="![Skin.HasSetting(slot5_show_movies) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot5_show_music) | Skin.HasSetting(slot5_show_musicvideos) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot5_show_radio) | Skin.HasSetting(slot5_show_games) | Skin.HasSetting(slot5_show_addons) | Skin.HasSetting(slot5_show_pictures) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot5_show_favorites) | Skin.HasSetting(slot5_show_weather) | Skin.HasSetting(slot5_show_none)]">Skin.SetBool(slot5_show_tv)</onload>	
+	<onload condition="![Skin.HasSetting(slot6_show_movies) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot6_show_music) | Skin.HasSetting(slot6_show_musicvideos) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot6_show_radio) | Skin.HasSetting(slot6_show_games) | Skin.HasSetting(slot6_show_addons) | Skin.HasSetting(slot6_show_pictures) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot6_show_favorites) | Skin.HasSetting(slot6_show_weather) | Skin.HasSetting(slot6_show_none)]">Skin.SetBool(slot6_show_radio)</onload>	
+	<onload condition="![Skin.HasSetting(slot7_show_movies) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot7_show_music) | Skin.HasSetting(slot7_show_musicvideos) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot7_show_radio) | Skin.HasSetting(slot7_show_games) | Skin.HasSetting(slot7_show_addons) | Skin.HasSetting(slot7_show_pictures) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot7_show_favorites) | Skin.HasSetting(slot7_show_weather) | Skin.HasSetting(slot7_show_none)]">Skin.SetBool(slot7_show_none)</onload>	
+	<onload condition="![Skin.HasSetting(slot8_show_movies) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot8_show_music) | Skin.HasSetting(slot8_show_musicvideos) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot8_show_radio) | Skin.HasSetting(slot8_show_games) | Skin.HasSetting(slot8_show_addons) | Skin.HasSetting(slot8_show_pictures) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot8_show_favorites) | Skin.HasSetting(slot8_show_weather) | Skin.HasSetting(slot8_show_none)]">Skin.SetBool(slot8_show_addons)</onload>	
+	<onload condition="![Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot9_show_musicvideos) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot9_show_games) | Skin.HasSetting(slot9_show_addons) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot9_show_favorites) | Skin.HasSetting(slot9_show_weather) | Skin.HasSetting(slot9_show_none)]">Skin.SetBool(slot9_show_pictures)</onload>	
+	<onload condition="![Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot10_show_musicvideos) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot10_show_games) | Skin.HasSetting(slot10_show_addons) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot10_show_favorites) | Skin.HasSetting(slot10_show_weather) | Skin.HasSetting(slot10_show_none)]">Skin.SetBool(slot10_show_videos)</onload>	
+	<onload condition="![Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot11_show_musicvideos) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot11_show_games) | Skin.HasSetting(slot11_show_addons) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot11_show_favorites) | Skin.HasSetting(slot11_show_weather) | Skin.HasSetting(slot11_show_none)]">Skin.SetBool(slot11_show_favorites)</onload>	
+	<onload condition="![Skin.HasSetting(slot12_show_movies) | Skin.HasSetting(slot12_show_tvshows) | Skin.HasSetting(slot12_show_music) | Skin.HasSetting(slot12_show_musicvideos) | Skin.HasSetting(slot12_show_tv) | Skin.HasSetting(slot12_show_radio) | Skin.HasSetting(slot12_show_games) | Skin.HasSetting(slot12_show_addons) | Skin.HasSetting(slot12_show_pictures) | Skin.HasSetting(slot12_show_videos) | Skin.HasSetting(slot12_show_favorites) | Skin.HasSetting(slot12_show_weather) | Skin.HasSetting(slot12_show_none)]">Skin.SetBool(slot12_show_weather)</onload>	
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -940,41 +939,173 @@
 						</control>
 					</itemlayout>
 					<content>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot1)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot1_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot1_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot1_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot1_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot1_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot1_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot1_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot1_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot1_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot1_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot1_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot1_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot1_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot2)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot2_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot2_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot2_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot2_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot2_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot2_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot2_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot2_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot2_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot2_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot2_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot2_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot2_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot3)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot3_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot3_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot3_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot3_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot3_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot3_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot3_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot3_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot3_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot3_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot3_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot3_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot3_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot4)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot4_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot4_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot4_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot4_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot4_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot4_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot4_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot4_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot4_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot4_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot4_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot4_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot4_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot5)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot5_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot5_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot5_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot5_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot5_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot5_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot5_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot5_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot5_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot5_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot5_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot5_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot5_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot6)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot6_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot6_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot6_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot6_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot6_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot6_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot6_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot6_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot6_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot6_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot6_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot6_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot6_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot7)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot7_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot7_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot7_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot7_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot7_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot7_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot7_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot7_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot7_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot7_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot7_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot7_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot7_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot8)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot8_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot8_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot8_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot8_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot8_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot8_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot8_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot8_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot8_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot8_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot8_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot8_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot8_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot9)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot9_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot9_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot9_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot9_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot9_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot9_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot9_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot9_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot9_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot9_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot9_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot9_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot9_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot10)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot10_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot10_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot10_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot10_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot10_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot10_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot10_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot10_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot10_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot10_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot10_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot10_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot10_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot11)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot11_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot11_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot11_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot11_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot11_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot11_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot11_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot11_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot11_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot11_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot11_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot11_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot11_show_weather)" />
 						</include>
-						<include content="HomeMenuItem">
-							<param name="menuitem_number" value="Skin.String(homemenu_slot12)" />
+						<include content="HomeMenuItem" condition="!Skin.HasSetting(slot12_show_none)">
+							<param name="show_movies" value="Skin.HasSetting(slot12_show_movies)" />
+							<param name="show_tvshows" value="Skin.HasSetting(slot12_show_tvshows)" />
+							<param name="show_music" value="Skin.HasSetting(slot12_show_music)" />
+							<param name="show_musicvideos" value="Skin.HasSetting(slot12_show_musicvideos)" />
+							<param name="show_tv" value="Skin.HasSetting(slot12_show_tv)" />
+							<param name="show_radio" value="Skin.HasSetting(slot12_show_radio)" />
+							<param name="show_games" value="Skin.HasSetting(slot12_show_games)" />
+							<param name="show_addons" value="Skin.HasSetting(slot12_show_addons)" />
+							<param name="show_pictures" value="Skin.HasSetting(slot12_show_pictures)" />
+							<param name="show_videos" value="Skin.HasSetting(slot12_show_videos)" />
+							<param name="show_favorites" value="Skin.HasSetting(slot12_show_favorites)" />
+							<param name="show_weather" value="Skin.HasSetting(slot12_show_weather)" />
 						</include>
 						<item>
 							<label>$LOCALIZE[427]</label>

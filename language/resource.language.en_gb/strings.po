@@ -804,3 +804,54 @@ msgstr ""
 msgctxt "#40171"
 msgid "Auto Dim"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40180"
+msgid "100%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40181"
+msgid "10%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40182"
+msgid "20%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40183"
+msgid "30%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40184"
+msgid "40%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40185"
+msgid "50%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40186"
+msgid "60%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40187"
+msgid "70%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40188"
+msgid "80%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40189"
+msgid "90%"
+msgstr ""
+

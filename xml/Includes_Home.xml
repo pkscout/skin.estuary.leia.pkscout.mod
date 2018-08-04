@@ -1042,7 +1042,18 @@
 		</control>
 	</include>
 	<include name="HomeMenuItem">
-		<param name="menuitem_number" />
+		<param name="show_movies" />
+		<param name="show_tvshows" />
+		<param name="show_music" />
+		<param name="show_musicvideos" />
+		<param name="show_tv" />
+		<param name="show_radio" />
+		<param name="show_games" />
+		<param name="show_addons" />
+		<param name="show_pictures" />
+		<param name="show_videos" />
+		<param name="show_favorites" />
+		<param name="show_weather" />
 		<definition>
 			<item>
 				<label>$LOCALIZE[342]</label>
@@ -1051,7 +1062,7 @@
 				<property name="menu_id">$NUMBER[5000]</property>
 				<thumb>icons/sidemenu/movies.png</thumb>
 				<property name="id">movies</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],1)</visible>
+				<visible>$PARAM[show_movies]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[20343]</label>
@@ -1060,7 +1071,7 @@
 				<property name="menu_id">$NUMBER[6000]</property>
 				<thumb>icons/sidemenu/tv.png</thumb>
 				<property name="id">tvshows</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],2)</visible>
+				<visible>$PARAM[show_tvshows]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[2]</label>
@@ -1068,7 +1079,7 @@
 				<property name="menu_id">$NUMBER[7000]</property>
 				<thumb>icons/sidemenu/music.png</thumb>
 				<property name="id">music</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],3)</visible>
+				<visible>$PARAM[show_music]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[20389]</label>
@@ -1076,7 +1087,7 @@
 				<onclick>ActivateWindow(Videos,musicvideos,return)</onclick>
 				<thumb>icons/sidemenu/musicvideos.png</thumb>
 				<property name="id">musicvideos</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],4)</visible>
+				<visible>$PARAM[show_musicvideos]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[19020]</label>
@@ -1084,7 +1095,7 @@
 				<onclick>ActivateWindow(TVChannels)</onclick>
 				<thumb>icons/sidemenu/livetv.png</thumb>
 				<property name="id">livetv</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],5)</visible>
+				<visible>$PARAM[show_tv]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[19021]</label>
@@ -1092,7 +1103,7 @@
 				<onclick>ActivateWindow(RadioChannels)</onclick>
 				<thumb>icons/sidemenu/radio.png</thumb>
 				<property name="id">radio</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],6)</visible>
+				<visible>$PARAM[show_radio]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[15016]</label>
@@ -1100,7 +1111,7 @@
 				<property name="menu_id">$NUMBER[17000]</property>
 				<thumb>icons/sidemenu/games.png</thumb>
 				<property name="id">games</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],7) + System.GetBool(gamesgeneral.enable)</visible>
+				<visible>$PARAM[show_games]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[24001]</label>
@@ -1108,7 +1119,7 @@
 				<onclick>ActivateWindow(1100)</onclick>
 				<thumb>icons/sidemenu/addons.png</thumb>
 				<property name="id">addons</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],8)</visible>
+				<visible>$PARAM[show_addons]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[1]</label>
@@ -1116,7 +1127,7 @@
 				<property name="menu_id">$NUMBER[4000]</property>
 				<thumb>icons/sidemenu/pictures.png</thumb>
 				<property name="id">pictures</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],9)</visible>
+				<visible>$PARAM[show_pictures]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[3]</label>
@@ -1124,7 +1135,7 @@
 				<property name="menu_id">$NUMBER[11000]</property>
 				<thumb>icons/sidemenu/videos.png</thumb>
 				<property name="id">video</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],10)</visible>
+				<visible>$PARAM[show_videos]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[10134]</label>
@@ -1132,7 +1143,7 @@
 				<property name="menu_id">$NUMBER[14000]</property>
 				<thumb>icons/sidemenu/favourites.png</thumb>
 				<property name="id">favorites</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],11)</visible>
+				<visible>$PARAM[show_favorites]</visible>
 			</item>
 			<item>
 				<label>$LOCALIZE[8]</label>
@@ -1141,7 +1152,7 @@
 				<property name="menu_id">$NUMBER[15000]</property>
 				<thumb>icons/sidemenu/weather.png</thumb>
 				<property name="id">weather</property>
-				<visible>String.IsEqual($PARAM[menuitem_number],12)</visible>
+				<visible>$PARAM[show_weather]</visible>
 			</item>
 		</definition>
 	</include>
