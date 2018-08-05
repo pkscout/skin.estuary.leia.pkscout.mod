@@ -108,12 +108,6 @@
 					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
 				</control>
 				<control type="radiobutton" id="710">
-					<label>$LOCALIZE[40165]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(four_digit_channel_fix)</onclick>
-					<selected>Skin.HasSetting(four_digit_channel_fix)</selected>
-				</control>
-				<control type="radiobutton" id="711">
 					<label>$LOCALIZE[40169]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>
