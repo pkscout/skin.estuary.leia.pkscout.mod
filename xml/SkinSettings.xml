@@ -192,73 +192,73 @@
 				<ondown>610</ondown>
 				<visible>Container(9000).HasFocus(2)</visible>
 				<control type="button" id="611">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 1</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot1_show_movies, 20343|slot1_show_tvshows, 2|slot1_show_music, 20389|slot1_show_musicvideos, 19020|slot1_show_tv, 19021|slot1_show_radio, 15016|slot1_show_games, 24001|slot1_show_addons, 1|slot1_show_pictures, 3|slot1_show_videos, 10134|slot1_show_favorites, 8|slot1_show_weather, 351|slot1_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot1Label2Var]</label2>
 				</control>
 				<control type="button" id="612">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 2</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot2_show_movies, 20343|slot2_show_tvshows, 2|slot2_show_music, 20389|slot2_show_musicvideos, 19020|slot2_show_tv, 19021|slot2_show_radio, 15016|slot2_show_games, 24001|slot2_show_addons, 1|slot2_show_pictures, 3|slot2_show_videos, 10134|slot2_show_favorites, 8|slot2_show_weather, 351|slot2_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot2Label2Var]</label2>
 				</control>
 				<control type="button" id="613">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 3</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot3_show_movies, 20343|slot3_show_tvshows, 2|slot3_show_music, 20389|slot3_show_musicvideos, 19020|slot3_show_tv, 19021|slot3_show_radio, 15016|slot3_show_games, 24001|slot3_show_addons, 1|slot3_show_pictures, 3|slot3_show_videos, 10134|slot3_show_favorites, 8|slot3_show_weather, 351|slot3_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot3Label2Var]</label2>
 				</control>
 				<control type="button" id="614">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 4</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot4_show_movies, 20343|slot4_show_tvshows, 2|slot4_show_music, 20389|slot4_show_musicvideos, 19020|slot4_show_tv, 19021|slot4_show_radio, 15016|slot4_show_games, 24001|slot4_show_addons, 1|slot4_show_pictures, 3|slot4_show_videos, 10134|slot4_show_favorites, 8|slot4_show_weather, 351|slot4_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot4Label2Var]</label2>
 				</control>
 				<control type="button" id="615">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 5</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot5_show_movies, 20343|slot5_show_tvshows, 2|slot5_show_music, 20389|slot5_show_musicvideos, 19020|slot5_show_tv, 19021|slot5_show_radio, 15016|slot5_show_games, 24001|slot5_show_addons, 1|slot5_show_pictures, 3|slot5_show_videos, 10134|slot5_show_favorites, 8|slot5_show_weather, 351|slot5_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot5Label2Var]</label2>
 				</control>
 				<control type="button" id="616">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 6</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot6_show_movies, 20343|slot6_show_tvshows, 2|slot6_show_music, 20389|slot6_show_musicvideos, 19020|slot6_show_tv, 19021|slot6_show_radio, 15016|slot6_show_games, 24001|slot6_show_addons, 1|slot6_show_pictures, 3|slot6_show_videos, 10134|slot6_show_favorites, 8|slot6_show_weather, 351|slot6_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot6Label2Var]</label2>
 				</control>
 				<control type="button" id="617">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 7</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot7_show_movies, 20343|slot7_show_tvshows, 2|slot7_show_music, 20389|slot7_show_musicvideos, 19020|slot7_show_tv, 19021|slot7_show_radio, 15016|slot7_show_games, 24001|slot7_show_addons, 1|slot7_show_pictures, 3|slot7_show_videos, 10134|slot7_show_favorites, 8|slot7_show_weather, 351|slot7_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot7Label2Var]</label2>
 				</control>
 				<control type="button" id="618">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 8</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot8_show_movies, 20343|slot8_show_tvshows, 2|slot8_show_music, 20389|slot8_show_musicvideos, 19020|slot8_show_tv, 19021|slot8_show_radio, 15016|slot8_show_games, 24001|slot8_show_addons, 1|slot8_show_pictures, 3|slot8_show_videos, 10134|slot8_show_favorites, 8|slot8_show_weather, 351|slot8_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot8Label2Var]</label2>
 				</control>
 				<control type="button" id="619">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 9</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot9_show_movies, 20343|slot9_show_tvshows, 2|slot9_show_music, 20389|slot9_show_musicvideos, 19020|slot9_show_tv, 19021|slot9_show_radio, 15016|slot9_show_games, 24001|slot9_show_addons, 1|slot9_show_pictures, 3|slot9_show_videos, 10134|slot9_show_favorites, 8|slot9_show_weather, 351|slot9_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot9Label2Var]</label2>
 				</control>
 				<control type="button" id="620">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 10</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot10_show_movies, 20343|slot10_show_tvshows, 2|slot10_show_music, 20389|slot10_show_musicvideos, 19020|slot10_show_tv, 19021|slot10_show_radio, 15016|slot10_show_games, 24001|slot10_show_addons, 1|slot10_show_pictures, 3|slot10_show_videos, 10134|slot10_show_favorites, 8|slot10_show_weather, 351|slot10_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot10Label2Var]</label2>
 				</control>
 				<control type="button" id="621">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 11</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot11_show_movies, 20343|slot11_show_tvshows, 2|slot11_show_music, 20389|slot11_show_musicvideos, 19020|slot11_show_tv, 19021|slot11_show_radio, 15016|slot11_show_games, 24001|slot11_show_addons, 1|slot11_show_pictures, 3|slot11_show_videos, 10134|slot11_show_favorites, 8|slot11_show_weather, 351|slot11_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot11Label2Var]</label2>
 				</control>
 				<control type="button" id="622">
-					<label>$LOCALIZE[40166]</label>
+					<label>$LOCALIZE[396] 12</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(40166, 342|slot12_show_movies, 20343|slot12_show_tvshows, 2|slot12_show_music, 20389|slot12_show_musicvideos, 19020|slot12_show_tv, 19021|slot12_show_radio, 15016|slot12_show_games, 24001|slot12_show_addons, 1|slot12_show_pictures, 3|slot12_show_videos, 10134|slot12_show_favorites, 8|slot12_show_weather, 351|slot12_show_none)</onclick>
 					<label2>$VAR[HomeMenuSlot12Label2Var]</label2>
