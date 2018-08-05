@@ -32,7 +32,7 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true">$INFO[Player.Art(fanart)]</texture>
-			<visible>!System.HasAddon(script.artistslideshow) | !String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)</visible>
+			<visible>!Skin.HasSetting(hide_background_fanart) + [!System.HasAddon(script.artistslideshow) | !String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)]</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -45,18 +45,6 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true" colordiffuse="$VAR[BackgroundDiffusion]">colors/black.png</texture>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
-		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>100%</width>
-			<height>100%</height>
-			<aspectratio>scale</aspectratio>
-			<fadetime>400</fadetime>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
-			<texture background="true" colordiffuse="88FFFFFF">$INFO[Player.Art(fanart)]</texture>
-			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
@@ -83,6 +71,21 @@
 				<top>-30</top>
 				<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + ![Window.IsActive(playerprocessinfo) | MusicPlayer.Content(livetv)]</visible>
 				<include>Visible_Left</include>
+				<control type="textbox" id="1012">
+					<top>165</top>
+					<right>10</right>
+					<width>50%</width>
+					<height>570</height>
+					<description>Artist Biography from Artist Slideshow</description>
+					<align>right</align>
+					<aligny>top</aligny>
+					<font>font13</font>
+					<scroll>true</scroll>
+					<wrapmultiline>true</wrapmultiline>
+					<autoscroll time="2000" delay="10000" repeat="5000"></autoscroll>
+					<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</label>
+					<visible>Skin.HasSetting(show_artist_bio)</visible>
+				</control>
 				<control type="group">
 					<left>30</left>
 					<top>740</top>

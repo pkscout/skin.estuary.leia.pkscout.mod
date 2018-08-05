@@ -771,6 +771,11 @@ msgid "Use alternate timer layout"
 msgstr ""
 
 #: /xml/SkinSettings.xml
+msgctxt "#40164"
+msgid "Show artist bio with Music OSD"
+msgstr ""
+
+#: /xml/SkinSettings.xml
 msgctxt "#40165"
 msgid "Better support for four digit channel numbers in PVR"
 msgstr ""
