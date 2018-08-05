@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
 	<onload condition="![Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot1_show_musicvideos) | Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot1_show_games) | Skin.HasSetting(slot1_show_addons) | Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot1_show_favorites) | Skin.HasSetting(slot1_show_weather) | Skin.HasSetting(slot1_show_none)]">Skin.SetBool(slot1_show_movies)</onload>	
 	<onload condition="![Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot2_show_musicvideos) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot2_show_games) | Skin.HasSetting(slot2_show_addons) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot2_show_favorites) | Skin.HasSetting(slot2_show_weather) | Skin.HasSetting(slot2_show_none)]">Skin.SetBool(slot2_show_tvshows)</onload>	
 	<onload condition="![Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot3_show_musicvideos) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot3_show_games) | Skin.HasSetting(slot3_show_addons) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot3_show_favorites) | Skin.HasSetting(slot3_show_weather) | Skin.HasSetting(slot3_show_none)]">Skin.SetBool(slot3_show_music)</onload>	
@@ -11,7 +12,16 @@
 	<onload condition="![Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot9_show_musicvideos) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot9_show_games) | Skin.HasSetting(slot9_show_addons) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot9_show_favorites) | Skin.HasSetting(slot9_show_weather) | Skin.HasSetting(slot9_show_none)]">Skin.SetBool(slot9_show_pictures)</onload>	
 	<onload condition="![Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot10_show_musicvideos) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot10_show_games) | Skin.HasSetting(slot10_show_addons) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot10_show_favorites) | Skin.HasSetting(slot10_show_weather) | Skin.HasSetting(slot10_show_none)]">Skin.SetBool(slot10_show_videos)</onload>	
 	<onload condition="![Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot11_show_musicvideos) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot11_show_games) | Skin.HasSetting(slot11_show_addons) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot11_show_favorites) | Skin.HasSetting(slot11_show_weather) | Skin.HasSetting(slot11_show_none)]">Skin.SetBool(slot11_show_favorites)</onload>	
-	<onload condition="![Skin.HasSetting(slot12_show_movies) | Skin.HasSetting(slot12_show_tvshows) | Skin.HasSetting(slot12_show_music) | Skin.HasSetting(slot12_show_musicvideos) | Skin.HasSetting(slot12_show_tv) | Skin.HasSetting(slot12_show_radio) | Skin.HasSetting(slot12_show_games) | Skin.HasSetting(slot12_show_addons) | Skin.HasSetting(slot12_show_pictures) | Skin.HasSetting(slot12_show_videos) | Skin.HasSetting(slot12_show_favorites) | Skin.HasSetting(slot12_show_weather) | Skin.HasSetting(slot12_show_none)]">Skin.SetBool(slot12_show_weather)</onload>	
+	<onload condition="![Skin.HasSetting(slot12_show_movies) | Skin.HasSetting(slot12_show_tvshows) | Skin.HasSetting(slot12_show_music) | Skin.HasSetting(slot12_show_musicvideos) | Skin.HasSetting(slot12_show_tv) | Skin.HasSetting(slot12_show_radio) | Skin.HasSetting(slot12_show_games) | Skin.HasSetting(slot12_show_addons) | Skin.HasSetting(slot12_show_pictures) | Skin.HasSetting(slot12_show_videos) | Skin.HasSetting(slot12_show_favorites) | Skin.HasSetting(slot12_show_weather) | Skin.HasSetting(slot12_show_none)]">Skin.SetBool(slot12_show_weather)</onload>
+	<onload condition="![Skin.HasSetting(movie_categories_standard) | Skin.HasSetting(movie_categories_icons) | Skin.HasSetting(movie_categories_none)]">Skin.SetBool(movie_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(tvshow_categories_standard) | Skin.HasSetting(tvshow_categories_icons) | Skin.HasSetting(tvshow_categories_none)]">Skin.SetBool(tvshow_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(music_categories_standard) | Skin.HasSetting(music_categories_icons) | Skin.HasSetting(music_categories_none)]">Skin.SetBool(music_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(musicvideos_categories_standard) | Skin.HasSetting(musicvideos_categories_icons) | Skin.HasSetting(musicvideos_categories_none)]">Skin.SetBool(musicvideos_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(tv_categories_standard) | Skin.HasSetting(tv_categories_icons) | Skin.HasSetting(tv_categories_none)]">Skin.SetBool(tv_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(radio_categories_standard) | Skin.HasSetting(radio_categories_icons) | Skin.HasSetting(radio_categories_none)]">Skin.SetBool(radio_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(addon_categories_standard) | Skin.HasSetting(addon_categories_icons) | Skin.HasSetting(addon_categories_none)]">Skin.SetBool(addon_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(picture_categories_standard) | Skin.HasSetting(picture_categories_icons) | Skin.HasSetting(picture_categories_none)]">Skin.SetBool(picture_categories_standard)</onload>
+	<onload condition="String.IsEmpty(Skin.String(first_run))">Skin.SetString(run_once,1)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -63,13 +73,13 @@
 					<control type="grouplist" id="5001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>5010</pagecontrol>
-						<include condition="[String.IsEmpty(Skin.String(movie_categories)) | String.IsEqual(Skin.String(movie_categories),0)] + Library.HasContent(movies)" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(movie_categories_standard) | String.IsEmpty(Skin.String(run_once))] + Library.HasContent(movies)" content="WidgetListCategories">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(movie_categories),1) + Library.HasContent(movies)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(movie_categories_icons) + Library.HasContent(movies)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://video/movies/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -133,13 +143,13 @@
 					</include>
 					<control type="grouplist" id="6001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="[String.IsEmpty(Skin.String(tv_categories)) | String.IsEqual(Skin.String(tv_categories),0)] + Library.HasContent(tvshows)" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(tvshow_categories_standard) | String.IsEmpty(Skin.String(run_once))] + Library.HasContent(tvshows)" content="WidgetListCategories">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(tv_categories),1) + Library.HasContent(tvshows)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(tvshow_categories_icons) + Library.HasContent(tvshows)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://video/tvshows/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -206,13 +216,13 @@
 					</include>
 					<control type="grouplist" id="7001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="[String.IsEmpty(Skin.String(music_categories)) | String.IsEqual(Skin.String(music_categories),0)] + Library.HasContent(music)" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(music_categories_standard) | String.IsEmpty(Skin.String(run_once))] + Library.HasContent(music)" content="WidgetListCategories">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(music_categories),1) + Library.HasContent(music)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(music_categories_icons) + Library.HasContent(music)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://music/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="music"/>
@@ -281,13 +291,13 @@
 					</include>
 					<control type="grouplist" id="8001">
 						<include>WidgetGroupListCommon</include>
-						<include condition="[String.IsEmpty(Skin.String(addon_categories)) | String.IsEqual(Skin.String(addon_categories),0)]" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(addon_categories_standard) | String.IsEmpty(Skin.String(run_once))]" content="WidgetListCategories">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(addon_categories),1)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(addon_categories_icons)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="addons://"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="addonbrowser"/>
@@ -436,13 +446,13 @@
 								</include>
 							</control>
 						</control>
-						<include condition="[String.IsEmpty(Skin.String(pvr_categories)) | String.IsEqual(Skin.String(pvr_categories),0)] + System.HasPVRAddon" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(tv_categories_standard) | String.IsEmpty(Skin.String(run_once))] + System.HasPVRAddon" content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="TV"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(pvr_categories),1) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(tv_categories_icons) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="12900"/>
 							<param name="pvr_submenu" value="true"/>
@@ -515,13 +525,13 @@
 								</include>
 							</control>
 						</control>
-						<include condition="[String.IsEmpty(Skin.String(radio_categories)) | String.IsEqual(Skin.String(radio_categories),0)] + System.HasPVRAddon" content="WidgetListCategories">
+						<include condition="[Skin.HasSetting(radio_categories_standard) | String.IsEmpty(Skin.String(run_once))] + System.HasPVRAddon" content="WidgetListCategories">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(radio_categories),1) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(radio_categories_icons) + System.HasPVRAddon" content="WidgetListCategoriesIcons">
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="list_id" value="13900"/>
 							<param name="pvr_submenu" value="true"/>
@@ -719,13 +729,13 @@
 					<control type="grouplist" id="16001">
 						<include>WidgetGroupListCommon</include>
 						<pagecontrol>16010</pagecontrol>
-						<include content="WidgetListCategories" condition="[String.IsEmpty(Skin.String(musicvideo_categories)) | String.IsEqual(Skin.String(musicvideo_categories),0)] + Library.HasContent(musicvideos)">
+						<include content="WidgetListCategories" condition="[Skin.HasSetting(musicvideo_categories_standard) | String.IsEmpty(Skin.String(run_once))] + Library.HasContent(musicvideos)">
 							<param name="content_path" value="library://video/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="16900"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(musicvideo_categories),1) + Library.HasContent(musicvideos)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(musicvideo_categories_icons) + Library.HasContent(musicvideos)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="library://music/musicvideos/"/>
 							<param name="widget_header" value="$LOCALIZE[31148]"/>
 							<param name="widget_target" value="videos"/>
@@ -795,13 +805,13 @@
 					</include>
 					<control type="grouplist" id="4001">
 						<include>WidgetGroupListCommon</include>
-						<include content="WidgetListCategories" condition="[String.IsEmpty(Skin.String(picture_sources)) | String.IsEqual(Skin.String(picture_sources),0)]">
+						<include content="WidgetListCategories" condition="[Skin.HasSetting(picture_categories_standard) | String.IsEmpty(Skin.String(run_once))]">
 							<param name="content_path" value="sources://pictures/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>
 							<param name="list_id" value="4100"/>
 						</include>
-						<include condition="String.IsEqual(Skin.String(picture_sources),1)" content="WidgetListCategoriesIcons">
+						<include condition="Skin.HasSetting(picture_categories_icons)" content="WidgetListCategoriesIcons">
 							<param name="content_path" value="sources://pictures/"/>
 							<param name="widget_header" value="$LOCALIZE[20094]"/>
 							<param name="widget_target" value="pictures"/>

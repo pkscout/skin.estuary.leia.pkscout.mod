@@ -3,18 +3,27 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot1))">Skin.SetString(homemenu_slot1,1)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot2))">Skin.SetString(homemenu_slot2,2)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot3))">Skin.SetString(homemenu_slot3,3)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot4))">Skin.SetString(homemenu_slot4,4)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot5))">Skin.SetString(homemenu_slot5,5)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot6))">Skin.SetString(homemenu_slot6,6)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot7))">Skin.SetString(homemenu_slot7,7)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot8))">Skin.SetString(homemenu_slot8,8)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot9))">Skin.SetString(homemenu_slot9,9)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot10))">Skin.SetString(homemenu_slot10,10)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot11))">Skin.SetString(homemenu_slot11,11)</onload>
-	<onload condition="String.IsEmpty(Skin.String(homemenu_slot12))">Skin.SetString(homemenu_slot12,12)</onload>
+	<onload condition="![Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot1_show_musicvideos) | Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot1_show_games) | Skin.HasSetting(slot1_show_addons) | Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot1_show_favorites) | Skin.HasSetting(slot1_show_weather) | Skin.HasSetting(slot1_show_none)]">Skin.SetBool(slot1_show_movies)</onload>	
+	<onload condition="![Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot2_show_musicvideos) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot2_show_games) | Skin.HasSetting(slot2_show_addons) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot2_show_favorites) | Skin.HasSetting(slot2_show_weather) | Skin.HasSetting(slot2_show_none)]">Skin.SetBool(slot2_show_tvshows)</onload>	
+	<onload condition="![Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot3_show_musicvideos) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot3_show_games) | Skin.HasSetting(slot3_show_addons) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot3_show_favorites) | Skin.HasSetting(slot3_show_weather) | Skin.HasSetting(slot3_show_none)]">Skin.SetBool(slot3_show_music)</onload>	
+	<onload condition="![Skin.HasSetting(slot4_show_movies) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot4_show_music) | Skin.HasSetting(slot4_show_musicvideos) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot4_show_radio) | Skin.HasSetting(slot4_show_games) | Skin.HasSetting(slot4_show_addons) | Skin.HasSetting(slot4_show_pictures) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot4_show_favorites) | Skin.HasSetting(slot4_show_weather) | Skin.HasSetting(slot4_show_none)]">Skin.SetBool(slot4_show_musicvideos)</onload>	
+	<onload condition="![Skin.HasSetting(slot5_show_movies) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot5_show_music) | Skin.HasSetting(slot5_show_musicvideos) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot5_show_radio) | Skin.HasSetting(slot5_show_games) | Skin.HasSetting(slot5_show_addons) | Skin.HasSetting(slot5_show_pictures) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot5_show_favorites) | Skin.HasSetting(slot5_show_weather) | Skin.HasSetting(slot5_show_none)]">Skin.SetBool(slot5_show_tv)</onload>	
+	<onload condition="![Skin.HasSetting(slot6_show_movies) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot6_show_music) | Skin.HasSetting(slot6_show_musicvideos) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot6_show_radio) | Skin.HasSetting(slot6_show_games) | Skin.HasSetting(slot6_show_addons) | Skin.HasSetting(slot6_show_pictures) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot6_show_favorites) | Skin.HasSetting(slot6_show_weather) | Skin.HasSetting(slot6_show_none)]">Skin.SetBool(slot6_show_radio)</onload>	
+	<onload condition="![Skin.HasSetting(slot7_show_movies) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot7_show_music) | Skin.HasSetting(slot7_show_musicvideos) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot7_show_radio) | Skin.HasSetting(slot7_show_games) | Skin.HasSetting(slot7_show_addons) | Skin.HasSetting(slot7_show_pictures) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot7_show_favorites) | Skin.HasSetting(slot7_show_weather) | Skin.HasSetting(slot7_show_none)]">Skin.SetBool(slot7_show_none)</onload>	
+	<onload condition="![Skin.HasSetting(slot8_show_movies) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot8_show_music) | Skin.HasSetting(slot8_show_musicvideos) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot8_show_radio) | Skin.HasSetting(slot8_show_games) | Skin.HasSetting(slot8_show_addons) | Skin.HasSetting(slot8_show_pictures) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot8_show_favorites) | Skin.HasSetting(slot8_show_weather) | Skin.HasSetting(slot8_show_none)]">Skin.SetBool(slot8_show_addons)</onload>	
+	<onload condition="![Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot9_show_musicvideos) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot9_show_games) | Skin.HasSetting(slot9_show_addons) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot9_show_favorites) | Skin.HasSetting(slot9_show_weather) | Skin.HasSetting(slot9_show_none)]">Skin.SetBool(slot9_show_pictures)</onload>	
+	<onload condition="![Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot10_show_musicvideos) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot10_show_games) | Skin.HasSetting(slot10_show_addons) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot10_show_favorites) | Skin.HasSetting(slot10_show_weather) | Skin.HasSetting(slot10_show_none)]">Skin.SetBool(slot10_show_videos)</onload>	
+	<onload condition="![Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot11_show_musicvideos) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot11_show_games) | Skin.HasSetting(slot11_show_addons) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot11_show_favorites) | Skin.HasSetting(slot11_show_weather) | Skin.HasSetting(slot11_show_none)]">Skin.SetBool(slot11_show_favorites)</onload>	
+	<onload condition="![Skin.HasSetting(slot12_show_movies) | Skin.HasSetting(slot12_show_tvshows) | Skin.HasSetting(slot12_show_music) | Skin.HasSetting(slot12_show_musicvideos) | Skin.HasSetting(slot12_show_tv) | Skin.HasSetting(slot12_show_radio) | Skin.HasSetting(slot12_show_games) | Skin.HasSetting(slot12_show_addons) | Skin.HasSetting(slot12_show_pictures) | Skin.HasSetting(slot12_show_videos) | Skin.HasSetting(slot12_show_favorites) | Skin.HasSetting(slot12_show_weather) | Skin.HasSetting(slot12_show_none)]">Skin.SetBool(slot12_show_weather)</onload>
+	<onload condition="![Skin.HasSetting(movie_categories_standard) | Skin.HasSetting(movie_categories_icons) | Skin.HasSetting(movie_categories_none)]">Skin.SetBool(movie_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(tvshow_categories_standard) | Skin.HasSetting(tvshow_categories_icons) | Skin.HasSetting(tvshow_categories_none)]">Skin.SetBool(tvshow_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(music_categories_standard) | Skin.HasSetting(music_categories_icons) | Skin.HasSetting(music_categories_none)]">Skin.SetBool(music_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(musicvideos_categories_standard) | Skin.HasSetting(musicvideos_categories_icons) | Skin.HasSetting(musicvideos_categories_none)]">Skin.SetBool(musicvideos_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(tv_categories_standard) | Skin.HasSetting(tv_categories_icons) | Skin.HasSetting(tv_categories_none)]">Skin.SetBool(tv_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(radio_categories_standard) | Skin.HasSetting(radio_categories_icons) | Skin.HasSetting(radio_categories_none)]">Skin.SetBool(radio_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(addon_categories_standard) | Skin.HasSetting(addon_categories_icons) | Skin.HasSetting(addon_categories_none)]">Skin.SetBool(addon_categories_standard)</onload>
+	<onload condition="![Skin.HasSetting(picture_categories_standard) | Skin.HasSetting(picture_categories_icons) | Skin.HasSetting(picture_categories_none)]">Skin.SetBool(picture_categories_standard)</onload>
+	<onload condition="String.IsEmpty(Skin.String(first_run))">Skin.SetString(run_once,1)</onload>
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="multiimage">
@@ -278,12 +287,9 @@
 				</control>
 				<control type="button" id="8010">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[MovieCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(movie_categories))">Skin.SetString(movie_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(movie_categories),2)">Skin.SetString(movie_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(movie_categories),1)">Skin.SetString(movie_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(movie_categories),0)">Skin.SetString(movie_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|movie_categories_standard, 536|movie_categories_icons, 351|movie_categories_none)</onclick>
+					<label2>$VAR[MovieCategoriesLabel2Var]</label2>
 				</control>
 				<control type="button" id="8017">
 					<label>-- $LOCALIZE[31157]</label>
@@ -334,12 +340,9 @@
 				</control>
 				<control type="button" id="8020">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[TVCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(tv_categories))">Skin.SetString(tv_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(tv_categories),2)">Skin.SetString(tv_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(tv_categories),1)">Skin.SetString(tv_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(tv_categories),0)">Skin.SetString(tv_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|tvshow_categories_standard, 536|tvshow_categories_icons, 351|tvshow_categories_none)</onclick>
+					<label2>$VAR[TVShowCategoriesLabel2Var]</label2>
 				</control>
 				<control type="button" id="8027">
 					<label>-- $LOCALIZE[31157]</label>
@@ -390,12 +393,9 @@
 				</control>
 				<control type="button" id="8030">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[MusicCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(music_categories))">Skin.SetString(music_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(music_categories),2)">Skin.SetString(music_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(music_categories),1)">Skin.SetString(music_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(music_categories),0)">Skin.SetString(music_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|music_categories_standard, 536|music_categories_icons, 351|music_categories_none)</onclick>
+					<label2>$VAR[MusicCategoriesLabel2Var]</label2>
 				</control>
 				<control type="button" id="8037">
 					<label>-- $LOCALIZE[31157]</label>
@@ -446,12 +446,9 @@
 				</control>
 				<control type="button" id="8060">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[MusicVideoCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(musicvideo_categories))">Skin.SetString(musicvideo_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),2)">Skin.SetString(musicvideo_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),1)">Skin.SetString(musicvideo_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(musicvideo_categories),0)">Skin.SetString(musicvideo_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|musicvideo_categories_standard, 536|musicvideo_categories_icons, 351|musicvideo_categories_none)</onclick>
+					<label2>$VAR[MusicVideoCategoriesLabel2Var]</label2>
 				</control>
 				<control type="button" id="8066">
 					<label>-- $LOCALIZE[31157]</label>
@@ -496,12 +493,9 @@
 				</control>
 				<control type="button" id="8040">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[PVRCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(pvr_categories))">Skin.SetString(pvr_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(pvr_categories),2)">Skin.SetString(pvr_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(pvr_categories),1)">Skin.SetString(pvr_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(pvr_categories),0)">Skin.SetString(pvr_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|tv_categories_standard, 536|tv_categories_icons, 351|tv_categories_none)</onclick>
+					<label2>$VAR[TVCategoriesLabel2Var]</label2>
 				</control>
 				<control type="radiobutton" id="8041">
 					<label>- $LOCALIZE[31016]</label>
@@ -521,12 +515,9 @@
 				</control>
 				<control type="button" id="8070">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[RadioCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(radio_categories))">Skin.SetString(radio_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(radio_categories),2)">Skin.SetString(radio_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(radio_categories),1)">Skin.SetString(radio_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(radio_categories),0)">Skin.SetString(radio_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|radio_categories_standard, 536|radio_categories_icons, 351|radio_categories_none)</onclick>
+					<label2>$VAR[RadioCategoriesLabel2Var]</label2>
 				</control>
 				<control type="radiobutton" id="8071">
 					<label>- $LOCALIZE[31016]</label>
@@ -543,14 +534,12 @@
 				<control type="button" id="808">
 					<label>$LOCALIZE[10821]</label>
 					<include>DefaultSettingButton</include>
-					<visible>System.GetBool(gamesgeneral.enable)</visible>
 				</control>				
 				<control type="radiobutton" id="8081">
 					<label>- $LOCALIZE[35049]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_games)</selected>
 					<onclick>Skin.ToggleSetting(no_games)</onclick>
-					<visible>System.GetBool(gamesgeneral.enable)</visible>
 				</control>
 				<control type="button" id="805">
 					<label>$LOCALIZE[24000]</label>
@@ -558,12 +547,9 @@
 				</control>
 				<control type="button" id="8050">
 					<label>- $LOCALIZE[31148]</label>
-					<label2>$VAR[AddonCategoriesTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(addon_categories))">Skin.SetString(addon_categories,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(addon_categories),2)">Skin.SetString(addon_categories,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(addon_categories),1)">Skin.SetString(addon_categories,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(addon_categories),0)">Skin.SetString(addon_categories,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|addon_categories_standard, 536|addon_categories_icons, 351|addon_categories_none)</onclick>
+					<label2>$VAR[AddonCategoriesLabel2Var]</label2>
 				</control>
 				<control type="radiobutton" id="8051">
 					<label>- $LOCALIZE[1037]</label>
@@ -582,7 +568,6 @@
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(no_addon_games)</selected>
 					<onclick>Skin.ToggleSetting(no_addon_games)</onclick>
-					<visible>System.GetBool(gamesgeneral.enable)</visible>
 				</control>
 				<control type="radiobutton" id="8054">
 					<label>- $LOCALIZE[1043]</label>
@@ -608,13 +593,10 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="button" id="8090">
-					<label>- $LOCALIZE[20094]</label>
-					<label2>$VAR[PictureSourcesTypeVar]</label2>
+					<label>- $LOCALIZE[31148]</label>
 					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(picture_sources))">Skin.SetString(picture_sources,1)</onclick>					
-					<onclick condition="String.IsEqual(Skin.String(picture_sources),2)">Skin.SetString(picture_sources,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(picture_sources),1)">Skin.SetString(picture_sources,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(picture_sources),0)">Skin.SetString(picture_sources,1)</onclick>
+					<onclick>Skin.SelectBool(31148, 602|picture_categories_standard, 536|picture_categories_icons, 351|picture_categories_none)</onclick>
+					<label2>$VAR[PictureCategoriesLabel2Var]</label2>
 				</control>
 				<control type="button" id="810">
 					<label>$LOCALIZE[3]</label>

@@ -438,71 +438,45 @@
 		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
 		<value>$LOCALIZE[20046]</value>
 	</variable>
-	<variable name="TVCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(tv_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(tv_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(tv_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(tv_categories),2)">$LOCALIZE[351]</value> <!-- this is OFF -->
+	<variable name="MovieCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(movie_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(movie_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="MovieCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(movie_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(movie_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(movie_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(movie_categories),2)">$LOCALIZE[351]</value>
+	<variable name="TVShowCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(tvshow_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(tvshow_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="MusicCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(music_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(music_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(music_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(music_categories),2)">$LOCALIZE[351]</value>
+	<variable name="MusicCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(music_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(music_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="MusicVideoCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(musicvideo_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(musicvideo_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(musicvideo_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(musicvideo_categories),2)">$LOCALIZE[351]</value>
+	<variable name="MusicVideoCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(musicvideo_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(musicvideo_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="PVRCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(pvr_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(pvr_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(pvr_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(pvr_categories),2)">$LOCALIZE[351]</value>
+	<variable name="TVCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(tv_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(tv_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="RadioCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(radio_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(radio_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(radio_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(radio_categories),2)">$LOCALIZE[351]</value>
+	<variable name="RadioCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(radio_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(radio_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="AddonCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(addon_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(addon_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(addon_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(addon_categories),2)">$LOCALIZE[351]</value>
+	<variable name="AddonCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(addon_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(addon_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
-	<variable name="PictureSourcesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(picture_sources))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(picture_sources),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(picture_sources),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(picture_sources),2)">$LOCALIZE[351]</value>
-	</variable>
-	<variable name="VideoCategoriesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(video_categories))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(video_categories),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(video_categories),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(video_categories),2)">$LOCALIZE[351]</value>
-	</variable>
-	<variable name="VideoSourcesTypeVar">
-		<value condition="String.IsEmpty(Skin.String(video_sources))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(video_sources),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(video_sources),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(video_sources),2)">$LOCALIZE[351]</value>
-	</variable>
-	<variable name="VideoPlaylistsTypeVar">
-		<value condition="String.IsEmpty(Skin.String(video_playlists))">$LOCALIZE[602]</value>		
-		<value condition="String.IsEqual(Skin.String(video_playlists),0)">$LOCALIZE[602]</value>
-		<value condition="String.IsEqual(Skin.String(video_playlists),1)">$LOCALIZE[536]</value>
-		<value condition="String.IsEqual(Skin.String(video_playlists),2)">$LOCALIZE[351]</value>
+	<variable name="PictureCategoriesLabel2Var">
+		<value condition="Skin.HasSetting(picture_categories_icons)">$LOCALIZE[536]</value>
+		<value condition="Skin.HasSetting(picture_categories_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[602]</value>
 	</variable>
 	<variable name="HomeMenuSlot1Label2Var">
 		<value condition="Skin.HasSetting(slot1_show_none)">$LOCALIZE[351]</value>
