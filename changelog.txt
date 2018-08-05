@@ -1,9 +1,9 @@
-v.1.0.7~beta2
+v.1.0.7
 - made PVR 4 channel display fixes non optional
-- menu category settings now only show if that menu item is enabled in menu slot
-
-v.1.0.7~beta1
+- fix for music artist background loading twice
+- added new option to show music artist bio when the Music OSD is showing
 - changed method for selecting what shows up in each menu slot (results in settings reset)
+- menu category settings now only show if that menu item is enabled in menu slot
 
 v.1.0.6
 - Estuary fixes from Estuary 2.0.11 (Leia Alpha 3)
