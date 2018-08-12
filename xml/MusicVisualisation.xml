@@ -34,6 +34,10 @@
 			<texture background="true">$INFO[Player.Art(fanart)]</texture>
 			<visible>!Skin.HasSetting(hide_background_fanart) + [!System.HasAddon(script.artistslideshow) | !String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)]</visible>
 		</control>
+		<control type="group">
+			<animation effect="fade" start="100" end="30" time="0" condition="![!System.HasAddon(script.artistslideshow) + String.IsEmpty(Player.Art(fanart))] | ![System.HasAddon(script.artistslideshow) + String.IsEqual(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady),true)] | Visualisation.Enabled">Conditional</animation>
+			<include>ColoredBackgroundImages</include>
+		</control>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
@@ -45,10 +49,6 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<texture background="true" colordiffuse="$VAR[BackgroundDiffusion]">colors/black.png</texture>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
-		</control>
-		<control type="group">
-			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
-			<include>ColoredBackgroundImages</include>
 		</control>
 		<control type="group">
 			<bottom>0</bottom>
