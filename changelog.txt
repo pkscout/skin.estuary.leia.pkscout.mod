@@ -1,3 +1,6 @@
+v.1.0.8
+- fix for condition that could cause Artist Slideshow images not to show even if available
+
 v.1.0.7
 - made PVR 4 channel display fixes non optional
 - fix for music artist background loading twice
