@@ -1,5 +1,6 @@
 v.1.0.9
 - internal code change for how main menu items are displayed
+- game support enabled by default
 
 v.1.0.8
 - fix for condition that could cause Artist Slideshow images not to show even if available
