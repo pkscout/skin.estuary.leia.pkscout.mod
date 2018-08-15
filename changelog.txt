@@ -1,3 +1,6 @@
+v.1.1.0
+- added option to select action for Movies, TV Shows, Music, Music Videos, TV, and Radio menus
+
 v.1.0.9
 - internal code change for how main menu items are displayed
 - game support enabled by default

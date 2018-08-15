@@ -777,7 +777,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40165"
-msgid "Better support for four digit channel numbers in PVR"
+msgid "Menu item actions"
 msgstr ""
 
 #: /xml/SkinSettings.xml

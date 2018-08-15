@@ -698,4 +698,67 @@
 		<value condition="Skin.HasSetting(bgd_show_0)">FFFFFFFF</value>
 		<value>37FFFFFF</value>
 	</variable>
+	<variable name="MovieMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(movieaction_root)">$LOCALIZE[20108]</value>
+		<value condition="Skin.HasSetting(movieaction_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieaction_years)">$LOCALIZE[652]</value>
+		<value condition="Skin.HasSetting(movieaction_actors)">$LOCALIZE[344]</value>
+		<value condition="Skin.HasSetting(movieaction_directors)">$LOCALIZE[20348]</value>
+		<value condition="Skin.HasSetting(movieaction_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(movieaction_sets)">$LOCALIZE[20458]</value>
+		<value condition="Skin.HasSetting(movieaction_countries)">$LOCALIZE[20451]</value>
+		<value condition="Skin.HasSetting(movieaction_tags)">$LOCALIZE[20459]</value>
+		<value condition="Skin.HasSetting(movieaction_recent))">$LOCALIZE[20386]</value>
+		<value>$LOCALIZE[10024]</value>
+	</variable>
+	<variable name="TVShowMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(tvshowaction_root)">$LOCALIZE[20108]</value>
+		<value condition="Skin.HasSetting(tvshowaction_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(tvshowaction_years)">$LOCALIZE[652]</value>
+		<value condition="Skin.HasSetting(tvshowaction_actors)">$LOCALIZE[344]</value>
+		<value condition="Skin.HasSetting(tvshowaction_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowaction_recent))">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowaction_inprogress)">$LOCALIZE[626]</value>
+		<value>$LOCALIZE[10024]</value>
+	</variable>
+	<variable name="MusicMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(musicaction_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(musicaction_artists)">$LOCALIZE[133]</value>
+		<value condition="Skin.HasSetting(musicaction_albums)">$LOCALIZE[132]</value>
+		<value condition="Skin.HasSetting(musicaction_songs)">$LOCALIZE[134]</value>
+		<value condition="Skin.HasSetting(musicaction_top100)">$LOCALIZE[271]</value>
+		<value condition="Skin.HasSetting(musicaction_top100songs)">$LOCALIZE[10504]</value>
+		<value condition="Skin.HasSetting(musicaction_top100albums)">$LOCALIZE[10505]</value>
+		<value condition="Skin.HasSetting(musicaction_recent))">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicaction_played))">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicaction_compilations)">$LOCALIZE[521]</value>
+		<value condition="Skin.HasSetting(musicaction_years)">$LOCALIZE[652]</value>
+		<value condition="Skin.HasSetting(musicaction_singles)">$LOCALIZE[1050]</value>
+		<value condition="Skin.HasSetting(musicaction_playlists)">$LOCALIZE[20011]</value>
+		<value>$LOCALIZE[20108]</value>
+	</variable>
+	<variable name="MusicVideosMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(mvaction_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(mvaction_titles)">$LOCALIZE[10024]</value>
+		<value condition="Skin.HasSetting(mvaction_years)">$LOCALIZE[652]</value>
+		<value condition="Skin.HasSetting(mvaction_artists)">$LOCALIZE[133]</value>
+		<value condition="Skin.HasSetting(mvaction_albums)">$LOCALIZE[132]</value>
+		<value condition="Skin.HasSetting(mvaction_directors)">$LOCALIZE[20348]</value>
+		<value condition="Skin.HasSetting(mvaction_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(mvaction_recent))">$LOCALIZE[20390]</value>
+		<value>$LOCALIZE[20108]</value>
+	</variable>
+	<variable name="TVMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(tvaction_guide)">$LOCALIZE[10702]</value>
+		<value condition="Skin.HasSetting(tvaction_recordings)">$LOCALIZE[10701]</value>
+		<value condition="Skin.HasSetting(tvaction_timers)">$LOCALIZE[10703]</value>
+		<value condition="Skin.HasSetting(tvaction_rules)">$LOCALIZE[10710]</value>
+		<value>$LOCALIZE[10700]</value>
+	</variable>
+	<variable name="RadioMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(radioaction_recordings)">$LOCALIZE[10706]</value>
+		<value condition="Skin.HasSetting(radioaction_timers)">$LOCALIZE[10708]</value>
+		<value condition="Skin.HasSetting(radioaction_rules)">$LOCALIZE[10711]</value>
+		<value>$LOCALIZE[10705]</value>
+	</variable>
 </includes>
