@@ -811,6 +811,12 @@ msgid "Auto Dim"
 msgstr ""
 
 #: /xml/SkinSettings.xml
+msgctxt "#40172"
+msgid "Unwatched TV Shows/In progress TV shows"
+msgstr ""
+
+
+#: /xml/SkinSettings.xml
 msgctxt "#40180"
 msgid "100%"
 msgstr ""

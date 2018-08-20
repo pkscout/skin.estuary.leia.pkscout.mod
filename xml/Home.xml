@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
-	<onload condition="![Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot1_show_musicvideos) | Skin.HasSetting(slot1_show_tv) | Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot1_show_games) | Skin.HasSetting(slot1_show_addons) | Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot1_show_favorites) | Skin.HasSetting(slot1_show_weather) | Skin.HasSetting(slot1_show_none)]">Skin.SetBool(slot1_show_movies)</onload>	
-	<onload condition="![Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot2_show_musicvideos) | Skin.HasSetting(slot2_show_tv) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot2_show_games) | Skin.HasSetting(slot2_show_addons) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot2_show_favorites) | Skin.HasSetting(slot2_show_weather) | Skin.HasSetting(slot2_show_none)]">Skin.SetBool(slot2_show_tvshows)</onload>	
-	<onload condition="![Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot3_show_musicvideos) | Skin.HasSetting(slot3_show_tv) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot3_show_games) | Skin.HasSetting(slot3_show_addons) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot3_show_favorites) | Skin.HasSetting(slot3_show_weather) | Skin.HasSetting(slot3_show_none)]">Skin.SetBool(slot3_show_music)</onload>	
-	<onload condition="![Skin.HasSetting(slot4_show_movies) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot4_show_music) | Skin.HasSetting(slot4_show_musicvideos) | Skin.HasSetting(slot4_show_tv) | Skin.HasSetting(slot4_show_radio) | Skin.HasSetting(slot4_show_games) | Skin.HasSetting(slot4_show_addons) | Skin.HasSetting(slot4_show_pictures) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot4_show_favorites) | Skin.HasSetting(slot4_show_weather) | Skin.HasSetting(slot4_show_none)]">Skin.SetBool(slot4_show_musicvideos)</onload>	
-	<onload condition="![Skin.HasSetting(slot5_show_movies) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot5_show_music) | Skin.HasSetting(slot5_show_musicvideos) | Skin.HasSetting(slot5_show_tv) | Skin.HasSetting(slot5_show_radio) | Skin.HasSetting(slot5_show_games) | Skin.HasSetting(slot5_show_addons) | Skin.HasSetting(slot5_show_pictures) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot5_show_favorites) | Skin.HasSetting(slot5_show_weather) | Skin.HasSetting(slot5_show_none)]">Skin.SetBool(slot5_show_tv)</onload>	
-	<onload condition="![Skin.HasSetting(slot6_show_movies) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot6_show_music) | Skin.HasSetting(slot6_show_musicvideos) | Skin.HasSetting(slot6_show_tv) | Skin.HasSetting(slot6_show_radio) | Skin.HasSetting(slot6_show_games) | Skin.HasSetting(slot6_show_addons) | Skin.HasSetting(slot6_show_pictures) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot6_show_favorites) | Skin.HasSetting(slot6_show_weather) | Skin.HasSetting(slot6_show_none)]">Skin.SetBool(slot6_show_radio)</onload>	
-	<onload condition="![Skin.HasSetting(slot7_show_movies) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot7_show_music) | Skin.HasSetting(slot7_show_musicvideos) | Skin.HasSetting(slot7_show_tv) | Skin.HasSetting(slot7_show_radio) | Skin.HasSetting(slot7_show_games) | Skin.HasSetting(slot7_show_addons) | Skin.HasSetting(slot7_show_pictures) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot7_show_favorites) | Skin.HasSetting(slot7_show_weather) | Skin.HasSetting(slot7_show_none)]">Skin.SetBool(slot7_show_none)</onload>	
-	<onload condition="![Skin.HasSetting(slot8_show_movies) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot8_show_music) | Skin.HasSetting(slot8_show_musicvideos) | Skin.HasSetting(slot8_show_tv) | Skin.HasSetting(slot8_show_radio) | Skin.HasSetting(slot8_show_games) | Skin.HasSetting(slot8_show_addons) | Skin.HasSetting(slot8_show_pictures) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot8_show_favorites) | Skin.HasSetting(slot8_show_weather) | Skin.HasSetting(slot8_show_none)]">Skin.SetBool(slot8_show_addons)</onload>	
-	<onload condition="![Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot9_show_musicvideos) | Skin.HasSetting(slot9_show_tv) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot9_show_games) | Skin.HasSetting(slot9_show_addons) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot9_show_favorites) | Skin.HasSetting(slot9_show_weather) | Skin.HasSetting(slot9_show_none)]">Skin.SetBool(slot9_show_pictures)</onload>	
-	<onload condition="![Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot10_show_musicvideos) | Skin.HasSetting(slot10_show_tv) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot10_show_games) | Skin.HasSetting(slot10_show_addons) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot10_show_favorites) | Skin.HasSetting(slot10_show_weather) | Skin.HasSetting(slot10_show_none)]">Skin.SetBool(slot10_show_videos)</onload>	
-	<onload condition="![Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot11_show_musicvideos) | Skin.HasSetting(slot11_show_tv) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot11_show_games) | Skin.HasSetting(slot11_show_addons) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot11_show_favorites) | Skin.HasSetting(slot11_show_weather) | Skin.HasSetting(slot11_show_none)]">Skin.SetBool(slot11_show_favorites)</onload>	
-	<onload condition="![Skin.HasSetting(slot12_show_movies) | Skin.HasSetting(slot12_show_tvshows) | Skin.HasSetting(slot12_show_music) | Skin.HasSetting(slot12_show_musicvideos) | Skin.HasSetting(slot12_show_tv) | Skin.HasSetting(slot12_show_radio) | Skin.HasSetting(slot12_show_games) | Skin.HasSetting(slot12_show_addons) | Skin.HasSetting(slot12_show_pictures) | Skin.HasSetting(slot12_show_videos) | Skin.HasSetting(slot12_show_favorites) | Skin.HasSetting(slot12_show_weather) | Skin.HasSetting(slot12_show_none)]">Skin.SetBool(slot12_show_weather)</onload>
-	<onload condition="![Skin.HasSetting(movie_categories_standard) | Skin.HasSetting(movie_categories_icons) | Skin.HasSetting(movie_categories_none)]">Skin.SetBool(movie_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(tvshow_categories_standard) | Skin.HasSetting(tvshow_categories_icons) | Skin.HasSetting(tvshow_categories_none)]">Skin.SetBool(tvshow_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(music_categories_standard) | Skin.HasSetting(music_categories_icons) | Skin.HasSetting(music_categories_none)]">Skin.SetBool(music_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(musicvideos_categories_standard) | Skin.HasSetting(musicvideos_categories_icons) | Skin.HasSetting(musicvideos_categories_none)]">Skin.SetBool(musicvideos_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(tv_categories_standard) | Skin.HasSetting(tv_categories_icons) | Skin.HasSetting(tv_categories_none)]">Skin.SetBool(tv_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(radio_categories_standard) | Skin.HasSetting(radio_categories_icons) | Skin.HasSetting(radio_categories_none)]">Skin.SetBool(radio_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(addon_categories_standard) | Skin.HasSetting(addon_categories_icons) | Skin.HasSetting(addon_categories_none)]">Skin.SetBool(addon_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(picture_categories_standard) | Skin.HasSetting(picture_categories_icons) | Skin.HasSetting(picture_categories_none)]">Skin.SetBool(picture_categories_standard)</onload>
-	<onload condition="![Skin.HasSetting(movieaction_titles) | Skin.HasSetting(movieaction_root) | Skin.HasSetting(movieaction_genres) | Skin.HasSetting(movieaction_years) | Skin.HasSetting(movieaction_actors) | Skin.HasSetting(movieaction_directors) | Skin.HasSetting(movieaction_studios) | Skin.HasSetting(movieaction_sets) | Skin.HasSetting(movieaction_countries) | Skin.HasSetting(movieaction_tags) | Skin.HasSetting(movieaction_recent)]">Skin.SetBool(movieaction_titles)</onload>
-	<onload condition="![Skin.HasSetting(tvshowaction_titles) | Skin.HasSetting(tvshowaction_root) | Skin.HasSetting(tvshowaction_genres) | Skin.HasSetting(tvshowaction_years) | Skin.HasSetting(tvshowaction_actors) | Skin.HasSetting(tvshowaction_studios) | Skin.HasSetting(tvshowaction_recent) | Skin.HasSetting(tvshowaction_inprogress)]">Skin.SetBool(tvshowaction_titles)</onload>
-	<onload condition="![Skin.HasSetting(musicaction_root) | Skin.HasSetting(musicaction_genres) | Skin.HasSetting(musicaction_artists) | Skin.HasSetting(musicaction_albums) | Skin.HasSetting(musicaction_songs) | Skin.HasSetting(musicaction_top100) | Skin.HasSetting(musicaction_top100songs) | Skin.HasSetting(musicaction_top100albums) | Skin.HasSetting(musicaction_recent) | Skin.HasSetting(musicaction_played) | Skin.HasSetting(musicaction_compilations) | Skin.HasSetting(musicaction_years) | Skin.HasSetting(musicaction_singles) | Skin.HasSetting(musicaction_playlists)]">Skin.SetBool(musicaction_root)</onload>
-	<onload condition="![Skin.HasSetting(mvaction_root) | Skin.HasSetting(mvaction_genres) | Skin.HasSetting(mvaction_titles) | Skin.HasSetting(mvaction_years) | Skin.HasSetting(mvaction_artists)  | Skin.HasSetting(mvaction_albums) | Skin.HasSetting(mvaction_directors) | Skin.HasSetting(mvaction_studios) | Skin.HasSetting(mvaction_recent)]">Skin.SetBool(mvaction_root)</onload>
-	<onload condition="![Skin.HasSetting(tvaction_channels) | Skin.HasSetting(tvaction_guide) | Skin.HasSetting(tvaction_recordings) | Skin.HasSetting(tvaction_timers) | Skin.HasSetting(tvaction_rules)]">Skin.SetBool(tvaction_channels)</onload>
-	<onload condition="![Skin.HasSetting(radioaction_channels) | Skin.HasSetting(radioaction_recordings) | Skin.HasSetting(radioaction_timers) | Skin.HasSetting(radioaction_rules)]">Skin.SetBool(radioaction_channels)</onload>
-	<onload condition="String.IsEmpty(Skin.String(first_run))">Skin.SetString(run_once,1)</onload>
+	<include condition="!String.IsEqual(Skin.String(run_once),2)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -91,44 +64,59 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_inprogress) + Library.HasContent(movies)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/inprogress_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31010]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5100"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot1_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot1_show_inprogress) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot1_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot1_show_unwatched)" />
+							<param name="show_random" value="Skin.HasSetting(movieslot1_show_random)" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot1_show_genres)" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot1_show_sets)" />
+							<param name="list_id" value="5100" />
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_recent) + Library.HasContent(movies)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/recent_unwatched_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[20386]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5200"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot2_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot2_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot2_show_recent) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot2_show_unwatched)" />
+							<param name="show_random" value="Skin.HasSetting(movieslot2_show_random)" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot2_show_genres)" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot2_show_sets)" />
+							<param name="list_id" value="5200" />
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_unwatched) + Library.HasContent(movies)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/unwatched_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31007]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5300"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot3_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot3_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot3_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot3_show_unwatched) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_random" value="Skin.HasSetting(movieslot3_show_random)" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot3_show_genres)" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot3_show_sets)" />
+							<param name="list_id" value="5300" />
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_random) + Library.HasContent(movies)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/random_movies.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31006]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5400"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot4_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot4_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot4_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot4_show_unwatched)" />
+							<param name="show_random" value="Skin.HasSetting(movieslot4_show_random) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot4_show_genres)" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot4_show_sets)" />
+							<param name="list_id" value="5400" />
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_genres) + Library.HasContent(movies)" content="WidgetListCategories">
-							<param name="content_path" value="videodb://movies/genres/"/>
-							<param name="widget_header" value="$LOCALIZE[135]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="5500"/>
-							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_height" value="70"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot5_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot5_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot5_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot5_show_unwatched)" />
+							<param name="show_random" value="Skin.HasSetting(movieslot5_show_random)" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot5_show_genres) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot5_show_sets)" />
+							<param name="list_id" value="5500" />
 						</include>
-						<include condition="!Skin.HasSetting(no_movie_sets) + Library.HasContent(movies)" content="WidgetListPoster">
-							<param name="content_path" value="videodb://movies/sets/"/>
-							<param name="widget_header" value="$LOCALIZE[31075]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="sortby" value="random"/>
-							<param name="list_id" value="5600"/>
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot6_show_none) + Library.HasContent(movies)">
+							<param name="show_inprogress" value="Skin.HasSetting(movieslot6_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(movieslot6_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(movieslot6_show_unwatched)" />
+							<param name="show_random" value="Skin.HasSetting(movieslot6_show_random)" />
+							<param name="show_genres" value="Skin.HasSetting(movieslot6_show_genres)" />
+							<param name="show_sets" value="Skin.HasSetting(movieslot6_show_sets) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="list_id" value="5600" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(movies)">
@@ -161,47 +149,50 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6900"/>
 						</include>
-						<include condition="!Skin.HasSetting(no_tv_inprogress) + Library.HasContent(tvshows)" content="WidgetListPoster">
-							<param name="content_path" value="videodb://inprogresstvshows"/>
-							<param name="sortby" value="lastplayed"/>
-							<param name="sortorder" value="descending"/>
-							<param name="widget_header" value="$LOCALIZE[626]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6100"/>
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot1_show_none) + Library.HasContent(tvshows)">
+							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot1_show_inprogress) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_recent" value="Skin.HasSetting(tvshowslot1_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot1_show_unwatched)" />
+							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot1_show_inprogunwatched)" />
+							<param name="show_genres" value="Skin.HasSetting(tvshowslot1_show_genres)" />
+							<param name="show_studio" value="Skin.HasSetting(tvshowslot1_show_studio)" />
+							<param name="list_id" value="6100" />
 						</include>
-						<include condition="!Skin.HasSetting(no_tv_recent) + Library.HasContent(tvshows)" content="WidgetListEpisodes">
-							<param name="content_path" value="special://skin/playlists/recent_unwatched_episodes.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[20387]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6200"/>
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot2_show_none) + Library.HasContent(tvshows)">
+							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot2_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(tvshowslot2_show_recent) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot2_show_unwatched)" />
+							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot2_show_inprogunwatched)" />
+							<param name="show_genres" value="Skin.HasSetting(tvshowslot2_show_genres)" />
+							<param name="show_studio" value="Skin.HasSetting(tvshowslot2_show_studio)" />
+							<param name="list_id" value="6200" />
 						</include>
-						<include condition="!Skin.HasSetting(no_tv_unwatched) + Library.HasContent(tvshows)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/unwatched_tvshows.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31122]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6300"/>
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot3_show_none) + Library.HasContent(tvshows)">
+							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot3_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(tvshowslot3_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot3_show_unwatched) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot3_show_inprogunwatched)" />
+							<param name="show_genres" value="Skin.HasSetting(tvshowslot3_show_genres)" />
+							<param name="show_studio" value="Skin.HasSetting(tvshowslot3_show_studio)" />
+							<param name="list_id" value="6300" />
 						</include>
-						<include condition="Skin.HasSetting(tv_unwatched_inprogress) + Library.HasContent(tvshows)" content="WidgetListPoster">
-							<param name="content_path" value="special://skin/playlists/unwatched_inprogress_tvshows.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31122] / $LOCALIZE[626]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6400"/>
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot4_show_none) + Library.HasContent(tvshows)">
+							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot4_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(tvshowslot4_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot4_show_unwatched)" />
+							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot4_show_inprogunwatched) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_genres" value="Skin.HasSetting(tvshowslot4_show_genres)" />
+							<param name="show_studio" value="Skin.HasSetting(tvshowslot4_show_studio)" />
+							<param name="list_id" value="6400" />
 						</include>
-						<include condition="!Skin.HasSetting(no_tv_genres) + Library.HasContent(tvshows)" content="WidgetListCategories">
-							<param name="content_path" value="videodb://tvshows/genres/"/>
-							<param name="widget_header" value="$LOCALIZE[135]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6500"/>
-							<param name="icon" value="$VAR[WidgetGenreIconVar]"/>
-							<param name="icon_height" value="70"/>
-						</include>
-						<include condition="!Skin.HasSetting(no_tv_studios) + Library.HasContent(tvshows)" content="WidgetListCategories">
-							<param name="content_path" value="videodb://tvshows/studios/"/>
-							<param name="widget_header" value="$LOCALIZE[20388]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="list_id" value="6500"/>
-							<param name="icon" value="$VAR[WidgetStudioIconVar]"/>
-							<param name="icon_height" value="70"/>
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot5_show_none) + Library.HasContent(tvshows)">
+							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot5_show_inprogress)" />
+							<param name="show_recent" value="Skin.HasSetting(tvshowslot5_show_recent)" />
+							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot5_show_unwatched)" />
+							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot5_show_inprogunwatched)" />
+							<param name="show_genres" value="Skin.HasSetting(tvshowslot5_show_genres) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_studio" value="Skin.HasSetting(tvshowslot5_show_studio)" />
+							<param name="list_id" value="6500" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(tvshows)">
@@ -234,49 +225,59 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
 						</include>
-						<include condition="!Skin.HasSetting(no_music_recentlyplayed) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="musicdb://recentlyplayedalbums"/>
-							<param name="widget_header" value="$LOCALIZE[517]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7100"/>
-							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot1_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot1_show_playedalbums) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot1_show_addedalbums)" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot1_show_randomalbums)" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot1_show_randomartists)" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot1_show_unplayedalbums)" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot1_show_mostplayed albums)" />
+							<param name="list_id" value="7100" />
 						</include>
-						<include condition="!Skin.HasSetting(no_music_recentlyadded) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="musicdb://recentlyaddedalbums/"/>
-							<param name="widget_header" value="$LOCALIZE[359]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7200"/>
-							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot2_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot2_show_playedalbums)" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot2_show_addedalbums) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot2_show_randomalbums)" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot2_show_randomartists)" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot2_show_unplayedalbums)" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot2_show_mostplayed albums)" />
+							<param name="list_id" value="7200" />
 						</include>
-						<include condition="!Skin.HasSetting(no_music_randomalbums) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="special://skin/playlists/random_albums.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31012]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7300"/>
-							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot3_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot3_show_playedalbums)" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot3_show_addedalbums)" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot3_show_randomalbums) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot3_show_randomartists)" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot3_show_unplayedalbums)" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot3_show_mostplayed albums)" />
+							<param name="list_id" value="7300" />
 						</include>
-						<include condition="!Skin.HasSetting(no_music_randomartists) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="special://skin/playlists/random_artists.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31013]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7400"/>
-							<param name="fallback_icon" value="DefaultMusicArtists.png"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot4_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot4_show_playedalbums)" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot4_show_addedalbums)" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot4_show_randomalbums)" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot4_show_randomartists) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot4_show_unplayedalbums)" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot4_show_mostplayed albums)" />
+							<param name="list_id" value="7400" />
 						</include>
-						<include condition="!Skin.HasSetting(no_music_unplayed) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="special://skin/playlists/unplayed_albums.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31014]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7500"/>
-							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot5_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot5_show_playedalbums)" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot5_show_addedalbums)" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot5_show_randomalbums)" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot5_show_randomartists)" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot5_show_unplayedalbums) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot5_show_mostplayed albums)" />
+							<param name="list_id" value="7500" />
 						</include>
-						<include condition="!Skin.HasSetting(no_music_mostplayed) + Library.HasContent(music)" content="WidgetListSquare">
-							<param name="content_path" value="special://skin/playlists/mostplayed_albums.xsp"/>
-							<param name="widget_header" value="$LOCALIZE[31011]"/>
-							<param name="widget_target" value="music"/>
-							<param name="list_id" value="7600"/>
-							<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
-							<param name="sortby" value="playcount"/>
-							<param name="sortorder" value="descending"/>
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot6_show_none) + Library.HasContent(music)">
+							<param name="show_playedalbums" value="Skin.HasSetting(musicslot6_show_playedalbums)" />
+							<param name="show_addedalbums" value="Skin.HasSetting(musicslot6_show_addedalbums)" />
+							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot6_show_randomalbums)" />
+							<param name="show_randomartists" value="Skin.HasSetting(musicslot6_show_randomartists)" />
+							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot6_show_unplayedalbums)" />
+							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot6_show_mostplayedalbums) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="list_id" value="7600" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!Library.HasContent(music)">
@@ -309,58 +310,59 @@
 							<param name="widget_target" value="addonbrowser"/>
 							<param name="list_id" value="8901"/>
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_video)" content="WidgetListSquare">
-							<param name="content_path" value="addons://sources/video/"/>
-							<param name="widget_header" value="$LOCALIZE[1037]"/>
-							<param name="widget_target" value="videos"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8100"/>
-							<param name="fallback_icon" value="DefaultAddon.png"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot1_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot1_show_video) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_music" value="Skin.HasSetting(addonslot1_show_music)" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot1_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot1_show_programs)" />
+							<param name="show_android" value="Skin.HasSetting(addonslot1_show_android) + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot1_show_pictures)" />
+							<param name="list_id" value="8100" />
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_audio)" content="WidgetListSquare">
-							<param name="content_path" value="addons://sources/audio/"/>
-							<param name="widget_header" value="$LOCALIZE[1038]"/>
-							<param name="widget_target" value="music"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8200"/>
-							<param name="fallback_icon" value="DefaultAddon.png"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot2_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot2_show_video)" />
+							<param name="show_music" value="Skin.HasSetting(addonslot2_show_music) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot2_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot2_show_programs)" />
+							<param name="show_android" value="Skin.HasSetting(addonslot2_show_android) + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot2_show_pictures)" />
+							<param name="list_id" value="8200" />
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_games) + System.GetBool(gamesgeneral.enable)" content="WidgetListSquare">
-							<param name="content_path" value="addons://sources/game/"/>
-							<param name="widget_header" value="$LOCALIZE[35049]"/>
-							<param name="widget_target" value="games"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8700"/>
-							<param name="fallback_icon" value="DefaultAddonGame.png"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot3_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot3_show_video)" />
+							<param name="show_music" value="Skin.HasSetting(addonslot3_show_music)" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot3_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot3_show_programs)" />
+							<param name="show_android" value="Skin.HasSetting(addonslot3_show_android) + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot3_show_pictures)" />
+							<param name="list_id" value="8300" />
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_program)" content="WidgetListSquare">
-							<param name="content_path" value="addons://sources/executable/"/>
-							<param name="widget_header" value="$LOCALIZE[1043]"/>
-							<param name="widget_target" value="programs"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8300"/>
-							<param name="fallback_icon" value="DefaultAddon.png"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot4_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot4_show_video)" />
+							<param name="show_music" value="Skin.HasSetting(addonslot4_show_music)" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot4_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot4_show_programs) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_android" value="Skin.HasSetting(addonslot4_show_android) + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot4_show_pictures)" />
+							<param name="list_id" value="8400" />
 						</include>
-						<include content="WidgetListSquare" condition="System.Platform.Android + !Skin.HasSetting(no_addon_android)">
-							<param name="content_path" value="androidapp://sources/apps/"/>
-							<param name="widget_header" value="$LOCALIZE[20244]"/>
-							<param name="widget_target" value="programs"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8400"/>
-							<param name="fallback_icon" value="DefaultAddon.png"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot5_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot5_show_video)" />
+							<param name="show_music" value="Skin.HasSetting(addonslot5_show_music)" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot5_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot5_show_programs)" />
+							<param name="show_android" value="[Skin.HasSetting(addonslot5_show_android) | String.IsEmpty(Skin.String(run_once))] + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot5_show_pictures)" />
+							<param name="list_id" value="8500" />
 						</include>
-						<include condition="!Skin.HasSetting(no_addon_image)" content="WidgetListSquare">
-							<param name="content_path" value="addons://sources/image/"/>
-							<param name="widget_header" value="$LOCALIZE[1039]"/>
-							<param name="widget_target" value="pictures"/>
-							<param name="sortby" value="lastused"/>
-							<param name="sortorder" value="descending"/>
-							<param name="list_id" value="8500"/>
+						<include content="AddonSubMenuItem" condition="!Skin.HasSetting(addonslot6_show_none)">
+							<param name="show_video" value="Skin.HasSetting(addonslot6_show_video)" />
+							<param name="show_music" value="Skin.HasSetting(addonslot6_show_music)" />
+							<param name="show_games"  value="Skin.HasSetting(addonslot6_show_games)" />
+							<param name="show_programs" value="Skin.HasSetting(addonslot6_show_programs)" />
+							<param name="show_android" value="Skin.HasSetting(addonslot6_show_android) + System.Platform.Android" />
+							<param name="show_pictures" value="Skin.HasSetting(addonslot6_show_pictures)| String.IsEmpty(Skin.String(run_once))" />
+							<param name="list_id" value="8600" />
 						</include>
 					</control>
 					<include content="ImageWidget">
@@ -464,23 +466,15 @@
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="TV"/>
 						</include>
-						<include content="WidgetListChannels" condition="!Skin.HasSetting(no_pvr_channels) + System.HasPVRAddon">
-							<param name="content_path" value="pvr://channels/tv/*?view=lastplayed"/>
-							<param name="sortby" value="lastplayed"/>
-							<param name="sortorder" value="descending"/>
-							<param name="widget_header" value="$LOCALIZE[31016]"/>
-							<param name="widget_target" value="pvr"/>
-							<param name="list_id" value="12200"/>
+						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot1_show_none)  + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(tvslot1_show_channels) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_recordings" value="Skin.HasSetting(tvslot1_show_recordings)" />
+							<param name="list_id" value="12200" />
 						</include>
-						<include content="WidgetListChannels" condition="!Skin.HasSetting(no_pvr_recordings) + System.HasPVRAddon">
-							<param name="content_path" value="pvr://recordings/tv/active?view=flat"/>
-							<param name="sortby" value="date"/>
-							<param name="sortorder" value="descending"/>
-							<param name="widget_header" value="$LOCALIZE[31015]"/>
-							<param name="widget_target" value="pvr"/>
-							<param name="list_id" value="12300"/>
-							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+						<include content="TVSubMenuItem" condition="!Skin.HasSetting(tvslot2_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(tvslot2_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(tvslot2_show_recordings) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="list_id" value="12300" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
@@ -543,24 +537,15 @@
 							<param name="pvr_submenu" value="true"/>
 							<param name="pvr_type" value="Radio"/>
 						</include>
-
-						<include content="WidgetListChannels" condition="!Skin.HasSetting(no_radio_channels) + System.HasPVRAddon">
-							<param name="content_path" value="pvr://channels/radio/*?view=lastplayed"/>
-							<param name="sortby" value="lastplayed"/>
-							<param name="sortorder" value="descending"/>
-							<param name="widget_header" value="$LOCALIZE[31018]"/>
-							<param name="widget_target" value="files"/>
-							<param name="list_id" value="13200"/>
+						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot1_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(radioslot1_show_channels) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="show_recordings" value="Skin.HasSetting(radioslot1_show_recordings)" />
+							<param name="list_id" value="13200" />
 						</include>
-						<include content="WidgetListChannels" condition="!Skin.HasSetting(no_radio_recordings) + System.HasPVRAddon">
-							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
-							<param name="sortby" value="date"/>
-							<param name="sortorder" value="descending"/>
-							<param name="widget_header" value="$LOCALIZE[31015]"/>
-							<param name="widget_target" value="pvr"/>
-							<param name="list_id" value="13300"/>
-							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.EpisodeName, (,)]"/>
+						<include content="RadioSubMenuItem" condition="!Skin.HasSetting(radioslot2_show_none) + System.HasPVRAddon">
+							<param name="show_channels" value="Skin.HasSetting(radioslot2_show_channels)" />
+							<param name="show_recordings" value="Skin.HasSetting(radioslot2_show_recordings) | String.IsEmpty(Skin.String(run_once))" />
+							<param name="list_id" value="13300" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">

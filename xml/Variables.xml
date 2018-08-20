@@ -761,4 +761,271 @@
 		<value condition="Skin.HasSetting(radioaction_rules)">$LOCALIZE[10711]</value>
 		<value>$LOCALIZE[10705]</value>
 	</variable>
+	<variable name="MovieSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(movieslot1_show_recent)">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieslot1_show_unwatched)">$LOCALIZE[31007]</value>
+		<value condition="Skin.HasSetting(movieslot1_show_random)">$LOCALIZE[31006]</value>
+		<value condition="Skin.HasSetting(movieslot1_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieslot1_show_sets)">$LOCALIZE[31075]</value>
+		<value condition="Skin.HasSetting(movieslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31010]</value>
+	</variable>
+	<variable name="MovieSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(movieslot2_show_inprogress)">$LOCALIZE[31010]</value>
+		<value condition="Skin.HasSetting(movieslot2_show_unwatched)">$LOCALIZE[31007]</value>
+		<value condition="Skin.HasSetting(movieslot2_show_random)">$LOCALIZE[31006]</value>
+		<value condition="Skin.HasSetting(movieslot2_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieslot2_show_sets)">$LOCALIZE[31075]</value>
+		<value condition="Skin.HasSetting(movieslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20386]</value>
+	</variable>
+	<variable name="MovieSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(movieslot3_show_inprogress)">$LOCALIZE[31010]</value>
+		<value condition="Skin.HasSetting(movieslot3_show_recent)">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieslot3_show_random)">$LOCALIZE[31006]</value>
+		<value condition="Skin.HasSetting(movieslot3_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieslot3_show_sets)">$LOCALIZE[31075]</value>
+		<value condition="Skin.HasSetting(movieslot3_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31007]</value>
+	</variable>
+	<variable name="MovieSubMenuSlot4Label2Var">
+		<value condition="Skin.HasSetting(movieslot4_show_inprogress)">$LOCALIZE[31010]</value>
+		<value condition="Skin.HasSetting(movieslot4_show_recent)">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieslot4_show_unwatched)">$LOCALIZE[31007]</value>
+		<value condition="Skin.HasSetting(movieslot4_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieslot4_show_sets)">$LOCALIZE[31075]</value>
+		<value condition="Skin.HasSetting(movieslot4_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31006]</value>
+	</variable>
+	<variable name="MovieSubMenuSlot5Label2Var">
+		<value condition="Skin.HasSetting(movieslot5_show_inprogress)">$LOCALIZE[31010]</value>
+		<value condition="Skin.HasSetting(movieslot5_show_recent)">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieslot5_show_unwatched)">$LOCALIZE[31007]</value>
+		<value condition="Skin.HasSetting(movieslot5_show_random)">$LOCALIZE[31006]</value>
+		<value condition="Skin.HasSetting(movieslot5_show_sets)">$LOCALIZE[31075]</value>
+		<value condition="Skin.HasSetting(movieslot5_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[135]</value>
+	</variable>
+	<variable name="MovieSubMenuSlot6Label2Var">
+		<value condition="Skin.HasSetting(movieslot6_show_inprogress)">$LOCALIZE[31010]</value>
+		<value condition="Skin.HasSetting(movieslot6_show_recent)">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieslot6_show_unwatched)">$LOCALIZE[31007]</value>
+		<value condition="Skin.HasSetting(movieslot6_show_random)">$LOCALIZE[31006]</value>
+		<value condition="Skin.HasSetting(movieslot6_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(movieslot6_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31075]</value>
+	</variable>
+	<variable name="TVShowSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(tvshowslot1_show_recent)">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_unwatched)">$LOCALIZE[31122]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[626]</value>
+	</variable>
+	<variable name="TVShowSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(tvshowslot2_show_inprogress)">$LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_unwatched)">$LOCALIZE[31122]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20387]</value>
+	</variable>
+	<variable name="TVShowSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(tvshowslot3_show_inprogress)">$LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_recent)">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31122]</value>
+	</variable>
+	<variable name="TVShowSubMenuSlot4Label2Var">
+		<value condition="Skin.HasSetting(tvshowslot4_show_inprogress)">$LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_recent)">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_unwatched)">$LOCALIZE[31122]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_studio)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(tvshowslot4_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[135]</value>
+	</variable>
+	<variable name="TVShowSubMenuSlot5Label2Var">
+		<value condition="Skin.HasSetting(tvshowslot5_show_inprogress)">$LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_recent)">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_unwatched)">$LOCALIZE[31122]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_inprogunwatched)">$LOCALIZE[31122] / $LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowslot3_show_genres)">$LOCALIZE[135]</value>
+		<value condition="Skin.HasSetting(tvshowslot5_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20388]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(musicslot1_show_addedalbums)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicslot1_show_randomalbums)">$LOCALIZE[31012]</value>
+		<value condition="Skin.HasSetting(musicslot1_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(musicslot1_show_unplayedalbums)">$LOCALIZE[31014]</value>
+		<value condition="Skin.HasSetting(musicslot1_show_mostplayedalbums)">$LOCALIZE[31011]</value>
+		<value condition="Skin.HasSetting(musicslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[517]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(musicslot2_show_playedalbums)">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicslot2_show_randomalbums)">$LOCALIZE[31012]</value>
+		<value condition="Skin.HasSetting(musicslot2_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(musicslot2_show_unplayedalbums)">$LOCALIZE[31014]</value>
+		<value condition="Skin.HasSetting(musicslot2_show_mostplayedalbums)">$LOCALIZE[31011]</value>
+		<value condition="Skin.HasSetting(musicslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[359]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(musicslot3_show_playedalbums)">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicslot3_show_addedalbums)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicslot3_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(musicslot3_show_unplayedalbums)">$LOCALIZE[31014]</value>
+		<value condition="Skin.HasSetting(musicslot3_show_mostplayedalbums)">$LOCALIZE[31011]</value>
+		<value condition="Skin.HasSetting(musicslot3_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31012]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot4Label2Var">
+		<value condition="Skin.HasSetting(musicslot4_show_playedalbums)">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicslot4_show_addedalbums)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicslot4_show_randomalbums)">$LOCALIZE[31012]</value>
+		<value condition="Skin.HasSetting(musicslot4_show_unplayedalbums)">$LOCALIZE[31014]</value>
+		<value condition="Skin.HasSetting(musicslot4_show_mostplayedalbums)">$LOCALIZE[31011]</value>
+		<value condition="Skin.HasSetting(musicslot4_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31013]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot5Label2Var">
+		<value condition="Skin.HasSetting(musicslot5_show_playedalbums)">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicslot5_show_addedalbums)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicslot5_show_randomalbums)">$LOCALIZE[31012]</value>
+		<value condition="Skin.HasSetting(musicslot5_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(musicslot5_show_mostplayedalbums)">$LOCALIZE[31011]</value>
+		<value condition="Skin.HasSetting(musicslot5_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31014]</value>
+	</variable>
+	<variable name="MusicSubMenuSlot6Label2Var">
+		<value condition="Skin.HasSetting(musicslot6_show_playedalbums)">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicslot6_show_addedalbums)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicslot6_show_randomalbums)">$LOCALIZE[31012]</value>
+		<value condition="Skin.HasSetting(musicslot6_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(musicslot6_show_unplayedalbums)">$LOCALIZE[31014]</value>
+		<value condition="Skin.HasSetting(musicslot6_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31011]</value>
+	</variable>
+	<variable name="MVSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(mvslot1_show_unwatched)">$LOCALIZE[31151]</value>
+		<value condition="Skin.HasSetting(mvslot1_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(mvslot1_show_randomvideos)">$LOCALIZE[31152]</value>
+		<value condition="Skin.HasSetting(mvslot1_show_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(mvslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20390]</value>
+	</variable>
+	<variable name="MVSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(mvslot2_show_recent)">$LOCALIZE[20390]</value>
+		<value condition="Skin.HasSetting(mvslot2_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(mvslot2_show_randomvideos)">$LOCALIZE[31152]</value>
+		<value condition="Skin.HasSetting(mvslot2_show_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(mvslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31151]</value>
+	</variable>
+	<variable name="MVSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(mvslot3_show_recent)">$LOCALIZE[20390]</value>
+		<value condition="Skin.HasSetting(mvslot3_show_unwatched)">$LOCALIZE[31151]</value>
+		<value condition="Skin.HasSetting(mvslot3_show_randomvideos)">$LOCALIZE[31152]</value>
+		<value condition="Skin.HasSetting(mvslot3_show_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(mvslot3_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31013]</value>
+	</variable>
+	<variable name="MVSubMenuSlot4Label2Var">
+		<value condition="Skin.HasSetting(mvslot4_show_recent)">$LOCALIZE[20390]</value>
+		<value condition="Skin.HasSetting(mvslot4_show_unwatched)">$LOCALIZE[31151]</value>
+		<value condition="Skin.HasSetting(mvslot4_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(mvslot4_show_studios)">$LOCALIZE[20388]</value>
+		<value condition="Skin.HasSetting(mvslot4_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31152]</value>
+	</variable>
+	<variable name="MVSubMenuSlot5Label2Var">
+		<value condition="Skin.HasSetting(mvslot5_show_recent)">$LOCALIZE[20390]</value>
+		<value condition="Skin.HasSetting(mvslot5_show_unwatched)">$LOCALIZE[31151]</value>
+		<value condition="Skin.HasSetting(mvslot5_show_randomartists)">$LOCALIZE[31013]</value>
+		<value condition="Skin.HasSetting(mvslot5_show_randomvideos)">$LOCALIZE[31152]</value>
+		<value condition="Skin.HasSetting(mvslot5_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20388]</value>
+	</variable>
+	<variable name="TVSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(tvslot1_show_recordings)">$LOCALIZE[31015]</value>
+		<value condition="Skin.HasSetting(tvslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31016]</value>
+	</variable>
+	<variable name="TVSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(tvslot2_show_channels)">$LOCALIZE[31016]</value>
+		<value condition="Skin.HasSetting(tvslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31015]</value>
+	</variable>
+	<variable name="RadioSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(radioslot1_show_recordings)">$LOCALIZE[31015]</value>
+		<value condition="Skin.HasSetting(radioslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31016]</value>
+	</variable>
+	<variable name="RadioSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(radioslot2_show_channels)">$LOCALIZE[31016]</value>
+		<value condition="Skin.HasSetting(radioslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[31015]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot1Label2Var">
+		<value condition="Skin.HasSetting(addonslot1_show_music)">$LOCALIZE[1038]</value>
+		<value condition="Skin.HasSetting(addonslot1_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot1_show_programs)">$LOCALIZE[1043]</value>
+		<value condition="Skin.HasSetting(addonslot1_show_android)">$LOCALIZE[20244]</value>
+		<value condition="Skin.HasSetting(addonslot1_show_pictures)">$LOCALIZE[1039]</value>
+		<value condition="Skin.HasSetting(addonslot1_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[1037]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot2Label2Var">
+		<value condition="Skin.HasSetting(addonslot2_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_programs)">$LOCALIZE[1043]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_android)">$LOCALIZE[20244]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_pictures)">$LOCALIZE[1039]</value>
+		<value condition="Skin.HasSetting(addonslot2_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[1038]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot3Label2Var">
+		<value condition="Skin.HasSetting(addonslot3_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot3_show_music)">$LOCALIZE[1038]</value>
+		<value condition="Skin.HasSetting(addonslot3_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot3_show_programs)">$LOCALIZE[1043]</value>
+		<value condition="Skin.HasSetting(addonslot3_show_android)">$LOCALIZE[20244]</value>
+		<value condition="Skin.HasSetting(addonslot3_show_pictures)">$LOCALIZE[1039]</value>
+		<value>$LOCALIZE[351]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot4Label2Var">
+		<value condition="Skin.HasSetting(addonslot4_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot4_show_music)">$LOCALIZE[1038]</value>
+		<value condition="Skin.HasSetting(addonslot4_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot4_show_android)">$LOCALIZE[20244]</value>
+		<value condition="Skin.HasSetting(addonslot4_show_pictures)">$LOCALIZE[1039]</value>
+		<value condition="Skin.HasSetting(addonslot4_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[1043]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot5Label2Var">
+		<value condition="Skin.HasSetting(addonslot5_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot5_show_music)">$LOCALIZE[1038]</value>
+		<value condition="Skin.HasSetting(addonslot5_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot5_show_programs)">$LOCALIZE[1043]</value>
+		<value condition="Skin.HasSetting(addonslot5_show_pictures)">$LOCALIZE[1039]</value>
+		<value condition="Skin.HasSetting(addonslot5_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[20244]</value>
+	</variable>
+	<variable name="AddonSubMenuSlot6Label2Var">
+		<value condition="Skin.HasSetting(addonslot6_show_video)">$LOCALIZE[1037]</value>
+		<value condition="Skin.HasSetting(addonslot6_show_music)">$LOCALIZE[1038]</value>
+		<value condition="Skin.HasSetting(addonslot6_show_games)">$LOCALIZE[35049]</value>
+		<value condition="Skin.HasSetting(addonslot6_show_programs)">$LOCALIZE[1043]</value>
+		<value condition="Skin.HasSetting(addonslot6_show_android)">$LOCALIZE[20244]</value>
+		<value condition="Skin.HasSetting(addonslot6_show_none)">$LOCALIZE[351]</value>
+		<value>$LOCALIZE[1039]</value>
+	</variable>
 </includes>
