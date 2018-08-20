@@ -1072,7 +1072,7 @@
 	<include name="HomeMenuItemMovies">
 		<item>
 			<label>$LOCALIZE[342]</label>
-			<onclick condition="Library.HasContent(movies) + [Skin.HasSetting(movieaction_titles | String.IsEmpty(Skin.String(run_once))]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<onclick condition="Library.HasContent(movies) + [Skin.HasSetting(movieaction_titles | String.IsEmpty(Skin.String(skin_version))]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_root)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_genres)">ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_years)">ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
@@ -1092,7 +1092,7 @@
 	<include name="HomeMenuItemTVShows">
 		<item>
 			<label>$LOCALIZE[20343]</label>
-			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_titles) | String.IsEmpty(Skin.String(run_once))]">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_titles) | String.IsEmpty(Skin.String(skin_version))]">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_root)]">ActivateWindow(Videos,videodb://tvshows/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_genres)]">ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_years)]">ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
@@ -1109,7 +1109,7 @@
 	<include name="HomeMenuItemMusic">
 		<item>
 			<label>$LOCALIZE[2]</label>
-			<onclick condition="Skin.HasSetting(musicaction_root) | String.IsEmpty(Skin.String(run_once))">ActivateWindow(Music,root,return)</onclick>
+			<onclick condition="Skin.HasSetting(musicaction_root) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(Music,root,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_genres)">ActivateWindow(Music,musicdb://genres/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_artists)">ActivateWindow(Music,musicdb://artists/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_albums)">ActivateWindow(Music,musicdb://albums/,return)</onclick>
@@ -1132,7 +1132,7 @@
 		<item>
 			<label>$LOCALIZE[20389]</label>
 			<property name="menu_id">$NUMBER[16000]</property>
-			<onclick condition="Skin.HasSetting(mvaction_root | String.IsEmpty(Skin.String(run_once))">ActivateWindow(Videos,musicvideos,return)</onclick>
+			<onclick condition="Skin.HasSetting(mvaction_root | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(Videos,musicvideos,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_genres)">ActivateWindow(Videos,videodb://musicvideos/genres/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_titles)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_years)">ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
@@ -1149,7 +1149,7 @@
 		<item>
 			<label>$LOCALIZE[19020]</label>
 			<property name="menu_id">$NUMBER[12000]</property>
-			<onclick condition="Skin.HasSetting(tvaction_channels) | String.IsEmpty(Skin.String(run_once))">ActivateWindow(TVChannels)</onclick>
+			<onclick condition="Skin.HasSetting(tvaction_channels) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(TVChannels)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_guide)">ActivateWindow(TVGuide)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_recordings)">ActivateWindow(TVRecordings)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_timers)">ActivateWindow(TVTimers)</onclick>
@@ -1162,7 +1162,7 @@
 		<item>
 			<label>$LOCALIZE[19021]</label>
 			<property name="menu_id">$NUMBER[13000]</property>
-			<onclick condition="Skin.HasSetting(radioaction_channels) | String.IsEmpty(Skin.String(run_once))">ActivateWindow(RadioChannels)</onclick>
+			<onclick condition="Skin.HasSetting(radioaction_channels) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(RadioChannels)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_recordings)">ActivateWindow(RadioRecordings)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_timers)">ActivateWindow(RadioTimers)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_rules)">ActivateWindow(RadioTimerRules)</onclick>
@@ -1380,6 +1380,61 @@
 				<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 				<param name="sortby" value="playcount"/>
 				<param name="sortorder" value="descending"/>
+			</include>
+		</definition>
+	</include>
+	<include name="MusicVideoSubMenuItem">
+		<param name="show_recent" />
+		<param name="show_unwatched" />
+		<param name="show_randomartists" />
+		<param name="show_randomvideos" />
+		<param name="show_studios" />
+		<param name="list_id" />
+		<definition>
+			<include content="WidgetListEpisodes" condition="$PARAM[show_recent]">
+				<param name="content_path" value="videodb://recentlyaddedmusicvideos/"/>
+				<param name="widget_header" value="$LOCALIZE[20390]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="main_label" value="$INFO[ListItem.Label]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+				<param name="thumb_label" value="$INFO[ListItem.Year]" />
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListEpisodes" condition="$PARAM[show_unwatched]">
+				<param name="content_path" value="special://skin/playlists/unwatched_musicvideos.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31151]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="main_label" value="$INFO[ListItem.Label]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+				<param name="thumb_label" value="$INFO[ListItem.Year]" />
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListSquare" condition="$PARAM[show_randomartists]">
+				<param name="content_path" value="special://skin/playlists/random_musicvideo_artists.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31013]"/>
+				<param name="widget_target" value="music"/>
+				<param name="widget_limit" value="10"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListEpisodes" condition="$PARAM[show_randomvideos]">
+				<param name="content_path" value="special://skin/playlists/random_musicvideos.xsp"/>
+				<param name="widget_header" value="$LOCALIZE[31152]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="main_label" value="$INFO[ListItem.Label]" />
+				<param name="sub_label" value="$INFO[ListItem.Artist]" />
+				<param name="thumb_label" value="$INFO[ListItem.Year]" />
+				<param name="fallback_image" value="DefaultMusicSongs.png" />
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<include content="WidgetListCategories" condition="$PARAM[show_studios]">
+				<param name="content_path" value="videodb://musicvideos/studios/"/>
+				<param name="widget_header" value="$LOCALIZE[20388]"/>
+				<param name="widget_target" value="music"/>
+				<param name="icon" value="$VAR[WidgetStudioIconVar]"/>
+				<param name="icon_height" value="70"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 		</definition>
 	</include>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="LoadDefaultConfig">
+		<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
+		<onload condition="!$EXP[HasMenuSlot1]">Skin.SetBool(slot1_show_movies)</onload>	
+		<onload condition="!$EXP[HasMenuSlot2]">Skin.SetBool(slot2_show_tvshows)</onload>	
+		<onload condition="!$EXP[HasMenuSlot3]">Skin.SetBool(slot3_show_music)</onload>	
+		<onload condition="!$EXP[HasMenuSlot4]">Skin.SetBool(slot4_show_musicvideos)</onload>	
+		<onload condition="!$EXP[HasMenuSlot5]">Skin.SetBool(slot5_show_tv)</onload>	
+		<onload condition="!$EXP[HasMenuSlot6]">Skin.SetBool(slot6_show_radio)</onload>	
+		<onload condition="!$EXP[HasMenuSlot7]">Skin.SetBool(slot7_show_none)</onload>	
+		<onload condition="!$EXP[HasMenuSlot8]">Skin.SetBool(slot8_show_addons)</onload>	
+		<onload condition="!$EXP[HasMenuSlot9]">Skin.SetBool(slot9_show_pictures)</onload>	
+		<onload condition="!$EXP[HasMenuSlot10]">Skin.SetBool(slot10_show_videos)</onload>	
+		<onload condition="!$EXP[HasMenuSlot11]">Skin.SetBool(slot11_show_favorites)</onload>	
+		<onload condition="!$EXP[HasMenuSlot12]">Skin.SetBool(slot12_show_weather)</onload>
+		<onload condition="!$EXP[HasMovieCategories]">Skin.SetBool(movie_categories_standard)</onload>
+		<onload condition="!$EXP[HasTVShowCategories]">Skin.SetBool(tvshow_categories_standard)</onload>
+		<onload condition="!$EXP[HasMusicCategories]">Skin.SetBool(music_categories_standard)</onload>
+		<onload condition="!$EXP[HasMusicVideoCategories]">Skin.SetBool(musicvideos_categories_standard)</onload>
+		<onload condition="!$EXP[HasTVCategories]">Skin.SetBool(tv_categories_standard)</onload>
+		<onload condition="!$EXP[HasRadioCategories]">Skin.SetBool(radio_categories_standard)</onload>
+		<onload condition="!$EXP[HasAddonCategories]">Skin.SetBool(addon_categories_standard)</onload>
+		<onload condition="!$EXP[HasPictureCategories]">Skin.SetBool(picture_categories_standard)</onload>
+		<onload condition="!$EXP[HasMovieAction]">Skin.SetBool(movieaction_titles)</onload>
+		<onload condition="!$EXP[HasTVShowAction]">Skin.SetBool(tvshowaction_titles)</onload>
+		<onload condition="!$EXP[HasMusicAction]">Skin.SetBool(musicaction_root)</onload>
+		<onload condition="!$EXP[HasMusicVideoAction]">Skin.SetBool(mvaction_root)</onload>
+		<onload condition="!$EXP[HasTVAction]">Skin.SetBool(tvaction_channels)</onload>
+		<onload condition="!$EXP[HasRadioAction]">Skin.SetBool(radioaction_channels)</onload>
+		<onload condition="!$EXP[HasMovieSlot1]">Skin.SetBool(movieslot1_show_inprogress)</onload>	
+		<onload condition="!$EXP[HasMovieSlot2]">Skin.SetBool(movieslot2_show_recent)</onload>	
+		<onload condition="!$EXP[HasMovieSlot3]">Skin.SetBool(movieslot3_show_unwatched)</onload>	
+		<onload condition="!$EXP[HasMovieSlot4]">Skin.SetBool(movieslot4_show_random)</onload>	
+		<onload condition="!$EXP[HasMovieSlot5]">Skin.SetBool(movieslot5_show_genres)</onload>	
+		<onload condition="!$EXP[HasMovieSlot6]">Skin.SetBool(movieslot6_show_sets)</onload>	
+		<onload condition="!$EXP[HasTVShowSlot1]">Skin.SetBool(tvshowslot1_show_inprogress)</onload>	
+		<onload condition="!$EXP[HasTVShowSlot2]">Skin.SetBool(tvshowslot2_show_recent)</onload>	
+		<onload condition="!$EXP[HasTVShowSlot3]">Skin.SetBool(tvshowslot3_show_unwatched)</onload>	
+		<onload condition="!$EXP[HasTVShowSlot4]">Skin.SetBool(tvshowslot4_show_genres)</onload>	
+		<onload condition="!$EXP[HasTVShowSlot5]">Skin.SetBool(tvshowslot5_show_studio)</onload>	
+		<onload condition="!$EXP[HasMusicSlot1]">Skin.SetBool(musicslot1_show_playedalbums)</onload>	
+		<onload condition="!$EXP[HasMusicSlot2]">Skin.SetBool(musicslot2_show_addedalbums)</onload>	
+		<onload condition="!$EXP[HasMusicSlot3]">Skin.SetBool(musicslot3_show_randomalbums)</onload>	
+		<onload condition="!$EXP[HasMusicSlot4]">Skin.SetBool(musicslot4_show_randomartists)</onload>	
+		<onload condition="!$EXP[HasMusicSlot5]">Skin.SetBool(musicslot5_show_unplayedalbums)</onload>	
+		<onload condition="!$EXP[HasMusicSlot6]">Skin.SetBool(musicslot6_show_mostplayedalbums)</onload>	
+		<onload condition="!$EXP[HasMusicVideoSlot1]">Skin.SetBool(mvslot1_show_recent)</onload>	
+		<onload condition="!$EXP[HasMusicVideoSlot2]">Skin.SetBool(mvslot2_show_unwatched)</onload>	
+		<onload condition="!$EXP[HasMusicVideoSlot3]">Skin.SetBool(mvslot3_show_randomartists)</onload>	
+		<onload condition="!$EXP[HasMusicVideoSlot4]">Skin.SetBool(mvslot4_show_randomvideos)</onload>	
+		<onload condition="!$EXP[HasMusicVideoSlot5]">Skin.SetBool(mvslot5_show_studios)</onload>	
+		<onload condition="!$EXP[HasTVSlot1]">Skin.SetBool(tvslot1_show_channels)</onload>	
+		<onload condition="!$EXP[HasTVSlot2]">Skin.SetBool(tvslot2_show_recordings)</onload>
+		<onload condition="!$EXP[HasRadioSlot1]">Skin.SetBool(radioslot1_show_channels)</onload>	
+		<onload condition="!$EXP[HasRadioSlot2]">Skin.SetBool(radioslot2_show_recordings)</onload>
+		<onload condition="!$EXP[HasAddonSlot1]">Skin.SetBool(addonslot1_show_video)</onload>	
+		<onload condition="!$EXP[HasAddonSlot2]">Skin.SetBool(addonslot2_show_music)</onload>	
+		<onload condition="!$EXP[HasAddonSlot3]">Skin.SetBool(addonslot3_show_none)</onload>	
+		<onload condition="!$EXP[HasAddonSlot4]">Skin.SetBool(addonslot4_show_programs)</onload>	
+		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
+		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
+		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
+		<onload>Skin.SetString(skin_version,1.1.0~beta2)</onload>
+	</include>
+</includes>
