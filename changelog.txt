@@ -2,6 +2,7 @@ v.1.1.0
 - added option to select action for Movies, TV Shows, Music, Music Videos, TV, and Radio menus
 - added ability to customize the order and visibility of many of the sub menus
 - removed Artist Slideshow addon as required download
+- Artist Slideshow related skin settings are hidden if AS is not installed
 
 v.1.0.9
 - internal code change for how main menu items are displayed
