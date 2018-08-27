@@ -10,6 +10,7 @@
 			<name>big_time</name>
 			<filename>Noto-Sans-Bold.ttf</filename>
 			<size>600</size>
+			<style>bold</style>
 		</font>
 		<font>
 			<name>big_date</name>
@@ -20,6 +21,7 @@
 			<name>big_temperature</name>
 			<filename>Noto-Sans-Bold.ttf</filename>
 			<size>190</size>
+			<style>bold</style>
 			<linespacing>0.90</linespacing>
 		</font>
 		<font>
