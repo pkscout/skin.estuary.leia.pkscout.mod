@@ -8,7 +8,6 @@
 	<include file="Includes_DialogSelect.xml" />
 	<include file="Includes_PVR.xml" />
 	<include file="Includes_WeatherStation.xml" />
-	<include file="Includes_Mod.xml" />
 	<include file="View_50_List.xml" />
 	<include file="View_51_Poster.xml" />
 	<include file="View_52_IconWall.xml" />
@@ -19,6 +18,8 @@
 	<include file="View_501_Banner.xml" />
 	<include file="View_502_FanArt.xml" />
 	<include file="Variables.xml" />
+	<include file="Font_Mod.xml" />
+	<include file="Includes_Mod.xml" />
 	<include file="VariablesMod.xml" />
 	<constant name="DepthDialog">0.50</constant>
 	<constant name="DepthDialog+">0.52</constant>
