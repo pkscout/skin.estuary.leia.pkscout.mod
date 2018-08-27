@@ -1,3 +1,6 @@
+v.1.1.2
+- updates from Estuary 2.0.12 (in Kodi Leia Beta 1)
+
 v.1.1.1
 - added Video Addons, Music Addons, and Picture Addons as actions for the appropriate menus
 
