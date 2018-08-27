@@ -1,3 +1,6 @@
+v.1.1.1
+- added Video Addons, Music Addons, and Picture Addons as actions for the appropriate menus
+
 v.1.1.0
 - added option to select action for Movies, TV Shows, Music, Music Videos, TV, and Radio menus
 - added ability to customize the order and visibility of many of the sub menus

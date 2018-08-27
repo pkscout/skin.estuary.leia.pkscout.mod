@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.0~beta2)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.1)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -199,21 +199,21 @@
 				<control type="button" id="711">
 					<label>$LOCALIZE[342]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(14230, 10024|movieaction_titles, 20108|movieaction_root, 135|movieaction_genres, 652|movieaction_years, 344|movieaction_actors, 20348|movieaction_directors, 20388|movieaction_studios, 20458|movieaction_sets, 20451|movieaction_countries, 20459|movieaction_tags, 20387|movieaction_recent)</onclick>
+					<onclick>Skin.SelectBool(14230, 10024|movieaction_titles, 20108|movieaction_root, 135|movieaction_genres, 652|movieaction_years, 344|movieaction_actors, 20348|movieaction_directors, 20388|movieaction_studios, 20458|movieaction_sets, 20451|movieaction_countries, 20459|movieaction_tags, 20387|movieaction_recent, 1037|movieaction_addons)</onclick>
 					<label2>$VAR[MovieMenuActionLabel2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_movies) | Skin.HasSetting(slot2_show_movies) | Skin.HasSetting(slot3_show_movies) | Skin.HasSetting(slot4_show_movies) | Skin.HasSetting(slot5_show_movies) | Skin.HasSetting(slot6_show_movies) | Skin.HasSetting(slot7_show_movies) | Skin.HasSetting(slot8_show_movies) | Skin.HasSetting(slot9_show_movies) | Skin.HasSetting(slot10_show_movies) | Skin.HasSetting(slot11_show_movies) | Skin.HasSetting(slot12_show_movies)</visible>
 				</control>
 				<control type="button" id="712">
 					<label>$LOCALIZE[20343]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(14230, 10024|tvshowaction_titles, 20108|tvshowaction_root, 135|tvshowaction_genres, 652|tvshowaction_years, 344|tvshowaction_actors, 20388|tvshowaction_studios, 20387|tvshowaction_recent, 626|tvshowaction_inprogress)</onclick>
+					<onclick>Skin.SelectBool(14230, 10024|tvshowaction_titles, 20108|tvshowaction_root, 135|tvshowaction_genres, 652|tvshowaction_years, 344|tvshowaction_actors, 20388|tvshowaction_studios, 20387|tvshowaction_recent, 626|tvshowaction_inprogress, 1037|tvshowaction_addons)</onclick>
 					<label2>$VAR[TVShowMenuActionLabel2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_tvshows) | Skin.HasSetting(slot2_show_tvshows) | Skin.HasSetting(slot3_show_tvshows) | Skin.HasSetting(slot4_show_tvshows) | Skin.HasSetting(slot5_show_tvshows) | Skin.HasSetting(slot6_show_tvshows) | Skin.HasSetting(slot7_show_tvshows) | Skin.HasSetting(slot8_show_tvshows) | Skin.HasSetting(slot9_show_tvshows) | Skin.HasSetting(slot10_show_tvshows) | Skin.HasSetting(slot11_show_tvshows) | Skin.HasSetting(slot12_show_tvshows)</visible>
 				</control>
 				<control type="button" id="713">
 					<label>$LOCALIZE[2]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(14230, 20108|musicaction_root, 135|musicaction_genres, 133|musicaction_artists, 132|musicaction_albums, 134|musicaction_songs, 271|musicaction_top100, 10504|musicaction_top100songs, 10505|musicaction_top100albums, 359|musicaction_recent, 517|musicaction_played, 521|musicaction_compilaations, 652|musicaction_years, 1050|musicaction_singles, 20011|musicaction_playlists)</onclick>
+					<onclick>Skin.SelectBool(14230, 20108|musicaction_root, 135|musicaction_genres, 133|musicaction_artists, 132|musicaction_albums, 134|musicaction_songs, 271|musicaction_top100, 10504|musicaction_top100songs, 10505|musicaction_top100albums, 359|musicaction_recent, 517|musicaction_played, 521|musicaction_compilaations, 652|musicaction_years, 1050|musicaction_singles, 20011|musicaction_playlists, 1038|musicaction_addons)</onclick>
 					<label2>$VAR[MusicMenuActionLabel2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_music) | Skin.HasSetting(slot2_show_music) | Skin.HasSetting(slot3_show_music) | Skin.HasSetting(slot4_show_music) | Skin.HasSetting(slot5_show_music) | Skin.HasSetting(slot6_show_music) | Skin.HasSetting(slot7_show_music) | Skin.HasSetting(slot8_show_music) | Skin.HasSetting(slot9_show_music) | Skin.HasSetting(slot10_show_music) | Skin.HasSetting(slot11_show_music) | Skin.HasSetting(slot12_show_music)</visible>
 				</control>
@@ -237,6 +237,20 @@
 					<onclick>Skin.SelectBool(14230, 10705|radioaction_channels, 10706|radioaction_recordings, 10708|radioaction_timers, 10711|radioaction_rules)</onclick>
 					<label2>$VAR[RadioMenuActionLabel2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot4_show_radio) | Skin.HasSetting(slot5_show_radio) | Skin.HasSetting(slot6_show_radio) | Skin.HasSetting(slot7_show_radio) | Skin.HasSetting(slot8_show_radio) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot12_show_radio)</visible>
+				</control>
+				<control type="button" id="717">
+					<label>$LOCALIZE[10025]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(14230, 20108|videoaction_root, 1037|videoaction_addons)</onclick>
+					<label2>$VAR[VideoMenuActionLabel2Var]</label2>
+					<visible>Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot12_show_videos)</visible>
+				</control>
+				<control type="button" id="718">
+					<label>$LOCALIZE[14217]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(14230, 20108|picaction_root, 1039|picaction_addons)</onclick>
+					<label2>$VAR[PictureMenuActionLabel2Var]</label2>
+					<visible>Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot4_show_pictures) | Skin.HasSetting(slot5_show_pictures) | Skin.HasSetting(slot6_show_pictures) | Skin.HasSetting(slot7_show_pictures) | Skin.HasSetting(slot8_show_pictures) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot12_show_pictures)</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="800">

@@ -279,6 +279,7 @@
 		<value condition="Skin.HasSetting(movieaction_countries)">$LOCALIZE[20451]</value>
 		<value condition="Skin.HasSetting(movieaction_tags)">$LOCALIZE[20459]</value>
 		<value condition="Skin.HasSetting(movieaction_recent))">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieaction_addons)">$LOCALIZE[1037]</value>
 		<value>$LOCALIZE[10024]</value>
 	</variable>
 	<variable name="TVShowMenuActionLabel2Var">
@@ -289,6 +290,7 @@
 		<value condition="Skin.HasSetting(tvshowaction_studios)">$LOCALIZE[20388]</value>
 		<value condition="Skin.HasSetting(tvshowaction_recent))">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowaction_inprogress)">$LOCALIZE[626]</value>
+		<value condition="Skin.HasSetting(tvshowaction_addons)">$LOCALIZE[1037]</value>
 		<value>$LOCALIZE[10024]</value>
 	</variable>
 	<variable name="MusicMenuActionLabel2Var">
@@ -305,6 +307,7 @@
 		<value condition="Skin.HasSetting(musicaction_years)">$LOCALIZE[652]</value>
 		<value condition="Skin.HasSetting(musicaction_singles)">$LOCALIZE[1050]</value>
 		<value condition="Skin.HasSetting(musicaction_playlists)">$LOCALIZE[20011]</value>
+		<value condition="Skin.HasSetting(musicaction_addons)">$LOCALIZE[1038]</value>
 		<value>$LOCALIZE[20108]</value>
 	</variable>
 	<variable name="MusicVideosMenuActionLabel2Var">
@@ -330,6 +333,14 @@
 		<value condition="Skin.HasSetting(radioaction_timers)">$LOCALIZE[10708]</value>
 		<value condition="Skin.HasSetting(radioaction_rules)">$LOCALIZE[10711]</value>
 		<value>$LOCALIZE[10705]</value>
+	</variable>
+	<variable name="VideoMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(videoaction_addons)">$LOCALIZE[1037]</value>
+		<value>$LOCALIZE[20108]</value>
+	</variable>
+	<variable name="PictureMenuActionLabel2Var">
+		<value condition="Skin.HasSetting(picaction_addons)">$LOCALIZE[1039]</value>
+		<value>$LOCALIZE[20108]</value>
 	</variable>
 	<variable name="MovieSubMenuSlot1Label2Var">
 		<value condition="Skin.HasSetting(movieslot1_show_recent)">$LOCALIZE[20386]</value>
@@ -661,13 +672,13 @@
 		Skin.HasSetting(picture_categories_standard) | Skin.HasSetting(picture_categories_icons) | Skin.HasSetting(picture_categories_none)
 	</expression>
 	<expression name="HasMovieAction">
-		Skin.HasSetting(movieaction_titles) | Skin.HasSetting(movieaction_root) | Skin.HasSetting(movieaction_genres) | Skin.HasSetting(movieaction_years) | Skin.HasSetting(movieaction_actors) | Skin.HasSetting(movieaction_directors) | Skin.HasSetting(movieaction_studios) | Skin.HasSetting(movieaction_sets) | Skin.HasSetting(movieaction_countries) | Skin.HasSetting(movieaction_tags) | Skin.HasSetting(movieaction_recent)
+		Skin.HasSetting(movieaction_titles) | Skin.HasSetting(movieaction_root) | Skin.HasSetting(movieaction_genres) | Skin.HasSetting(movieaction_years) | Skin.HasSetting(movieaction_actors) | Skin.HasSetting(movieaction_directors) | Skin.HasSetting(movieaction_studios) | Skin.HasSetting(movieaction_sets) | Skin.HasSetting(movieaction_countries) | Skin.HasSetting(movieaction_tags) | Skin.HasSetting(movieaction_recent) | Skin.HasSetting(movieaction_addons)
 	</expression>
 	<expression name="HasTVShowAcction">
 		Skin.HasSetting(tvshowaction_titles) | Skin.HasSetting(tvshowaction_root) | Skin.HasSetting(tvshowaction_genres) | Skin.HasSetting(tvshowaction_years) | Skin.HasSetting(tvshowaction_actors) | Skin.HasSetting(tvshowaction_studios) | Skin.HasSetting(tvshowaction_recent) | Skin.HasSetting(tvshowaction_inprogress)
 	</expression>
 	<expression name="HasMusicAction">
-		Skin.HasSetting(musicaction_root) | Skin.HasSetting(musicaction_genres) | Skin.HasSetting(musicaction_artists) | Skin.HasSetting(musicaction_albums) | Skin.HasSetting(musicaction_songs) | Skin.HasSetting(musicaction_top100) | Skin.HasSetting(musicaction_top100songs) | Skin.HasSetting(musicaction_top100albums) | Skin.HasSetting(musicaction_recent) | Skin.HasSetting(musicaction_played) | Skin.HasSetting(musicaction_compilations) | Skin.HasSetting(musicaction_years) | Skin.HasSetting(musicaction_singles) | Skin.HasSetting(musicaction_playlists)
+		Skin.HasSetting(musicaction_root) | Skin.HasSetting(musicaction_genres) | Skin.HasSetting(musicaction_artists) | Skin.HasSetting(musicaction_albums) | Skin.HasSetting(musicaction_songs) | Skin.HasSetting(musicaction_top100) | Skin.HasSetting(musicaction_top100songs) | Skin.HasSetting(musicaction_top100albums) | Skin.HasSetting(musicaction_recent) | Skin.HasSetting(musicaction_played) | Skin.HasSetting(musicaction_compilations) | Skin.HasSetting(musicaction_years) | Skin.HasSetting(musicaction_singles) | Skin.HasSetting(musicaction_playlists) | Skin.HasSetting(musicaction_addons)
 	</expression>
 	<expression name="HasMusicVideoAction">
 		Skin.HasSetting(mvaction_root) | Skin.HasSetting(mvaction_genres) | Skin.HasSetting(mvaction_titles) | Skin.HasSetting(mvaction_years) | Skin.HasSetting(mvaction_artists)  | Skin.HasSetting(mvaction_albums) | Skin.HasSetting(mvaction_directors) | Skin.HasSetting(mvaction_studios) | Skin.HasSetting(mvaction_recent)
@@ -677,6 +688,12 @@
 	</expression>
 	<expression name="HasRadioAction">
 		Skin.HasSetting(radioaction_channels) | Skin.HasSetting(radioaction_recordings) | Skin.HasSetting(radioaction_timers) | Skin.HasSetting(radioaction_rules)
+	</expression>
+	<expression name="HasVideoAction">
+		Skin.HasSetting(videoaction_root) | Skin.HasSetting(videoaction_addons)
+	</expression>
+	<expression name="HasPictureAction">
+		Skin.HasSetting(picaction_root) | Skin.HasSetting(picaction_addons)
 	</expression>
 	<expression name="HasMovieSlot1">
 		Skin.HasSetting(movieslot1_show_inprogress) | Skin.HasSetting(movieslot1_show_recent) | Skin.HasSetting(movieslot1_show_unwatched) | Skin.HasSetting(movieslot1_show_random) | Skin.HasSetting(movieslot1_show_genres) | Skin.HasSetting(movieslot1_show_sets) | Skin.HasSetting(movieslot1_show_none)

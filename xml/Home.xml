@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.0~beta2)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.1)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -280,7 +280,7 @@
 							<param name="list_id" value="7600" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(music)">
+					<include content="ImageWidget" condition="!Library.HasContent(music) + !Skin.HasSetting(musicaction_addons)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
