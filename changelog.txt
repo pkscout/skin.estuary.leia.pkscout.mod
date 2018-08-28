@@ -1,3 +1,8 @@
+v.1.1.3
+- adjusted main menu action option settings order to match main menu default order
+- fixes for addons as menu actions
+- left area warning about empty libraries is suppressed if you choose addon as the action for that section
+
 v.1.1.2
 - updates from Estuary 2.0.12 (in Kodi Leia Beta 1)
 - added images back for proper weather station display
