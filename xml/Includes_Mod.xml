@@ -129,7 +129,7 @@
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_tags)">ActivateWindow(Videos,videodb://movies/tags/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_recent))">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<onclick condition="Skin.HasSetting(movieaction_addons)">ActivateWindow(Videos,Addons,return)</onclick>
-			<onclick condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_inprogress)">ActivateWindow(Videos,sources://video/,return)</onclick>
+			<onclick condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_addons)">ActivateWindow(Videos,sources://video/,return)</onclick>
 			<property name="menu_id">$NUMBER[5000]</property>
 			<thumb>icons/sidemenu/movies.png</thumb>
 			<property name="id">movies</property>
@@ -665,6 +665,6 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.1.2)</onload>
+		<onload>Skin.SetString(skin_version,1.1.3)</onload>
 	</include>
 </includes>

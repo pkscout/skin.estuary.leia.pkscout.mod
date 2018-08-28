@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.2)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.3)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -239,18 +239,18 @@
 					<visible>Skin.HasSetting(slot1_show_radio) | Skin.HasSetting(slot2_show_radio) | Skin.HasSetting(slot3_show_radio) | Skin.HasSetting(slot4_show_radio) | Skin.HasSetting(slot5_show_radio) | Skin.HasSetting(slot6_show_radio) | Skin.HasSetting(slot7_show_radio) | Skin.HasSetting(slot8_show_radio) | Skin.HasSetting(slot9_show_radio) | Skin.HasSetting(slot10_show_radio) | Skin.HasSetting(slot11_show_radio) | Skin.HasSetting(slot12_show_radio)</visible>
 				</control>
 				<control type="button" id="717">
-					<label>$LOCALIZE[10025]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(14230, 20108|videoaction_root, 1037|videoaction_addons)</onclick>
-					<label2>$VAR[VideoMenuActionLabel2Var]</label2>
-					<visible>Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot12_show_videos)</visible>
-				</control>
-				<control type="button" id="718">
 					<label>$LOCALIZE[14217]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SelectBool(14230, 20108|picaction_root, 1039|picaction_addons)</onclick>
 					<label2>$VAR[PictureMenuActionLabel2Var]</label2>
 					<visible>Skin.HasSetting(slot1_show_pictures) | Skin.HasSetting(slot2_show_pictures) | Skin.HasSetting(slot3_show_pictures) | Skin.HasSetting(slot4_show_pictures) | Skin.HasSetting(slot5_show_pictures) | Skin.HasSetting(slot6_show_pictures) | Skin.HasSetting(slot7_show_pictures) | Skin.HasSetting(slot8_show_pictures) | Skin.HasSetting(slot9_show_pictures) | Skin.HasSetting(slot10_show_pictures) | Skin.HasSetting(slot11_show_pictures) | Skin.HasSetting(slot12_show_pictures)</visible>
+				</control>
+				<control type="button" id="718">
+					<label>$LOCALIZE[10025]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(14230, 20108|videoaction_root, 1037|videoaction_addons)</onclick>
+					<label2>$VAR[VideoMenuActionLabel2Var]</label2>
+					<visible>Skin.HasSetting(slot1_show_videos) | Skin.HasSetting(slot2_show_videos) | Skin.HasSetting(slot3_show_videos) | Skin.HasSetting(slot4_show_videos) | Skin.HasSetting(slot5_show_videos) | Skin.HasSetting(slot6_show_videos) | Skin.HasSetting(slot7_show_videos) | Skin.HasSetting(slot8_show_videos) | Skin.HasSetting(slot9_show_videos) | Skin.HasSetting(slot10_show_videos) | Skin.HasSetting(slot11_show_videos) | Skin.HasSetting(slot12_show_videos)</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="800">

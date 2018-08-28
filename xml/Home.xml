@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.2)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.3)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -119,7 +119,7 @@
 							<param name="list_id" value="5600" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(movies)">
+					<include content="ImageWidget" condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_addons)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -195,7 +195,7 @@
 							<param name="list_id" value="6500" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(tvshows)">
+					<include content="ImageWidget" condition="!Library.HasContent(tvshows) + !Skin.HasSetting(tvshowaction_addons)">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -405,12 +405,11 @@
 							<param name="icon" value="DefaultPlaylist.png"/>
 						</include>
 					</control>
-					<include content="ImageWidget">
+					<include content="ImageWidget" condition="!Library.HasContent(video) + !Skin.HasSetting(videoaction_addons)">
 						<param name="text_label" value="$LOCALIZE[31105]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
 						<param name="button_id" value="11300"/>
-						<param name="visible" value="!Library.HasContent(video)"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
