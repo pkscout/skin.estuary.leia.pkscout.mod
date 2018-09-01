@@ -1,3 +1,7 @@
+v.1.1.4
+- added video addons widget as option in TV Show, Movie, and Video menu
+- added music addons widget as option in Music menu
+
 v.1.1.3
 - adjusted main menu action option settings order to match main menu default order
 - fixes for addons as menu actions
