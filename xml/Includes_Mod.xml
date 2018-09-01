@@ -282,6 +282,7 @@
 		<param name="show_random" />
 		<param name="show_genres" />
 		<param name="show_sets" />
+		<param name="show_videoaddons" />
 		<param name="list_id" />
 		<definition>
 			<include condition="$PARAM[show_inprogress]" content="WidgetListPoster">
@@ -323,6 +324,15 @@
 				<param name="sortby" value="random"/>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
+			<include condition="$PARAM[show_videoaddons]" content="WidgetListSquare">
+				<param name="content_path" value="addons://sources/video/"/>
+				<param name="widget_header" value="$LOCALIZE[1037]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="sortby" value="lastused"/>
+				<param name="sortorder" value="descending"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="fallback_icon" value="DefaultAddon.png"/>
+			</include>
 		</definition>
 	</include>
 	<include name="TVShowSubMenuItem">
@@ -332,6 +342,7 @@
 		<param name="show_inprogunwatched" />
 		<param name="show_genres" />
 		<param name="show_studio" />
+		<param name="show_videoaddons" />
 		<param name="list_id" />
 		<definition>
 			<include condition="$PARAM[show_inprogress]" content="WidgetListPoster">
@@ -376,6 +387,15 @@
 				<param name="icon_height" value="70"/>
 				<param name="list_id" value="6500"/>
 			</include>
+			<include condition="$PARAM[show_videoaddons]" content="WidgetListSquare">
+				<param name="content_path" value="addons://sources/video/"/>
+				<param name="widget_header" value="$LOCALIZE[1037]"/>
+				<param name="widget_target" value="videos"/>
+				<param name="sortby" value="lastused"/>
+				<param name="sortorder" value="descending"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="fallback_icon" value="DefaultAddon.png"/>
+			</include>
 		</definition>
 	</include>
 	<include name="MusicSubMenuItem">
@@ -385,6 +405,7 @@
 		<param name="show_randomartists" />
 		<param name="show_unplayedalbums" />
 		<param name="show_mostplayedalbums" />
+		<param name="show_musicaddons" />
 		<param name="list_id" />
 		<definition>
 			<include condition="$PARAM[show_playedalbums]" content="WidgetListSquare">
@@ -430,6 +451,15 @@
 				<param name="fallback_icon" value="DefaultMusicAlbums.png"/>
 				<param name="sortby" value="playcount"/>
 				<param name="sortorder" value="descending"/>
+			</include>
+			<include condition="$PARAM[show_musicaddons]" content="WidgetListSquare">
+				<param name="content_path" value="addons://sources/audio/"/>
+				<param name="widget_header" value="$LOCALIZE[1038]"/>
+				<param name="widget_target" value="music"/>
+				<param name="sortby" value="lastused"/>
+				<param name="sortorder" value="descending"/>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="fallback_icon" value="DefaultAddon.png"/>
 			</include>
 		</definition>
 	</include>
@@ -665,6 +695,6 @@
 		<onload condition="!$EXP[HasAddonSlot5] + System.Platform.Android">Skin.SetBool(addonslot5_show_android)</onload>	
 		<onload condition="!$EXP[HasAddonSlot5] + !System.Platform.Android">Skin.SetBool(addonslot5_show_none)</onload>	
 		<onload condition="!$EXP[HasAddonSlot6]">Skin.SetBool(addonslot6_show_pictures)</onload>
-		<onload>Skin.SetString(skin_version,1.1.3)</onload>
+		<onload>Skin.SetString(skin_version,1.1.4)</onload>
 	</include>
 </includes>

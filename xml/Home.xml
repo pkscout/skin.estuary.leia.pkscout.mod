@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.3)">LoadDefaultConfig</include>
+	<include condition="!String.IsEqual(Skin.String(skin_version),1.1.4)">LoadDefaultConfig</include>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
@@ -64,62 +64,68 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="5900"/>
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot1_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot1_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot1_show_inprogress) | !$EXP[HasMovieSlot1]" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot1_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot1_show_unwatched)" />
 							<param name="show_random" value="Skin.HasSetting(movieslot1_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot1_show_genres)" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot1_show_sets)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot1_show_videoaddons)" />
 							<param name="list_id" value="5100" />
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot2_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot2_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot2_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot2_show_recent) | !$EXP[HasMovieSlot2]" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot2_show_unwatched)" />
 							<param name="show_random" value="Skin.HasSetting(movieslot2_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot2_show_genres)" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot2_show_sets)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot2_show_videoaddons)" />
 							<param name="list_id" value="5200" />
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot3_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot3_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot3_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot3_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot3_show_unwatched) | !$EXP[HasMovieSlot3]" />
 							<param name="show_random" value="Skin.HasSetting(movieslot3_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot3_show_genres)" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot3_show_sets)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot3_show_videoaddons)" />
 							<param name="list_id" value="5300" />
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot4_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot4_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot4_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot4_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot4_show_unwatched)" />
 							<param name="show_random" value="Skin.HasSetting(movieslot4_show_random) | !$EXP[HasMovieSlot4]" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot4_show_genres)" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot4_show_sets)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot4_show_videoaddons)" />
 							<param name="list_id" value="5400" />
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot5_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot5_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot5_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot5_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot5_show_unwatched)" />
 							<param name="show_random" value="Skin.HasSetting(movieslot5_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot5_show_genres) | !$EXP[HasMovieSlot5]" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot5_show_sets)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot5_show_videoaddons)" />
 							<param name="list_id" value="5500" />
 						</include>
-						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot6_show_none) + Library.HasContent(movies)">
+						<include content="MovieSubMenuItem" condition="!Skin.HasSetting(movieslot6_show_none) + [Library.HasContent(movies) | $EXP[HasVideoAddonsInMovies]]">
 							<param name="show_inprogress" value="Skin.HasSetting(movieslot6_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(movieslot6_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(movieslot6_show_unwatched)" />
 							<param name="show_random" value="Skin.HasSetting(movieslot6_show_random)" />
 							<param name="show_genres" value="Skin.HasSetting(movieslot6_show_genres)" />
 							<param name="show_sets" value="Skin.HasSetting(movieslot6_show_sets) | !$EXP[HasMovieSlot6]" />
+							<param name="show_videoaddons" value="Skin.HasSetting(movieslot6_show_videoaddons)" />
 							<param name="list_id" value="5600" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_addons)">
+					<include content="ImageWidget" condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_addons) + !$EXP[HasVideoAddonsInMovies]">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -149,53 +155,58 @@
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6900"/>
 						</include>
-						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot1_show_none) + Library.HasContent(tvshows)">
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot1_show_none) + [Library.HasContent(tvshows) | $EXP[HasVideoAddonsInTVShows]]">
 							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot1_show_inprogress) | !$EXP[HasTVShowSlot1]" />
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot1_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot1_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot1_show_inprogunwatched)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot1_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot1_show_studio)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot1_show_videoaddons)" />
 							<param name="list_id" value="6100" />
 						</include>
-						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot2_show_none) + Library.HasContent(tvshows)">
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot2_show_none) + [Library.HasContent(tvshows) | $EXP[HasVideoAddonsInTVShows]]">
 							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot2_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot2_show_recent) | !$EXP[HasTVShowSlot2]" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot2_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot2_show_inprogunwatched)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot2_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot2_show_studio)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot2_show_videoaddons)" />
 							<param name="list_id" value="6200" />
 						</include>
-						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot3_show_none) + Library.HasContent(tvshows)">
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot3_show_none) + [Library.HasContent(tvshows) | $EXP[HasVideoAddonsInTVShows]]">
 							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot3_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot3_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot3_show_unwatched) | !$EXP[HasTVShowSlot3]" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot3_show_inprogunwatched)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot3_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot3_show_studio)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot3_show_videoaddons)" />
 							<param name="list_id" value="6300" />
 						</include>
-						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot4_show_none) + Library.HasContent(tvshows)">
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot4_show_none) + [Library.HasContent(tvshows) | $EXP[HasVideoAddonsInTVShows]]">
 							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot4_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot4_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot4_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot4_show_inprogunwatched) | !$EXP[HasTVShowSlot4]" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot4_show_genres)" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot4_show_studio)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot4_show_videoaddons)" />
 							<param name="list_id" value="6400" />
 						</include>
-						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot5_show_none) + Library.HasContent(tvshows)">
+						<include content="TVShowSubMenuItem" condition="!Skin.HasSetting(tvshowslot5_show_none) + [Library.HasContent(tvshows) | $EXP[HasVideoAddonsInTVShows]]">
 							<param name="show_inprogress" value="Skin.HasSetting(tvshowslot5_show_inprogress)" />
 							<param name="show_recent" value="Skin.HasSetting(tvshowslot5_show_recent)" />
 							<param name="show_unwatched"  value="Skin.HasSetting(tvshowslot5_show_unwatched)" />
 							<param name="show_inprogunwatched" value="Skin.HasSetting(tvshowslot5_show_inprogunwatched)" />
 							<param name="show_genres" value="Skin.HasSetting(tvshowslot5_show_genres) | !$EXP[HasTVShowSlot5]" />
 							<param name="show_studio" value="Skin.HasSetting(tvshowslot5_show_studio)" />
+							<param name="show_videoaddons" value="Skin.HasSetting(tvshowslot5_show_videoaddons)" />
 							<param name="list_id" value="6500" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(tvshows) + !Skin.HasSetting(tvshowaction_addons)">
+					<include content="ImageWidget" condition="!Library.HasContent(tvshows) + !Skin.HasSetting(tvshowaction_addons) + !$EXP[HasVideoAddonsInTVShows]">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -225,62 +236,68 @@
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="7900"/>
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot1_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot1_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot1_show_playedalbums) | !$EXP[HasMusicSlot1]" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot1_show_addedalbums)" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot1_show_randomalbums)" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot1_show_randomartists)" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot1_show_unplayedalbums)" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot1_show_mostplayed albums)" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot1_show_musicaddons)" />
 							<param name="list_id" value="7100" />
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot2_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot2_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot2_show_playedalbums)" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot2_show_addedalbums) | !$EXP[HasMusicSlot2]" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot2_show_randomalbums)" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot2_show_randomartists)" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot2_show_unplayedalbums)" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot2_show_mostplayed albums)" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot2_show_musicaddons)" />
 							<param name="list_id" value="7200" />
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot3_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot3_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot3_show_playedalbums)" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot3_show_addedalbums)" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot3_show_randomalbums) | !$EXP[HasMusicSlot3]" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot3_show_randomartists)" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot3_show_unplayedalbums)" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot3_show_mostplayed albums)" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot3_show_musicaddons)" />
 							<param name="list_id" value="7300" />
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot4_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot4_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot4_show_playedalbums)" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot4_show_addedalbums)" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot4_show_randomalbums)" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot4_show_randomartists) | !$EXP[HasMusicSlot4]" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot4_show_unplayedalbums)" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot4_show_mostplayed albums)" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot4_show_musicaddons)" />
 							<param name="list_id" value="7400" />
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot5_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot5_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot5_show_playedalbums)" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot5_show_addedalbums)" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot5_show_randomalbums)" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot5_show_randomartists)" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot5_show_unplayedalbums) | !$EXP[HasMusicSlot5]" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot5_show_mostplayed albums)" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot5_show_musicaddons)" />
 							<param name="list_id" value="7500" />
 						</include>
-						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot6_show_none) + Library.HasContent(music)">
+						<include content="MusicSubMenuItem" condition="!Skin.HasSetting(musicslot6_show_none) + [Library.HasContent(music) | $EXP[HasMusicAddonsInMusic]]">
 							<param name="show_playedalbums" value="Skin.HasSetting(musicslot6_show_playedalbums)" />
 							<param name="show_addedalbums" value="Skin.HasSetting(musicslot6_show_addedalbums)" />
 							<param name="show_randomalbums"  value="Skin.HasSetting(musicslot6_show_randomalbums)" />
 							<param name="show_randomartists" value="Skin.HasSetting(musicslot6_show_randomartists)" />
 							<param name="show_unplayedalbums" value="Skin.HasSetting(musicslot6_show_unplayedalbums)" />
 							<param name="show_mostplayedalbums" value="Skin.HasSetting(musicslot6_show_mostplayedalbums) | !$EXP[HasMusicSlot6]" />
+							<param name="show_musicaddons" value="Skin.HasSetting(musicslot6_show_musicaddons)" />
 							<param name="list_id" value="7600" />
 						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(music) + !Skin.HasSetting(musicaction_addons)">
+					<include content="ImageWidget" condition="!Library.HasContent(music) + !Skin.HasSetting(musicaction_addons) + !$EXP[HasMusicAddonsInMusic]">
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
@@ -404,8 +421,17 @@
 							<param name="list_id" value="11200"/>
 							<param name="icon" value="DefaultPlaylist.png"/>
 						</include>
+						<include condition="Skin.HasSetting(show_video_addons)" content="WidgetListSquare">
+							<param name="content_path" value="addons://sources/video/"/>
+							<param name="widget_header" value="$LOCALIZE[1037]"/>
+							<param name="widget_target" value="videos"/>
+							<param name="sortby" value="lastused"/>
+							<param name="sortorder" value="descending"/>
+							<param name="list_id" value="11300"/>
+							<param name="fallback_icon" value="DefaultAddon.png"/>
+						</include>
 					</control>
-					<include content="ImageWidget" condition="!Library.HasContent(video) + !Skin.HasSetting(videoaction_addons)">
+					<include content="ImageWidget" condition="!Library.HasContent(video) + !Skin.HasSetting(videoaction_addons) + !Skin.HasSetting(show_video_addons)">
 						<param name="text_label" value="$LOCALIZE[31105]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
