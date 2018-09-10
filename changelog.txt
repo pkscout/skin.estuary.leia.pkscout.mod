@@ -1,3 +1,6 @@
+v.1.1.5
+- updates from Estuary 2.0.12 (in Kodi Leia Beta 2)
+
 v.1.1.4
 - added video addons widget as option in TV Show, Movie, and Video menu
 - added music addons widget as option in Music menu
