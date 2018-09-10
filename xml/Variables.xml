@@ -430,4 +430,16 @@
 		<value condition="[Window.IsActive(tvtimerrules) | Window.IsActive(radiotimerrules)] + !ListItem.HasTimerSchedule">$INFO[ListItem.Timertype]</value>
 		<value>$INFO[ListItem.EpisodeName]</value>
 	</variable>
+	<variable name="BackgroundOverlayTypeVar">
+		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
+		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
+	</variable>
+	<variable name="MasterModeLabel">
+		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
+		<value>$LOCALIZE[20046]</value>
+	</variable>
+	<variable name="ChannelListEPGIconVar">
+		<value condition="!String.IsEmpty(Listitem.EpgEventIcon)">$INFO[ListItem.EpgEventIcon]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
 </includes>
