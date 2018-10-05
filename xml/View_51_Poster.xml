@@ -143,6 +143,34 @@
 				<aspectratio>scale</aspectratio>
 				<texture fallback="DefaultVideo.png" background="true">$VAR[PosterVar]</texture>
 			</control>
+			<control type="group">
+				<visible>String.IsEqual(ListItem.DBtype,tvshow)</visible>
+				<top>670</top>
+				<control type="image">
+					<left>4</left>
+					<top>0</top>
+					<width>476</width>
+					<height>50</height>
+					<texture colordiffuse="CCFFFFFF">overlays/overlayfade.png</texture>
+					<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>20</top>
+					<width>440</width>
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
+					<font>font20_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>right</align>
+				</control>
+				<control type="image">
+					<left>450</left>
+					<top>23</top>
+					<width>24</width>
+					<height>24</height>
+					<texture>lists/played-total.png</texture>
+				</control>
+			</control>
 			<control type="image">
 				<left>1</left>
 				<top>1</top>
