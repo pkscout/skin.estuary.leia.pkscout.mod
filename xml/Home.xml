@@ -387,7 +387,7 @@
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
 						<param name="button_id" value="8800"/>
-						<param name="visible" value="[Integer.IsEqual(Container(8001).NumItems,0) | [Integer.IsEqual(Container(8001).NumItems,1) + !String.IsEqual(Skin.String(addon_categories),2)]] + ![Skin.HasSetting(no_addon_video) | Skin.HasSetting(no_addon_audio) | Skin.HasSetting(no_addon_program) | Skin.HasSetting(no_addon_image) | [Skin.HasSetting(no_addon_games) + System.GetBool(gamesgeneral.enable)] | [System.Platform.Android + Skin.HasSetting(no_addon_android)]]"/>
+						<param name="visible" value="[Integer.IsEqual(Container(8001).NumItems,0) | [Integer.IsEqual(Container(8001).NumItems,1) + !String.IsEqual(Skin.String(addon_categories),2)]] + ![Skin.HasSetting(addonslot1_show_none) | Skin.HasSetting(addonslot2_show_none) | Skin.HasSetting(addonslot3_show_none) | Skin.HasSetting(addonslot4_show_none) | Skin.HasSetting(addonslot5_show_none) | Skin.HasSetting(addonslot6_show_none)]"/>
 						<param name="button2_onclick" value="ActivateWindow(skinsettings)"/> 
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
