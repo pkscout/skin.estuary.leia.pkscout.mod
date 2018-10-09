@@ -1,3 +1,6 @@
+v.1.1.8
+- fix for display problem on addon home menu right side if all options are turned off
+
 v.1.1.7
 - fix to show watched count on focused TV Show in Poster View
 
