@@ -117,7 +117,7 @@
 	<include name="HomeMenuItemMovies">
 		<item>
 			<label>$LOCALIZE[342]</label>
-			<onclick condition="Library.HasContent(movies) + [Skin.HasSetting(movieaction_titles | String.IsEmpty(Skin.String(skin_version))]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+			<onclick condition="Library.HasContent(movies) + [Skin.HasSetting(movieaction_titles | String.IsEmpty(Skin.String(skin_version)]">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_root)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_genres)">ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_years)">ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
@@ -127,7 +127,7 @@
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_sets)">ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_countries)">ActivateWindow(Videos,videodb://movies/countries/,return)</onclick>
 			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_tags)">ActivateWindow(Videos,videodb://movies/tags/,return)</onclick>
-			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_recent))">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<onclick condition="Library.HasContent(movies) + Skin.HasSetting(movieaction_recent)">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
 			<onclick condition="Skin.HasSetting(movieaction_addons)">ActivateWindow(Videos,Addons,return)</onclick>
 			<onclick condition="!Library.HasContent(movies) + !Skin.HasSetting(movieaction_addons)">ActivateWindow(Videos,sources://video/,return)</onclick>
 			<property name="menu_id">$NUMBER[5000]</property>
@@ -138,7 +138,7 @@
 	<include name="HomeMenuItemTVShows">
 		<item>
 			<label>$LOCALIZE[20343]</label>
-			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_titles) | String.IsEmpty(Skin.String(skin_version))]">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
+			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_titles) | String.IsEmpty(Skin.String(skin_version)]">ActivateWindow(Videos,videodb://tvshows/titles/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_root)]">ActivateWindow(Videos,videodb://tvshows/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_genres)]">ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
 			<onclick condition="Library.HasContent(tvshows) + [Skin.HasSetting(tvshowaction_years)]">ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
@@ -156,7 +156,7 @@
 	<include name="HomeMenuItemMusic">
 		<item>
 			<label>$LOCALIZE[2]</label>
-			<onclick condition="Skin.HasSetting(musicaction_root) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(Music,root,return)</onclick>
+			<onclick condition="Skin.HasSetting(musicaction_root) | String.IsEmpty(Skin.String(skin_version)">ActivateWindow(Music,root,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_genres)">ActivateWindow(Music,musicdb://genres/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_artists)">ActivateWindow(Music,musicdb://artists/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_albums)">ActivateWindow(Music,musicdb://albums/,return)</onclick>
@@ -164,8 +164,8 @@
 			<onclick condition="Skin.HasSetting(musicaction_top100)">ActivateWindow(Music,musicdb://top100/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_top100songs)">ActivateWindow(Music,musicdb://top100/songs/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_top100albums)">ActivateWindow(Music,musicdb://top100/albums/,return)</onclick>
-			<onclick condition="Skin.HasSetting(musicaction_recent))">ActivateWindow(Music,musicdb://recentlyaddedalbums/,return)</onclick>
-			<onclick condition="Skin.HasSetting(musicaction_played))">ActivateWindow(Music,musicdb://recentlyplayedalbums/,return)</onclick>
+			<onclick condition="Skin.HasSetting(musicaction_recent)">ActivateWindow(Music,musicdb://recentlyaddedalbums/,return)</onclick>
+			<onclick condition="Skin.HasSetting(musicaction_played)">ActivateWindow(Music,musicdb://recentlyplayedalbums/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_compilations)">ActivateWindow(Music,musicdb://compilations/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_years)">ActivateWindow(Music,musicdb://years/,return)</onclick>
 			<onclick condition="Skin.HasSetting(musicaction_singles)">ActivateWindow(Music,musicdb://singles/,return)</onclick>
@@ -180,7 +180,7 @@
 		<item>
 			<label>$LOCALIZE[20389]</label>
 			<property name="menu_id">$NUMBER[16000]</property>
-			<onclick condition="Skin.HasSetting(mvaction_root | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(Videos,musicvideos,return)</onclick>
+			<onclick condition="Skin.HasSetting(mvaction_root | String.IsEmpty(Skin.String(skin_version)">ActivateWindow(Videos,musicvideos,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_genres)">ActivateWindow(Videos,videodb://musicvideos/genres/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_titles)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_years)">ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
@@ -188,7 +188,7 @@
 			<onclick condition="Skin.HasSetting(mvaction_albums)">ActivateWindow(Videos,videodb://musicvideos/albums/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_directors)">ActivateWindow(Videos,videodb://musicvideos/directors/,return)</onclick>
 			<onclick condition="Skin.HasSetting(mvaction_studios)">ActivateWindow(Videos,videodb://musicvideos/studios/,return)</onclick>
-			<onclick condition="Skin.HasSetting(mvaction_recent))">ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</onclick>
+			<onclick condition="Skin.HasSetting(mvaction_recent)">ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</onclick>
 			<thumb>icons/sidemenu/musicvideos.png</thumb>
 			<property name="id">musicvideos</property>
 		</item>
@@ -197,7 +197,7 @@
 		<item>
 			<label>$LOCALIZE[19020]</label>
 			<property name="menu_id">$NUMBER[12000]</property>
-			<onclick condition="Skin.HasSetting(tvaction_channels) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(TVChannels)</onclick>
+			<onclick condition="Skin.HasSetting(tvaction_channels) | String.IsEmpty(Skin.String(skin_version)">ActivateWindow(TVChannels)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_guide)">ActivateWindow(TVGuide)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_recordings)">ActivateWindow(TVRecordings)</onclick>
 			<onclick condition="Skin.HasSetting(tvaction_timers)">ActivateWindow(TVTimers)</onclick>
@@ -210,7 +210,7 @@
 		<item>
 			<label>$LOCALIZE[19021]</label>
 			<property name="menu_id">$NUMBER[13000]</property>
-			<onclick condition="Skin.HasSetting(radioaction_channels) | String.IsEmpty(Skin.String(skin_version))">ActivateWindow(RadioChannels)</onclick>
+			<onclick condition="Skin.HasSetting(radioaction_channels) | String.IsEmpty(Skin.String(skin_version)">ActivateWindow(RadioChannels)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_recordings)">ActivateWindow(RadioRecordings)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_timers)">ActivateWindow(RadioTimers)</onclick>
 			<onclick condition="Skin.HasSetting(radioaction_rules)">ActivateWindow(RadioTimerRules)</onclick>
@@ -633,7 +633,7 @@
 		</definition>
 	</include>
 	<include name="LoadDefaultConfig">
-		<onload condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,1)</onload>
+		<onload condition="String.IsEmpty(Skin.String(background_overlay)">Skin.SetString(background_overlay,1)</onload>
 		<onload condition="!$EXP[HasMenuSlot1]">Skin.SetBool(slot1_show_movies)</onload>	
 		<onload condition="!$EXP[HasMenuSlot2]">Skin.SetBool(slot2_show_tvshows)</onload>	
 		<onload condition="!$EXP[HasMenuSlot3]">Skin.SetBool(slot3_show_music)</onload>	

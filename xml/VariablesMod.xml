@@ -278,7 +278,7 @@
 		<value condition="Skin.HasSetting(movieaction_sets)">$LOCALIZE[20458]</value>
 		<value condition="Skin.HasSetting(movieaction_countries)">$LOCALIZE[20451]</value>
 		<value condition="Skin.HasSetting(movieaction_tags)">$LOCALIZE[20459]</value>
-		<value condition="Skin.HasSetting(movieaction_recent))">$LOCALIZE[20386]</value>
+		<value condition="Skin.HasSetting(movieaction_recent)">$LOCALIZE[20386]</value>
 		<value condition="Skin.HasSetting(movieaction_addons)">$LOCALIZE[1037]</value>
 		<value>$LOCALIZE[10024]</value>
 	</variable>
@@ -288,7 +288,7 @@
 		<value condition="Skin.HasSetting(tvshowaction_years)">$LOCALIZE[652]</value>
 		<value condition="Skin.HasSetting(tvshowaction_actors)">$LOCALIZE[344]</value>
 		<value condition="Skin.HasSetting(tvshowaction_studios)">$LOCALIZE[20388]</value>
-		<value condition="Skin.HasSetting(tvshowaction_recent))">$LOCALIZE[20387]</value>
+		<value condition="Skin.HasSetting(tvshowaction_recent)">$LOCALIZE[20387]</value>
 		<value condition="Skin.HasSetting(tvshowaction_inprogress)">$LOCALIZE[626]</value>
 		<value condition="Skin.HasSetting(tvshowaction_addons)">$LOCALIZE[1037]</value>
 		<value>$LOCALIZE[10024]</value>
@@ -301,8 +301,8 @@
 		<value condition="Skin.HasSetting(musicaction_top100)">$LOCALIZE[271]</value>
 		<value condition="Skin.HasSetting(musicaction_top100songs)">$LOCALIZE[10504]</value>
 		<value condition="Skin.HasSetting(musicaction_top100albums)">$LOCALIZE[10505]</value>
-		<value condition="Skin.HasSetting(musicaction_recent))">$LOCALIZE[359]</value>
-		<value condition="Skin.HasSetting(musicaction_played))">$LOCALIZE[517]</value>
+		<value condition="Skin.HasSetting(musicaction_recent)">$LOCALIZE[359]</value>
+		<value condition="Skin.HasSetting(musicaction_played)">$LOCALIZE[517]</value>
 		<value condition="Skin.HasSetting(musicaction_compilations)">$LOCALIZE[521]</value>
 		<value condition="Skin.HasSetting(musicaction_years)">$LOCALIZE[652]</value>
 		<value condition="Skin.HasSetting(musicaction_singles)">$LOCALIZE[1050]</value>
@@ -318,7 +318,7 @@
 		<value condition="Skin.HasSetting(mvaction_albums)">$LOCALIZE[132]</value>
 		<value condition="Skin.HasSetting(mvaction_directors)">$LOCALIZE[20348]</value>
 		<value condition="Skin.HasSetting(mvaction_studios)">$LOCALIZE[20388]</value>
-		<value condition="Skin.HasSetting(mvaction_recent))">$LOCALIZE[20390]</value>
+		<value condition="Skin.HasSetting(mvaction_recent)">$LOCALIZE[20390]</value>
 		<value>$LOCALIZE[20108]</value>
 	</variable>
 	<variable name="TVMenuActionLabel2Var">
