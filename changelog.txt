@@ -1,3 +1,6 @@
+v.1.1.9~beta1
+- removed some unmatched parentheses (thanks to HeresJohnny for that catch)
+
 v.1.1.8
 - fix for display problem on addon home menu right side if all options are turned off
 
