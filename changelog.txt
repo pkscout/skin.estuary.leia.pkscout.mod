@@ -1,4 +1,5 @@
-v.1.1.9~beta1
+v.1.1.9
+- updates from Estuary 2.0.13 (in Kodi Leia Beta 4)
 - removed some unmatched parentheses (thanks to HeresJohnny for that catch)
 
 v.1.1.8
