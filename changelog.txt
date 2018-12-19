@@ -1,3 +1,7 @@
+v.1.1.14
+- better support for 4 digit channel numbers in PVR dialog seek window
+- fixes from Estuary 2.0.16 (in Kodi 18RC3)
+
 v.1.1.13
 - updates from Estuary 2.0.16 (in Kodi 18RC2)
 
