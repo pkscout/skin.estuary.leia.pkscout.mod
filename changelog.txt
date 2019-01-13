@@ -1,3 +1,6 @@
+v.1.1.16
+- updates from Estuary 2.019 (in Kodi 18RC5)
+
 v.1.1.15
 - language file fixes from Estuary 2.0.17 (in Kodi 18RC4)
 
