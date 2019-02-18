@@ -1,3 +1,6 @@
+v.1.1.18
+- fixes from Estuary 2.0.21 in Kodi 18.1 Final Release
+
 v.1.1.17
 - fixes from Estuary 2.0.21 in Kodi 18 Final Release
 
