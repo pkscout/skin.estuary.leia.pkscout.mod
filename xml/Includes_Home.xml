@@ -458,6 +458,12 @@
 				<visible>System.HasAddon(script.xbmc.x-newa)</visible>
 			</item>
 			<item>
+				<label>New NextPVR Client</label>
+				<onclick>RunScript(script.kodi.knew4v5)</onclick>
+				<thumb>DefaultNetwork.png</thumb>
+				<visible>System.HasAddon(script.kodi.knew4v5)</visible>
+			</item>
+			<item>
 				<label>PseudoLibrary</label>
 				<onclick>RunScript(script.pseudo.library)</onclick>
 				<thumb>DefaultVCD.png</thumb>
