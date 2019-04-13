@@ -1,3 +1,6 @@
+v.1.2.0
+- added option to not scale artist images on music visualization screen
+
 v.1.1.19
 - support for New NextPVR client shortcut in TV menu
 - small change to support Shoutcast radio as a TV channel
