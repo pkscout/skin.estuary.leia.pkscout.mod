@@ -821,6 +821,10 @@ msgctxt "#40172"
 msgid "Unwatched TV Shows/In progress TV shows"
 msgstr ""
 
+#: /xml/SkinSettings.xml
+msgctxt "#40173"
+msgid "In music visualization do not scale background artist images"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40180"
