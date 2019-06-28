@@ -1,3 +1,6 @@
+v.1.2.4
+- updates from Estuary 2.0.23 in Kodi 18.3
+
 v.1.2.3
 - fixes for new naming convention for Native NextPVR Client
 
