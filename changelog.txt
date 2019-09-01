@@ -1,3 +1,6 @@
+v.1.2.5
+- updates from Estuary 2.0.25 in Kodi 18.4
+
 v.1.2.4
 - updates from Estuary 2.0.23 in Kodi 18.3
 
