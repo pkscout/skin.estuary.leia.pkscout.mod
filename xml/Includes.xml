@@ -783,7 +783,7 @@
 				<control type="grouplist">
 					<left>35</left>
 					<description>Left side of top bar</description>
-					<width>900</width>
+					<width>1000</width>
 					<top>-7</top>
 					<height>100</height>
 					<orientation>horizontal</orientation>
@@ -1016,12 +1016,12 @@
 		</definition>
 	</include>
 	<include name="BreadcrumbsLabel">
-		<font>font45</font>
+		<font>font14</font>
 		<shadowcolor>text_shadow</shadowcolor>
-		<top>7</top>
+		<top>18</top>
 		<height>100</height>
-		<width>auto</width>
-	</include>
+        <width min="0" max="900">auto</width>
+    </include>
 	<include name="ColoredBackgroundImages">
 		<control type="image">
 			<depth>DepthBackground</depth>
