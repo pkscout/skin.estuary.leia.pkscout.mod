@@ -1,3 +1,6 @@
+v.1.2.8
+- fixes from Estuary 2.0.26 in Kodi 18.5
+
 v.1.2.7
 - bug in logic for displaying images from old version of Artist Slideshow
 
