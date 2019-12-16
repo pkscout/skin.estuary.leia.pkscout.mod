@@ -45,7 +45,7 @@
 				<fadetime>600</fadetime>
 				<loop>yes</loop>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!Skin.HasSetting(keep_artist_artwork_scale) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady)</visible>
+				<visible>!Skin.HasSetting(keep_artist_artwork_scale) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
 			</control>
 			<control type="multiimage">
 				<aspectratio>keep</aspectratio>
@@ -54,7 +54,7 @@
 				<fadetime>600</fadetime>
 				<loop>yes</loop>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>Skin.HasSetting(keep_artist_artwork_scale) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady)</visible>
+				<visible>Skin.HasSetting(keep_artist_artwork_scale) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
 			</control>
 		</control>
 		<control type="group">
