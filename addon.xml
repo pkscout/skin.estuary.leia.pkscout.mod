@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.leia.pkscout.mod" version="1.2.8" name="Estuary Leia Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.leia.pkscout.mod" version="1.2.9" name="Estuary Leia Mod (pkscout)" provider-name="pkscout, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 	</requires>
@@ -15,6 +15,9 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<news>
+v.1.2.9
+- fix for visible logic for legacy version of ArtistSlideshow
+
 v.1.2.8
 - fixes from Estuary 2.0.26 in Kodi 18.5
 		</news>
