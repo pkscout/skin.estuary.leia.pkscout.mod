@@ -1,3 +1,6 @@
+v.1.2.10~beta1
+- added support for Premiere tags in PVR (requires PVR addon that supports those tags)
+
 v.1.2.9
 - fix for visible logic for legacy version of ArtistSlideshow
 
