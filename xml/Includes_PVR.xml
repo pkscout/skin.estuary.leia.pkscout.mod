@@ -461,6 +461,15 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
+						<visible>String.IsEqual(ListItem.Premiered,ListItem.StartDate)</visible>
+						<left>6</left>
+						<top>35</top>
+						<width>16</width>
+						<height>16</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="button_focus">icons/pvr/premiere.png</texture>
+					</control>
+					<control type="image">
 						<left>6</left>
 						<top>35</top>
 						<width>20</width>
@@ -496,6 +505,15 @@
 						<aligny>center</aligny>
 						<font>font13</font>
 						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="image">
+						<visible>String.IsEqual(ListItem.Premiered,ListItem.StartDate)</visible>
+						<left>6</left>
+						<top>35</top>
+						<width>16</width>
+						<height>16</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/pvr/premiere.png</texture>
 					</control>
 					<control type="image">
 						<left>6</left>

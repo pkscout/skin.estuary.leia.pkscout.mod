@@ -44,12 +44,24 @@
 					<onclick>ActivateWindow(1102)</onclick>
 				</control>
 				<control type="textbox" id="400">
+					<visible>String.EndsWith(ListItem.Premiered,1969) | String.IsEmpty(ListItem.Premiered) </visible>
 					<left>660</left>
 					<top>20</top>
 					<width>1050</width>
 					<height>425</height>
 					<align>justify</align>
 					<label>$INFO[ListItem.ChannelName,[B],[/B][CR]]$INFO[ListItem.Date,[COLOR grey]$LOCALIZE[552]:[/COLOR] ,[CR]]$INFO[ListItem.Duration,[COLOR grey]$LOCALIZE[180]:[/COLOR] ,[CR]]$VAR[ExpirationDateTimeLabel]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR grey]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR grey]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR grey]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
+					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+				<control type="textbox" id="400">
+					<visible>!String.EndsWith(ListItem.Premiered,1969) + !String.IsEmpty(ListItem.Premiered) </visible>
+					<!--visible>String.IsEqual(ListItem.Premiered,ListItem.StartDate)</visible-->
+					<left>660</left>
+					<top>20</top>
+					<width>1050</width>
+					<height>425</height>
+					<align>justify</align>
+					<label>$INFO[ListItem.ChannelName,[B],[/B][CR]]$INFO[ListItem.Date,[COLOR grey]$LOCALIZE[552]:[/COLOR] ,[CR]]$INFO[ListItem.Duration,[COLOR grey]$LOCALIZE[180]:[/COLOR] ,[CR]]$VAR[ExpirationDateTimeLabel][COLOR grey]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Premiered][CR]$INFO[ListItem.Genre,[COLOR grey]$LOCALIZE[515]:[/COLOR] ,[CR]]$INFO[ListItem.Writer,[COLOR grey]$LOCALIZE[20417]:[/COLOR] ,[CR]]$INFO[ListItem.Director,[COLOR grey]$LOCALIZE[20339]:[/COLOR] ,[CR]]$INFO[ListItem.Cast,[COLOR grey]$LOCALIZE[206]:[/COLOR] ,[CR]][CR]$INFO[ListItem.Plot]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">

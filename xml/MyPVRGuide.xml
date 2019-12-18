@@ -184,6 +184,13 @@
 						<top>0</top>
 						<left>350</left>
 						<control type="label">
+							<visible>String.IsEqual(ListItem.Premiered,ListItem.StartDate)</visible>
+							<width>70%</width>
+							<height>30</height>
+							<label>[B]$INFO[ListItem.EpgEventTitle][/B] (New)</label>
+						</control>
+						<control type="label">
+							<visible>!String.IsEqual(ListItem.Premiered,ListItem.StartDate)</visible>
 							<width>70%</width>
 							<height>30</height>
 							<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
