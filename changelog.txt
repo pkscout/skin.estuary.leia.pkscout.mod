@@ -1,4 +1,5 @@
-v.1.2.10~beta1
+v.1.2.10
+- added support for Weather Icon Packs (thanks to Guilouz for the code)
 - added support for Premiere tags in PVR (requires PVR addon that supports those tags)
 
 v.1.2.9
