@@ -766,6 +766,8 @@ msgctxt "#31167"
 msgid "Animate background"
 msgstr ""
 
+#empty strings from id 31168 to 40161
+
 #: /xml/SkinSettings.xml
 msgctxt "#40162"
 msgid "Show music visualisation screen directly when playing song"
@@ -874,5 +876,10 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40189"
 msgid "90%"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40190"
+msgid "Choose weather icon pack"
 msgstr ""
 
