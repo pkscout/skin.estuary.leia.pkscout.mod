@@ -15,4 +15,5 @@ option to use alternate layout for weather widget in top bar that doesn't overla
 added categories in TV category widget for X-NEWA and Pseudolibrary if those addons are installed
 option to use an alternate timer layout that puts the show name before the channel name in the PVR listings
 better support for 4 digit channel numbers in PVR
+ability to use Weather icon packs to change the look of the weather screen (code from Guilouz)
 option to use the Weather menu as a weather clock (really only works with a RPi 9" touchscreen, requires additional addon <https://github.com/pkscout/script.weatherstation.lite> and software <https://github.com/pkscout/rpi.weatherstation.lite>)
