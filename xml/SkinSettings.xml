@@ -87,13 +87,19 @@
 					<selected>Skin.HasSetting(use_alt_timer_layout)</selected>
 				</control>
 				<control type="radiobutton" id="710">
+					<label>$LOCALIZE[40191]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(use_alt_mv_layout)</onclick>
+					<selected>Skin.HasSetting(use_alt_mv_layout)</selected>
+				</control>
+				<control type="radiobutton" id="711">
 					<label>$LOCALIZE[40164]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(show_artist_bio)</onclick>
 					<selected>Skin.HasSetting(show_artist_bio)</selected>
 					<visible>System.HasAddon(script.artistslideshow)</visible>
 				</control>
-				<control type="radiobutton" id="711">
+				<control type="radiobutton" id="712">
 					<label>$LOCALIZE[40169]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(use_weatherclock)</onclick>

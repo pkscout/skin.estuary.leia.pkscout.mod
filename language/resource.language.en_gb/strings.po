@@ -883,3 +883,9 @@ msgctxt "#40190"
 msgid "Choose weather icon pack"
 msgstr ""
 
+#: /xml/SkinSettings.xml
+msgctxt "#40191"
+msgid "Use alternate music visualisation layout"
+msgstr ""
+
+
