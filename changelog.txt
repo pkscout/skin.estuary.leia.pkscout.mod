@@ -1,3 +1,6 @@
+v.1.2.11
+- added optional music visualization layout to maximize background artist image view
+
 v.1.2.10
 - added support for Weather Icon Packs (thanks to Guilouz for the code)
 - added support for Premiere tags in PVR (requires PVR addon that supports those tags)
