@@ -1,3 +1,6 @@
+v.1.2.13
+- changed skin string numbers to match required range from Kodi docs
+
 v.1.2.12
 - alternate music visualization layout now removes the difusion in front of artist images
 
