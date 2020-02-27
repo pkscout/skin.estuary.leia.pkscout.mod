@@ -241,16 +241,16 @@
 		<value>$LOCALIZE[8]</value>
 	</variable>
 	<variable name="BackgroundDiffusionPercentLabel2Var">
-		<value condition="Skin.HasSetting(bgd_show_100)">$LOCALIZE[40180]</value>
-		<value condition="Skin.HasSetting(bgd_show_90)">$LOCALIZE[40189]</value>
-		<value condition="Skin.HasSetting(bgd_show_80)">$LOCALIZE[40188]</value>
-		<value condition="Skin.HasSetting(bgd_show_70)">$LOCALIZE[40187]</value>
-		<value condition="Skin.HasSetting(bgd_show_60)">$LOCALIZE[40186]</value>
-		<value condition="Skin.HasSetting(bgd_show_50)">$LOCALIZE[40185]</value>
-		<value condition="Skin.HasSetting(bgd_show_40)">$LOCALIZE[40184]</value>
-		<value condition="Skin.HasSetting(bgd_show_30)">$LOCALIZE[40183]</value>
-		<value condition="Skin.HasSetting(bgd_show_20)">$LOCALIZE[40180]</value>
-		<value condition="Skin.HasSetting(bgd_show_10)">$LOCALIZE[40181]</value>
+		<value condition="Skin.HasSetting(bgd_show_100)">$LOCALIZE[31512]</value>
+		<value condition="Skin.HasSetting(bgd_show_90)">$LOCALIZE[31521]</value>
+		<value condition="Skin.HasSetting(bgd_show_80)">$LOCALIZE[31520]</value>
+		<value condition="Skin.HasSetting(bgd_show_70)">$LOCALIZE[31519]</value>
+		<value condition="Skin.HasSetting(bgd_show_60)">$LOCALIZE[31518]</value>
+		<value condition="Skin.HasSetting(bgd_show_50)">$LOCALIZE[31517]</value>
+		<value condition="Skin.HasSetting(bgd_show_40)">$LOCALIZE[31516]</value>
+		<value condition="Skin.HasSetting(bgd_show_30)">$LOCALIZE[31515]</value>
+		<value condition="Skin.HasSetting(bgd_show_20)">$LOCALIZE[31512]</value>
+		<value condition="Skin.HasSetting(bgd_show_10)">$LOCALIZE[31513]</value>
 		<value condition="Skin.HasSetting(bgd_show_0)">$LOCALIZE[16018]</value>
 		<value>$LOCALIZE[13278]</value>
 	</variable>

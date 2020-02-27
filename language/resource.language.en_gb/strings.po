@@ -769,122 +769,122 @@ msgstr ""
 #empty strings from id 31168 to 40161
 
 #: /xml/SkinSettings.xml
-msgctxt "#40162"
+msgctxt "#31500"
 msgid "Show music visualisation screen directly when playing song"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40163"
+msgctxt "#31501"
 msgid "Use alternate timer layout"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40164"
+msgctxt "#31502"
 msgid "Show artist bio with Music OSD"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40165"
+msgctxt "#31503"
 msgid "Menu item actions"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40166"
+msgctxt "#31504"
 msgid "Select menu item to display"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40167"
+msgctxt "#31505"
 msgid "Background diffusion"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40168"
+msgctxt "#31506"
 msgid "Use alternate location for weather widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40169"
+msgctxt "#31507"
 msgid "Use weather clock for weather page"
 msgstr ""
 
 #: /xml/MyWeather.xml
-msgctxt "#40170"
+msgctxt "#31508"
 msgid "Switching locations..."
 msgstr ""
 
 #: /xml/MyWeather.xml
-msgctxt "#40171"
+msgctxt "#31509"
 msgid "Auto Dim"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40172"
+msgctxt "#31510"
 msgid "Unwatched TV Shows/In progress TV shows"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40173"
+msgctxt "#31511"
 msgid "In music visualization do not scale background artist images"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40180"
+msgctxt "#31512"
 msgid "100%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40181"
+msgctxt "#31513"
 msgid "10%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40182"
+msgctxt "#31514"
 msgid "20%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40183"
+msgctxt "#31515"
 msgid "30%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40184"
+msgctxt "#31516"
 msgid "40%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40185"
+msgctxt "#31517"
 msgid "50%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40186"
+msgctxt "#31518"
 msgid "60%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40187"
+msgctxt "#31519"
 msgid "70%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40188"
+msgctxt "#31520"
 msgid "80%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40189"
+msgctxt "#31521"
 msgid "90%"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40190"
+msgctxt "#31522"
 msgid "Choose weather icon pack"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40191"
+msgctxt "#31523"
 msgid "Use alternate music visualisation layout"
 msgstr ""
 

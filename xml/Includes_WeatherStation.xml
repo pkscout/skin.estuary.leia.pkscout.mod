@@ -98,7 +98,7 @@
 				<scroll>false</scroll>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>40170</label>
+				<label>31508</label>
 			</control>
 			<control type="button" id="15102">
 				<description>System Date</description>
@@ -159,7 +159,7 @@
 					<align>center</align>
 					<font>big_date</font>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[40171]: [COLOR=green]$LOCALIZE[16041][/COLOR]</label>
+					<label>$LOCALIZE[31509]: [COLOR=green]$LOCALIZE[16041][/COLOR]</label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
@@ -180,7 +180,7 @@
 					<align>center</align>
 					<font>big_date</font>
 					<textcolor>white</textcolor>
-					<label>$LOCALIZE[40171]: [COLOR=red]$LOCALIZE[351][/COLOR]</label>
+					<label>$LOCALIZE[31509]: [COLOR=red]$LOCALIZE[351][/COLOR]</label>
 					<selectedcolor>selected</selectedcolor>
 					<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 					<texturenofocus />
