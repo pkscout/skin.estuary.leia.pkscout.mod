@@ -1,3 +1,6 @@
+v.1.2.14
+- updated language files from Estuary 2.0.27 in Kodi 18.6
+
 v.1.2.13
 - changed skin string numbers to match required range from Kodi docs
 
