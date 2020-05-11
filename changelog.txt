@@ -1,3 +1,6 @@
+v.1.2.15
+- added video resolution to dialog seek bar (backport from Matrix version of Estuary)
+
 v.1.2.14
 - updated language files from Estuary 2.0.27 in Kodi 18.6
 
